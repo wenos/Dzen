@@ -1,0 +1,50 @@
+spring:
+  profiles:
+    default: local
+  servlet:
+    multipart:
+      max-file-size: 30MB
+      max-request-size: 30MB
+  datasource:
+    url: ${datasource.url}
+    username: ${datasource.username}
+    password: ${datasource.password}
+    driverClassName: org.postgresql.Driver
+  jpa:
+    hibernate:
+      naming:
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  liquibase:
+    enabled: true
+    change-log: classpath:db/changelog/db.changelog-master.yaml
+  quartz:
+    job-store-type: jdbc
+    jdbc:
+      initialize-schema: always
+
+token:
+  signing:
+    key: ${token.signing.key}
+
+superuser:
+  id: 1
+  enabled: true
+  default:
+    password: superuser
+
+storage:
+  cloud:
+    endpoint:
+      url: storage.yandexcloud.net
+      region: ru-central1
+    access:
+      key: ${storage.cloud.access.key}
+    secret:
+      key: ${storage.cloud.secret.key}
+    bucket:
+      name: ${storage.cloud.bucket.name}

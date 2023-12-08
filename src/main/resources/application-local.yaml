@@ -1,0 +1,18 @@
+datasource:
+  url: jdbc:postgresql://localhost:5432/ttt
+  username: postgres
+  password: root
+
+storage:
+  cloud:
+    access:
+      key: YCAJEMOge50ClNRbHqlZzH8p0
+    secret:
+      key: YCPmI14G4qSqf7ytrvfCmULImBLj8sMbZeeTLa0z
+    bucket:
+      name: neninja-storage
+
+token:
+  signing:
+    key: 413F4428472B4B6250655368566D5970337336763979244226452948404D6351
+

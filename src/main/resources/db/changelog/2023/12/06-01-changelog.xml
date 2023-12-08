@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+    <changeSet id="1700854008463-100" author="ramal">
+        <createSequence incrementBy="1" sequenceName="security_id_seq" startValue="1"/>
+    </changeSet>
+    <changeSet id="1700854008463-101" author="ramal">
+        <createSequence incrementBy="1" sequenceName="security_type_id_seq" startValue="1"/>
+    </changeSet>
+
+    <changeSet id="1700854008463-102" author="ramal">
+        <createTable tableName="jn_security">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="pk_jn_security"/>
+            </column>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="shortname" type="VARCHAR(255)"/>
+            <column name="sec_id" type="VARCHAR(255)">
+                    <constraints nullable="false"/>
+            </column>
+            <column name="primary_board_id" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="type_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_at" type="timestamp"/>
+            <column name="updated_at" type="timestamp"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="1700854008463-103" author="ramal">
+        <createTable tableName="c_security_type">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="pk_c_security_type"/>
+            </column>
+            <column name="title" type="VARCHAR(255)">
+                <constraints unique="false"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints unique="false"/>
+            </column>
+            <column name="created_at" type="timestamp"/>
+            <column name="updated_at" type="timestamp"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="addForeignKeyConstraints" author="Ramal">
+        <addForeignKeyConstraint baseTableName="jn_security" baseColumnNames="type_id"
+                                 referencedTableName="c_security_type" referencedColumnNames="id"
+                                 constraintName="fk_jn_security_type_id" />
+    </changeSet>
+
+
+
+    <changeSet id="1700854008463-43" author="minusd">
+        <createTable tableName="ref_user_security">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="pk_ref_user_security"/>
+            </column>
+            <column name="user_id" type="BIGINT"/>
+            <column name="security_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+
+
+    <changeSet id="1700854008463-44" author="minusd">
+        <addForeignKeyConstraint baseColumnNames="security_id" baseTableName="ref_user_security"
+                                 constraintName="FK_REF_USER_SECURITY_ON_USER" referencedColumnNames="id"
+                                 referencedTableName="jn_security"/>
+    </changeSet>
+    <changeSet id="1700854008463-45" author="minusd">
+        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="ref_user_security"
+                                 constraintName="FK_REF_USER_SECURITY_ON_SECURITY" referencedColumnNames="id"
+                                 referencedTableName="jn_user"/>
+    </changeSet>
+
+</databaseChangeLog>

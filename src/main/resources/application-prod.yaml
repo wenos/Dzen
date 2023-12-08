@@ -1,0 +1,18 @@
+datasource:
+  url: jdbc:postgresql://localhost:5432/tinkoff_neninja_prod
+  username: postgres
+  password: root
+
+storage:
+  cloud:
+    access:
+      key: YCAJERXk_lhbEfR6oDtRSXJxk
+    secret:
+      key: YCOU9RrjDhAX7vZyEYDAdqctUMn7iTtWfK4IdSLt
+    bucket:
+      name: neninja-storage-prod
+
+token:
+  signing:
+    key: 413F4428472B4B6899228715536D5970337336895046165196452948404D6351
+

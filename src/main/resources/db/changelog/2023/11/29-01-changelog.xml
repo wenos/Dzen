@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+    <changeSet id="1701218490300-5" author="minusd" runInTransaction="false">
+        <createIndex indexName="idx_comment_post_id" tableName="jn_comment">
+            <column name="post_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet id="1701218490300-2" author="minusd" runInTransaction="false">
+        <createIndex indexName="idx_user_email" tableName="jn_user" unique="false">
+            <column name="email"/>
+        </createIndex>
+    </changeSet>
+    <changeSet id="1701218490300-4" author="minusd" runInTransaction="false">
+        <createIndex indexName="idx_user_username" tableName="jn_user" unique="false">
+            <column name="username"/>
+        </createIndex>
+    </changeSet>
+
+</databaseChangeLog>
