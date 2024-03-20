@@ -12,17 +12,14 @@ import java.util.List;
 
 @Repository
 public interface PostRepository extends JpaRepository<Post, Long> {
-//    @Query("select p from Post p where " +
-//            "(:topicId is null or p.topic.id = :topicId) " +
-//            "and (:postTypeId is null or p.postType.id = :postTypeId)")
-//    Page<Post> findAllByTopicIdAndPostTypeId(
-//            @Param("topicId") Long topicId,
-//            @Param("postTypeId") Long postTypeId,
-//            Pageable pageable);
 
-    @Query("SELECT p FROM Post p where " + "(p.isNews = :isNews) ")
-    Page<Post> findAllWithPages(@Param("isNews") Boolean isNews, Pageable pageable);
-
+    @Query("select p from Post p " +
+            "where (:categoryId is null or p.category.id = :categoryId)" +
+            "and (:title is null or p.title like %:title%)")
+    Page<Post> findAllWithPages(
+            @Param("categoryId") Long categoryId,
+            @Param("title") String title,
+            Pageable pageable);
 
     List<Post> findAllByAuthorId(Long id);
 }

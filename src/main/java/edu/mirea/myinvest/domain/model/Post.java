@@ -7,6 +7,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.SequenceGenerator;
@@ -24,6 +25,7 @@ import org.hibernate.annotations.UpdateTimestamp;
 import java.time.OffsetDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Getter
@@ -53,8 +55,8 @@ public class Post {
     private String content;
 
 
-    @Column(name = "is_news", nullable = false)
-    private Boolean isNews;
+    @Column(name = "likes")
+    private Long likes;
 
     /**
      * Автор поста
@@ -91,6 +93,16 @@ public class Post {
     @UpdateTimestamp
     @Column(name = "updated_at")
     private OffsetDateTime updatedAt;
+
+
+    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    @JoinColumn(name = "category_id")
+    Category category;
+
+    @OneToMany(mappedBy = "post")
+    private Set<PostUserRel> postUserRel;
+
+
 
 
     /**

@@ -5,23 +5,23 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd"
         objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
-    <changeSet id="1700854008463-1" author="minusd">
+    <changeSet id="1700854008463-1" author="wenos">
         <createSequence incrementBy="1" sequenceName="comment_id_seq" startValue="1"/>
     </changeSet>
-    <changeSet id="1700854008463-3" author="minusd">
+    <changeSet id="1700854008463-3" author="wenos">
         <createSequence incrementBy="1" sequenceName="post_file_id_seq" startValue="1"/>
     </changeSet>
 
-    <changeSet id="1700854008463-109" author="minusd">
+    <changeSet id="1700854008463-109" author="wenos">
         <createSequence incrementBy="1" sequenceName="user_security_id_seq" startValue="1"/>
     </changeSet>
-    <changeSet id="1700854008463-4" author="minusd">
+    <changeSet id="1700854008463-4" author="wenos">
         <createSequence incrementBy="1" sequenceName="post_id_seq" startValue="1"/>
     </changeSet>
-    <changeSet id="1700854008463-8" author="minusd">
+    <changeSet id="1700854008463-8" author="wenos">
         <createSequence incrementBy="1" sequenceName="user_id_seq" startValue="1"/>
     </changeSet>
-    <changeSet id="1700854008463-11" author="minusd">
+    <changeSet id="1700854008463-11" author="wenos">
         <createTable tableName="jn_comment">
             <column name="id" type="BIGINT">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="pk_jn_comment"/>
@@ -33,7 +33,7 @@
             <column name="updated_at" type="timestamp"/>
         </createTable>
     </changeSet>
-    <changeSet id="1700854008463-12" author="minusd">
+    <changeSet id="1700854008463-12" author="wenos">
         <createTable tableName="jn_post">
             <column name="id" type="BIGINT">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="pk_jn_post"/>
@@ -41,15 +41,13 @@
             <column name="title" type="VARCHAR(255)"/>
             <column name="content" type="VARCHAR(10000)"/>
             <column name="author_id" type="BIGINT"/>
-            <column name="is_news" type="boolean">
-                <constraints nullable="false"/>
-            </column>
             <column name="created_at" type="timestamp"/>
             <column name="updated_at" type="timestamp"/>
+            <column name="likes" type="bigint" defaultValue="0"/>
         </createTable>
     </changeSet>
 
-    <changeSet id="1700854008463-15" author="minusd">
+    <changeSet id="1700854008463-15" author="wenos">
         <createTable tableName="jn_uploaded_file">
             <column name="id" type="UUID">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="pk_jn_uploaded_file"/>
@@ -62,7 +60,7 @@
             <column name="updated_at" type="timestamp"/>
         </createTable>
     </changeSet>
-    <changeSet id="1700854008463-16" author="minusd">
+    <changeSet id="1700854008463-16" author="wenos">
         <createTable tableName="jn_user">
             <column name="id" type="BIGINT">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="pk_jn_user"/>
@@ -84,7 +82,7 @@
             <column name="updated_at" type="timestamp"/>
         </createTable>
     </changeSet>
-    <changeSet id="1700854008463-17" author="minusd">
+    <changeSet id="1700854008463-17" author="wenos">
         <createTable tableName="ref_post_file">
             <column name="id" type="BIGINT">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="pk_ref_post_file"/>
@@ -97,61 +95,34 @@
 
 
 
-<!--    <changeSet id="1700854008463-18" author="minusd">-->
-<!--        <addUniqueConstraint columnNames="title" constraintName="uc_c_course_title" tableName="c_course"/>-->
-<!--    </changeSet>-->
-<!--    <changeSet id="1700854008463-19" author="minusd">-->
-<!--        <addUniqueConstraint columnNames="title" constraintName="uc_c_post_type_title" tableName="c_post_type"/>-->
-<!--    </changeSet>-->
-<!--    <changeSet id="1700854008463-20" author="minusd">-->
-<!--        <addUniqueConstraint columnNames="title" constraintName="uc_jn_subject_title" tableName="jn_subject"/>-->
-<!--    </changeSet>-->
-    <changeSet id="1700854008463-21" author="minusd">
+    <changeSet id="1700854008463-21" author="wenos">
         <addUniqueConstraint columnNames="email" constraintName="uc_jn_user_email" tableName="jn_user"/>
     </changeSet>
-    <changeSet id="1700854008463-22" author="minusd">
+    <changeSet id="1700854008463-22" author="wenos">
         <addUniqueConstraint columnNames="username" constraintName="uc_jn_user_username" tableName="jn_user"/>
     </changeSet>
-    <changeSet id="1700854008463-23" author="minusd">
+    <changeSet id="1700854008463-23" author="wenos">
         <addForeignKeyConstraint baseColumnNames="author_id" baseTableName="jn_comment"
                                  constraintName="FK_JN_COMMENT_ON_AUTHOR" referencedColumnNames="id"
                                  referencedTableName="jn_user"/>
     </changeSet>
-    <changeSet id="1700854008463-24" author="minusd">
+    <changeSet id="1700854008463-24" author="wenos">
         <addForeignKeyConstraint baseColumnNames="post_id" baseTableName="jn_comment"
                                  constraintName="FK_JN_COMMENT_ON_POST" referencedColumnNames="id"
                                  referencedTableName="jn_post"/>
     </changeSet>
-    <changeSet id="1700854008463-25" author="minusd">
+    <changeSet id="1700854008463-25" author="wenos">
         <addForeignKeyConstraint baseColumnNames="author_id" baseTableName="jn_post"
                                  constraintName="fk_jn_post_on_author" referencedColumnNames="id"
                                  referencedTableName="jn_user"/>
     </changeSet>
-<!--    <changeSet id="1700854008463-26" author="minusd">-->
-<!--        <addForeignKeyConstraint baseColumnNames="post_type_id" baseTableName="jn_post"-->
-<!--                                 constraintName="FK_JN_POST_ON_POST_TYPE" referencedColumnNames="id"-->
-<!--                                 referencedTableName="c_post_type"/>-->
-<!--    </changeSet>-->
-<!--    <changeSet id="1700854008463-27" author="minusd">-->
-<!--        <addForeignKeyConstraint baseColumnNames="topic_id" baseTableName="jn_post" constraintName="FK_JN_POST_ON_TOPIC"-->
-<!--                                 referencedColumnNames="id" referencedTableName="jn_topic"/>-->
-<!--    </changeSet>-->
-<!--    <changeSet id="1700854008463-28" author="minusd">-->
-<!--        <addForeignKeyConstraint baseColumnNames="course_id" baseTableName="jn_topic"-->
-<!--                                 constraintName="FK_JN_TOPIC_ON_COURSE" referencedColumnNames="id"-->
-<!--                                 referencedTableName="c_course"/>-->
-<!--    </changeSet>-->
-<!--    <changeSet id="1700854008463-29" author="minusd">-->
-<!--        <addForeignKeyConstraint baseColumnNames="subject_id" baseTableName="jn_topic"-->
-<!--                                 constraintName="FK_JN_TOPIC_ON_SUBJECT" referencedColumnNames="id"-->
-<!--                                 referencedTableName="jn_subject"/>-->
-<!--    </changeSet>-->
-    <changeSet id="1700854008463-30" author="minusd">
+
+    <changeSet id="1700854008463-30" author="wenos">
         <addForeignKeyConstraint baseColumnNames="file_id" baseTableName="ref_post_file"
                                  constraintName="FK_REF_POST_FILE_ON_FILE" referencedColumnNames="id"
                                  referencedTableName="jn_uploaded_file"/>
     </changeSet>
-    <changeSet id="1700854008463-31" author="minusd">
+    <changeSet id="1700854008463-31" author="wenos">
         <addForeignKeyConstraint baseColumnNames="post_id" baseTableName="ref_post_file"
                                  constraintName="FK_REF_POST_FILE_ON_POST" referencedColumnNames="id"
                                  referencedTableName="jn_post"/>

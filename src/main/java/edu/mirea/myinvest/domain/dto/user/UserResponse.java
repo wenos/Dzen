@@ -31,7 +31,7 @@ public record UserResponse(
         @Schema(description = "Дата удаления пользователя", example = "2021-10-10T10:10:10+03:00")
         OffsetDateTime deletedAt,
 
-        @Schema(description = "Список id подписок")
+        @Schema(description = "Список categoryId подписок")
         Set<Long> subscribes
 ) {
 }

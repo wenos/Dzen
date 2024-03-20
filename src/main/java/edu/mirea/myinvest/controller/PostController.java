@@ -23,6 +23,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/posts")
@@ -94,4 +96,23 @@ public class PostController {
         return result;
     }
 
+    @Operation(summary = "Получение постов по id пользователя")
+    @GetMapping("/user/{id}")
+    public List<PostResponse> getAllByAuthorId(@PathVariable Long id) {
+        List<Post> posts = service.getAllByAuthorId(id);
+        return mapper.toResponse(posts);
+
+    }
+
+    @Operation(summary = "Лайк понравившегося поста")
+    @PostMapping("/{id}/like")
+    public void likePost(@PathVariable Long id) {
+        service.likePost(id);
+    }
+
+    @Operation(summary = "Снятие лайка с поста")
+    @PostMapping("/{id}/unlike")
+    public void unlikePost(@PathVariable Long id) {
+        service.unlikePost(id);
+    }
 }

@@ -3,6 +3,7 @@ package edu.mirea.myinvest.service;
 import edu.mirea.myinvest.domain.dto.post.PostFilter;
 import edu.mirea.myinvest.domain.dto.post.PostRequest;
 import edu.mirea.myinvest.domain.dto.post.UpdatePostRequest;
+import edu.mirea.myinvest.domain.model.Category;
 import edu.mirea.myinvest.domain.model.Post;
 import edu.mirea.myinvest.domain.model.User;
 import edu.mirea.myinvest.exception.post.PostNotFoundProblem;
@@ -16,6 +17,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 import java.util.Optional;
 
 import static java.util.Objects.isNull;
@@ -26,6 +28,10 @@ public class PostService {
     private final PostRepository repository;
     private final FileService fileService;
     private final UserService userService;
+    private final CategoryService categoryService;
+
+
+    private final PostUserRelService postUserRelService;
     private final PostFileRelRepository postFileRelRepository;
 
     /**
@@ -43,11 +49,12 @@ public class PostService {
      */
     @Transactional
     public Post create(PostRequest request) {
+
+
         var post = Post.builder()
                 .title(request.title())
                 .author(userService.getCurrentUser())
                 .content(request.content())
-                .isNews(request.isNews())
                 .build();
         return setPostInformation(request, post);
     }
@@ -141,8 +148,6 @@ public class PostService {
 
         post.setTitle(request.title());
         post.setContent(request.content());
-//        post.setTopic(topic);
-//        post.setPostType(type);
 
         return save(post);
     }
@@ -156,15 +161,14 @@ public class PostService {
      * @return сохраненный пост
      */
     private Post setPostInformation(PostRequest request, Post post) {
+        if (!isNull(request.categoryId())) {
+            Category category = categoryService.getById(request.categoryId());
+            post.setCategory(category);
+        }
+
         if (!isNull(request.attachments())) {
             post.addFiles(fileService.uploadFiles(request.attachments()));
         }
-//        if (!isNull(request.postTypeId())) {
-//            post.setPostType(postTypeService.getById(request.postTypeId()));
-//        }
-//        if (!isNull(request.topicId())) {
-//            post.setTopic(topicService.getById(request.topicId()));
-//        }
         return save(post);
     }
 
@@ -174,20 +178,11 @@ public class PostService {
      * @param filter фильтр
      * @return Найденные посты
      */
-//    public Page<Post> findByFilter(PostFilter filter) {
-//        Pageable pageable = PageRequest.of(filter.getPage(), filter.getSize());
-//
-//        return repository.findAllByTopicIdAndPostTypeId(filter.getTopicId(), filter.getPostTypeId(), pageable);
-//    }
-
     public Page<Post> findByFilter(PostFilter filter) {
         Pageable pageable = PageRequest.of(filter.getPage(), filter.getSize());
 
-        return repository.findAllWithPages(filter.getIsNews(), pageable);
+        return repository.findAllWithPages(filter.getCategoryId(), filter.getTitle(), pageable);
     }
-
-
-
 
 
     /**
@@ -200,4 +195,37 @@ public class PostService {
         var posts = repository.findAllByAuthorId(id);
         posts.forEach(post -> deleteById(post.getId()));
     }
+
+
+
+    public List<Post> getAllByAuthorId(Long id) {
+        return repository.findAllByAuthorId(id);
+    }
+
+
+    @Transactional
+    public void likePost(Long postId) {
+        Post post = getById(postId);
+
+        User user = userService.getCurrentUser();
+        if (!postUserRelService.existsByPostIdAndUserId(postId, user.getId())) {
+            postUserRelService.create(post, user);
+            post.setLikes(post.getLikes() + 1);
+            repository.save(post);
+        }
+    }
+
+
+    @Transactional
+    public void unlikePost(Long postId) {
+        Post post = getById(postId);
+
+        User user = userService.getCurrentUser();
+        if (postUserRelService.existsByPostIdAndUserId(postId, user.getId())) {
+            postUserRelService.delete(postId, user.getId());
+            post.setLikes(post.getLikes() - 1);
+            repository.save(post);
+        }
+    }
+
 }

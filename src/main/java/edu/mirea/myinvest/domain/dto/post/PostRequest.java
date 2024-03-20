@@ -3,7 +3,6 @@ package edu.mirea.myinvest.domain.dto.post;
 import edu.mirea.myinvest.validation.constraints.ValidFiles;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.Builder;
 import org.springframework.web.multipart.MultipartFile;
@@ -22,12 +21,11 @@ public record PostRequest(
         @Size(max = 9_999, message = "Содержание должно быть от 0 до 9999 символов")
         String content,
 
-        @Schema(description = "Проверка на новость", example = "true")
-        @NotNull(message = "Поле является обязательным")
-        Boolean isNews,
-
         @Schema(description = "Файлы")
         @ValidFiles
-        List<MultipartFile> attachments
+        List<MultipartFile> attachments,
+
+        @Schema(description = "Id категории")
+        Long categoryId
 ) {
 }

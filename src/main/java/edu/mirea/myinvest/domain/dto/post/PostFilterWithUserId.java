@@ -7,11 +7,7 @@ import lombok.Setter;
 
 @Setter
 @Getter
-public class PostFilter extends PageRequestDTO {
+public class PostFilterWithUserId extends PageRequestDTO {
 
-    private Long categoryId;
-
-    private String title;
-
-
+    private Long userId;
 }

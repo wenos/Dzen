@@ -9,7 +9,7 @@ import org.mapstruct.Named;
 import java.util.List;
 
 
-@Mapper(componentModel = "spring", uses = {UploadedFileMapper.class, CommentMapper.class})
+@Mapper(componentModel = "spring", uses = {UploadedFileMapper.class, CommentMapper.class, CategoryMapper.class})
 public interface PostMapper {
     @Named("toResponse")
     PostResponse toResponse(Post post);
