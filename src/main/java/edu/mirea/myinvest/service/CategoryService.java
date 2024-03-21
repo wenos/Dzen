@@ -71,6 +71,11 @@ public class CategoryService {
         if (!currentUser.isAdmin()) {
             throw new ForbiddenAccessProblem();
         }
+        Category category = getById(id);
+        Category defaultCategory = getById(1L);
+
+        category.getPosts().forEach(post -> post.setCategory(defaultCategory));
+
 
         categoryRepository.deleteById(id);
     }

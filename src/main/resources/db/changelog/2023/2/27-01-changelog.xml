@@ -9,7 +9,7 @@
     <changeSet id="2024.02.27-01-1" author="wenos">
         <insert tableName="c_category">
             <column name="id" valueNumeric="1"/>
-            <column name="title" value="Category 1"/>
+            <column name="title" value="Другое"/>
         </insert>
     </changeSet>
 

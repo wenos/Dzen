@@ -15,7 +15,8 @@ public interface PostRepository extends JpaRepository<Post, Long> {
 
     @Query("select p from Post p " +
             "where (:categoryId is null or p.category.id = :categoryId)" +
-            "and (:title is null or p.title like %:title%)")
+            "and (:title is null or p.title like %:title%) " +
+            "order by p.createdAt desc")
     Page<Post> findAllWithPages(
             @Param("categoryId") Long categoryId,
             @Param("title") String title,

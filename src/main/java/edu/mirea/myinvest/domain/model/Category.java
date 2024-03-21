@@ -34,6 +34,6 @@ public class Category {
     @Column(name = "title", nullable = false)
     String title;
 
-    @OneToMany(mappedBy = "category", orphanRemoval = true)
+    @OneToMany(mappedBy = "category")
     Set<Post> posts;
 }
