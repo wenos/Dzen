@@ -62,6 +62,7 @@ public class PostService {
                 .title(request.title())
                 .author(userService.getCurrentUser())
                 .content(request.content())
+                .likes(0L)
                 .build();
         return setPostInformation(request, post);
     }

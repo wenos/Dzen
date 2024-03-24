@@ -1,7 +1,6 @@
 databaseChangeLog:
   - include:
       file: db/changelog/2023/11/24-01-changelog.xml
-
   - include:
       file: db/changelog/2023/11/29-01-changelog.xml
   - include:
