@@ -19,7 +19,13 @@ import org.zalando.problem.violations.ConstraintViolationProblemModule;
 import static edu.mirea.vitality.blog.service.system.ConfigService.CONFIGURATIONS_CACHE_NAME;
 
 /**
- * Класс общей конфигурации
+ * @file ApplicationConfig.java
+ * @brief Этот файл содержит класс ApplicationConfig.
+ */
+
+/**
+ * @class ApplicationConfig
+ * @brief Класс для общей конфигурации приложения.
  */
 @Configuration
 @EnableCaching
@@ -28,7 +34,10 @@ public class ApplicationConfig {
 
     private final CloudStorageConfig cloudStorageConfig;
 
-
+    /**
+     * Создает и возвращает объект ObjectMapper для преобразования объектов JSON.
+     * @return Объект ObjectMapper.
+     */
     @Bean
     public ObjectMapper objectMapper() {
         return new ObjectMapper().registerModules(
@@ -37,11 +46,19 @@ public class ApplicationConfig {
                 .findAndRegisterModules();
     }
 
+    /**
+     * Создает и возвращает объект Transliterator для транслитерации текста.
+     * @return Объект Transliterator.
+     */
     @Bean
     public Transliterator transliterator() {
         return Transliterator.getInstance("Russian-Latin/BGN");
     }
 
+    /**
+     * Создает и возвращает клиент Amazon S3 для работы с облачным хранилищем.
+     * @return Клиент Amazon S3.
+     */
     @Bean
     public AmazonS3 getClient() {
         AWSCredentials credentials = new BasicAWSCredentials(
@@ -60,6 +77,10 @@ public class ApplicationConfig {
                 .build();
     }
 
+    /**
+     * Создает и возвращает менеджер кэша для кэширования данных.
+     * @return Менеджер кэша.
+     */
     @Bean
     public CacheManager cacheManager() {
         return new ConcurrentMapCacheManager(CONFIGURATIONS_CACHE_NAME);

@@ -7,7 +7,19 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 /**
- * Класс конфигурации облачного хранилища¬
+ * @file CloudStorageConfig.java
+ * @brief Этот файл содержит класс CloudStorageConfig.
+ */
+
+import lombok.Getter;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
+import lombok.RequiredArgsConstructor;
+
+/**
+ * @class CloudStorageConfig
+ * @brief Класс конфигурации облачного хранилища.
  */
 @Configuration
 @Getter

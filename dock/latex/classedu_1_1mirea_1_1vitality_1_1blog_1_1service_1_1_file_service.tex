@@ -1,0 +1,177 @@
+\doxysection{Класс edu.\+mirea.\+vitality.\+blog.\+service.\+File\+Service}
+\hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service}{}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service}\index{edu.mirea.vitality.blog.service.FileService@{edu.mirea.vitality.blog.service.FileService}}
+
+
+Этот класс предоставляет сервис для работы с файлами.  
+
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ UUID $>$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service_ace420cf70517941a8089b3b8a5bd2e88}{upload\+Files\+And\+Get\+Ids}} (Multipart\+File\mbox{[}$\,$\mbox{]} files)
+\begin{DoxyCompactList}\small\item\em Загружает файлы на сервер и возвращает их идентификаторы. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_uploaded_file}{Uploaded\+File}} $>$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service_ab21ca9838f21992fafd49fb43f6fd6b4}{upload\+Files}} (List$<$ Multipart\+File $>$ files)
+\begin{DoxyCompactList}\small\item\em Загружает файлы на сервер. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service_aad7563da51b70839b99e6c50ba77ca8c}{save\+In\+Cloud}} (Multipart\+File file, String code)  throws \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1exception_1_1file_1_1_file_save_problem}{File\+Save\+Problem}} 
+\begin{DoxyCompactList}\small\item\em Сохраняет файл в облаке. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_uploaded_file}{Uploaded\+File}} $>$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service_aacb2c347a13efd468ee32dfbc2d84af7}{get\+All}} ()
+\begin{DoxyCompactList}\small\item\em Получает список всех файлов. \end{DoxyCompactList}\item 
+Optional$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_uploaded_file}{Uploaded\+File}} $>$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service_a23314313495d597beed74af3e6509499}{find\+By\+Id}} (UUID id)
+\begin{DoxyCompactList}\small\item\em Находит файл по его идентификатору. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_uploaded_file}{Uploaded\+File}} \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service_a02c44c9e8cb4158cc0252e455038221e}{get\+By\+Id}} (UUID id)
+\begin{DoxyCompactList}\small\item\em Получает файл по его идентификатору. \end{DoxyCompactList}\item 
+Uploaded\+File\+Content\+Response \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service_a5cc8aba8f650b9bc3d16fe6570b419da}{download\+File}} (UUID file\+Id)
+\begin{DoxyCompactList}\small\item\em Загружает файл с облака. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service_a99093392314985344a8276a85ab8baf5}{delete\+By\+Id}} (UUID file\+Id)
+\begin{DoxyCompactList}\small\item\em Удаляет файл по его идентификатору. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Этот класс предоставляет сервис для работы с файлами. 
+
+\doxysubsection{Методы}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service_a99093392314985344a8276a85ab8baf5}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service_a99093392314985344a8276a85ab8baf5} 
+\index{edu.mirea.vitality.blog.service.FileService@{edu.mirea.vitality.blog.service.FileService}!deleteById@{deleteById}}
+\index{deleteById@{deleteById}!edu.mirea.vitality.blog.service.FileService@{edu.mirea.vitality.blog.service.FileService}}
+\doxysubsubsection{\texorpdfstring{deleteById()}{deleteById()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+service.\+File\+Service.\+delete\+By\+Id (\begin{DoxyParamCaption}\item[{UUID}]{file\+Id }\end{DoxyParamCaption})}
+
+
+
+Удаляет файл по его идентификатору. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em file\+Id} & Идентификатор файла. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service_a5cc8aba8f650b9bc3d16fe6570b419da}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service_a5cc8aba8f650b9bc3d16fe6570b419da} 
+\index{edu.mirea.vitality.blog.service.FileService@{edu.mirea.vitality.blog.service.FileService}!downloadFile@{downloadFile}}
+\index{downloadFile@{downloadFile}!edu.mirea.vitality.blog.service.FileService@{edu.mirea.vitality.blog.service.FileService}}
+\doxysubsubsection{\texorpdfstring{downloadFile()}{downloadFile()}}
+{\footnotesize\ttfamily Uploaded\+File\+Content\+Response edu.\+mirea.\+vitality.\+blog.\+service.\+File\+Service.\+download\+File (\begin{DoxyParamCaption}\item[{UUID}]{file\+Id }\end{DoxyParamCaption})}
+
+
+
+Загружает файл с облака. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em file\+Id} & Идентификатор файла. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Данные о файле. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service_a23314313495d597beed74af3e6509499}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service_a23314313495d597beed74af3e6509499} 
+\index{edu.mirea.vitality.blog.service.FileService@{edu.mirea.vitality.blog.service.FileService}!findById@{findById}}
+\index{findById@{findById}!edu.mirea.vitality.blog.service.FileService@{edu.mirea.vitality.blog.service.FileService}}
+\doxysubsubsection{\texorpdfstring{findById()}{findById()}}
+{\footnotesize\ttfamily Optional$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_uploaded_file}{Uploaded\+File}} $>$ edu.\+mirea.\+vitality.\+blog.\+service.\+File\+Service.\+find\+By\+Id (\begin{DoxyParamCaption}\item[{UUID}]{id }\end{DoxyParamCaption})}
+
+
+
+Находит файл по его идентификатору. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & Идентификатор файла. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Файл. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service_aacb2c347a13efd468ee32dfbc2d84af7}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service_aacb2c347a13efd468ee32dfbc2d84af7} 
+\index{edu.mirea.vitality.blog.service.FileService@{edu.mirea.vitality.blog.service.FileService}!getAll@{getAll}}
+\index{getAll@{getAll}!edu.mirea.vitality.blog.service.FileService@{edu.mirea.vitality.blog.service.FileService}}
+\doxysubsubsection{\texorpdfstring{getAll()}{getAll()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_uploaded_file}{Uploaded\+File}} $>$ edu.\+mirea.\+vitality.\+blog.\+service.\+File\+Service.\+get\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получает список всех файлов. 
+
+\begin{DoxyReturn}{Возвращает}
+Список файлов. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service_a02c44c9e8cb4158cc0252e455038221e}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service_a02c44c9e8cb4158cc0252e455038221e} 
+\index{edu.mirea.vitality.blog.service.FileService@{edu.mirea.vitality.blog.service.FileService}!getById@{getById}}
+\index{getById@{getById}!edu.mirea.vitality.blog.service.FileService@{edu.mirea.vitality.blog.service.FileService}}
+\doxysubsubsection{\texorpdfstring{getById()}{getById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_uploaded_file}{Uploaded\+File}} edu.\+mirea.\+vitality.\+blog.\+service.\+File\+Service.\+get\+By\+Id (\begin{DoxyParamCaption}\item[{UUID}]{id }\end{DoxyParamCaption})}
+
+
+
+Получает файл по его идентификатору. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & Идентификатор файла. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Файл. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service_aad7563da51b70839b99e6c50ba77ca8c}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service_aad7563da51b70839b99e6c50ba77ca8c} 
+\index{edu.mirea.vitality.blog.service.FileService@{edu.mirea.vitality.blog.service.FileService}!saveInCloud@{saveInCloud}}
+\index{saveInCloud@{saveInCloud}!edu.mirea.vitality.blog.service.FileService@{edu.mirea.vitality.blog.service.FileService}}
+\doxysubsubsection{\texorpdfstring{saveInCloud()}{saveInCloud()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+service.\+File\+Service.\+save\+In\+Cloud (\begin{DoxyParamCaption}\item[{Multipart\+File}]{file,  }\item[{String}]{code }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1exception_1_1file_1_1_file_save_problem}{File\+Save\+Problem}}}
+
+
+
+Сохраняет файл в облаке. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em file} & Файл для сохранения. \\
+\hline
+{\em code} & Код файла. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em File\+Save\+Problem} & Если возникает проблема при сохранении файла. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service_ab21ca9838f21992fafd49fb43f6fd6b4}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service_ab21ca9838f21992fafd49fb43f6fd6b4} 
+\index{edu.mirea.vitality.blog.service.FileService@{edu.mirea.vitality.blog.service.FileService}!uploadFiles@{uploadFiles}}
+\index{uploadFiles@{uploadFiles}!edu.mirea.vitality.blog.service.FileService@{edu.mirea.vitality.blog.service.FileService}}
+\doxysubsubsection{\texorpdfstring{uploadFiles()}{uploadFiles()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_uploaded_file}{Uploaded\+File}} $>$ edu.\+mirea.\+vitality.\+blog.\+service.\+File\+Service.\+upload\+Files (\begin{DoxyParamCaption}\item[{List$<$ Multipart\+File $>$}]{files }\end{DoxyParamCaption})}
+
+
+
+Загружает файлы на сервер. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em files} & Список файлов для загрузки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Список загруженных файлов. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service_ace420cf70517941a8089b3b8a5bd2e88}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service_ace420cf70517941a8089b3b8a5bd2e88} 
+\index{edu.mirea.vitality.blog.service.FileService@{edu.mirea.vitality.blog.service.FileService}!uploadFilesAndGetIds@{uploadFilesAndGetIds}}
+\index{uploadFilesAndGetIds@{uploadFilesAndGetIds}!edu.mirea.vitality.blog.service.FileService@{edu.mirea.vitality.blog.service.FileService}}
+\doxysubsubsection{\texorpdfstring{uploadFilesAndGetIds()}{uploadFilesAndGetIds()}}
+{\footnotesize\ttfamily List$<$ UUID $>$ edu.\+mirea.\+vitality.\+blog.\+service.\+File\+Service.\+upload\+Files\+And\+Get\+Ids (\begin{DoxyParamCaption}\item[{Multipart\+File\mbox{[}$\,$\mbox{]}}]{files }\end{DoxyParamCaption})}
+
+
+
+Загружает файлы на сервер и возвращает их идентификаторы. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em files} & Массив файлов для загрузки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Список идентификаторов загруженных файлов. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+service/File\+Service.\+java\end{DoxyCompactItemize}

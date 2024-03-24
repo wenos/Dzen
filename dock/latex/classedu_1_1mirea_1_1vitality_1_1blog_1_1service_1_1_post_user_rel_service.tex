@@ -1,0 +1,81 @@
+\doxysection{Класс edu.\+mirea.\+vitality.\+blog.\+service.\+Post\+User\+Rel\+Service}
+\hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_user_rel_service}{}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_user_rel_service}\index{edu.mirea.vitality.blog.service.PostUserRelService@{edu.mirea.vitality.blog.service.PostUserRelService}}
+
+
+Класс, представляющий сервис для работы с отношениями постов и пользователей.  
+
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+Boolean \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_user_rel_service_a07faa52fcf705d7897fcb84fbe176294}{exists\+By\+Post\+Id\+And\+User\+Id}} (Long post\+Id, Long user\+Id)
+\begin{DoxyCompactList}\small\item\em Проверяет существование связи между постом и пользователем. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_user_rel_service_a20fdbcdc8c2cca92d8a3cf0b90276f52}{create}} (\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post}{Post}} post, \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} user)
+\begin{DoxyCompactList}\small\item\em Создает отношение между постом и пользователем. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_user_rel_service_a245a32842be864f6d29715550098bb52}{delete}} (Long post\+Id, Long user\+Id)
+\begin{DoxyCompactList}\small\item\em Удаляет отношение между постом и пользователем. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс, представляющий сервис для работы с отношениями постов и пользователей. 
+
+\doxysubsection{Методы}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_user_rel_service_a20fdbcdc8c2cca92d8a3cf0b90276f52}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_user_rel_service_a20fdbcdc8c2cca92d8a3cf0b90276f52} 
+\index{edu.mirea.vitality.blog.service.PostUserRelService@{edu.mirea.vitality.blog.service.PostUserRelService}!create@{create}}
+\index{create@{create}!edu.mirea.vitality.blog.service.PostUserRelService@{edu.mirea.vitality.blog.service.PostUserRelService}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+service.\+Post\+User\+Rel\+Service.\+create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post}{Post}}}]{post,  }\item[{\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}}}]{user }\end{DoxyParamCaption})}
+
+
+
+Создает отношение между постом и пользователем. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em post} & Пост. \\
+\hline
+{\em user} & Пользователь. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_user_rel_service_a245a32842be864f6d29715550098bb52}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_user_rel_service_a245a32842be864f6d29715550098bb52} 
+\index{edu.mirea.vitality.blog.service.PostUserRelService@{edu.mirea.vitality.blog.service.PostUserRelService}!delete@{delete}}
+\index{delete@{delete}!edu.mirea.vitality.blog.service.PostUserRelService@{edu.mirea.vitality.blog.service.PostUserRelService}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+service.\+Post\+User\+Rel\+Service.\+delete (\begin{DoxyParamCaption}\item[{Long}]{post\+Id,  }\item[{Long}]{user\+Id }\end{DoxyParamCaption})}
+
+
+
+Удаляет отношение между постом и пользователем. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em post\+Id} & Идентификатор поста. \\
+\hline
+{\em user\+Id} & Идентификатор пользователя. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_user_rel_service_a07faa52fcf705d7897fcb84fbe176294}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_user_rel_service_a07faa52fcf705d7897fcb84fbe176294} 
+\index{edu.mirea.vitality.blog.service.PostUserRelService@{edu.mirea.vitality.blog.service.PostUserRelService}!existsByPostIdAndUserId@{existsByPostIdAndUserId}}
+\index{existsByPostIdAndUserId@{existsByPostIdAndUserId}!edu.mirea.vitality.blog.service.PostUserRelService@{edu.mirea.vitality.blog.service.PostUserRelService}}
+\doxysubsubsection{\texorpdfstring{existsByPostIdAndUserId()}{existsByPostIdAndUserId()}}
+{\footnotesize\ttfamily Boolean edu.\+mirea.\+vitality.\+blog.\+service.\+Post\+User\+Rel\+Service.\+exists\+By\+Post\+Id\+And\+User\+Id (\begin{DoxyParamCaption}\item[{Long}]{post\+Id,  }\item[{Long}]{user\+Id }\end{DoxyParamCaption})}
+
+
+
+Проверяет существование связи между постом и пользователем. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em post\+Id} & Идентификатор поста. \\
+\hline
+{\em user\+Id} & Идентификатор пользователя. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true, если связь существует, в противном случае -\/ false. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+service/\mbox{\hyperlink{_post_user_rel_service_8java}{Post\+User\+Rel\+Service.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,429 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>VitalityBlog: Класс edu.mirea.vitality.blog.service.PostService</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">VitalityBlog<span id="projectnumber">&#160;next-SNAPSHOT</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>edu</b></li><li class="navelem"><b>mirea</b></li><li class="navelem"><b>vitality</b></li><li class="navelem"><b>blog</b></li><li class="navelem"><b>service</b></li><li class="navelem"><a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service.html">PostService</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс edu.mirea.vitality.blog.service.PostService</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс, представляющий сервис для работы с постами.  
+ <a href="#details">Подробнее...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a16dcb4fee09ea19235bd06d4b02c66fd" id="r_a16dcb4fee09ea19235bd06d4b02c66fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post.html">Post</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16dcb4fee09ea19235bd06d4b02c66fd">save</a> (<a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post.html">Post</a> post)</td></tr>
+<tr class="memdesc:a16dcb4fee09ea19235bd06d4b02c66fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сохраняет пост.  <br /></td></tr>
+<tr class="separator:a16dcb4fee09ea19235bd06d4b02c66fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4628bdbea16da60f0c80af9d8f91722e" id="r_a4628bdbea16da60f0c80af9d8f91722e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post.html">Post</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4628bdbea16da60f0c80af9d8f91722e">create</a> (PostRequest request)</td></tr>
+<tr class="memdesc:a4628bdbea16da60f0c80af9d8f91722e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создает пост с прикрепленными файлами.  <br /></td></tr>
+<tr class="separator:a4628bdbea16da60f0c80af9d8f91722e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af79b0f05712c4dfb7cb54c6d1cfa0e72" id="r_af79b0f05712c4dfb7cb54c6d1cfa0e72"><td class="memItemLeft" align="right" valign="top">Optional&lt; <a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post.html">Post</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af79b0f05712c4dfb7cb54c6d1cfa0e72">findById</a> (Long id)</td></tr>
+<tr class="memdesc:af79b0f05712c4dfb7cb54c6d1cfa0e72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ищет пост по идентификатору.  <br /></td></tr>
+<tr class="separator:af79b0f05712c4dfb7cb54c6d1cfa0e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93c5cb393e2fcd90209ec63b0539d5ee" id="r_a93c5cb393e2fcd90209ec63b0539d5ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post.html">Post</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93c5cb393e2fcd90209ec63b0539d5ee">getById</a> (Long postId)</td></tr>
+<tr class="memdesc:a93c5cb393e2fcd90209ec63b0539d5ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает пост по его идентификатору.  <br /></td></tr>
+<tr class="separator:a93c5cb393e2fcd90209ec63b0539d5ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabfc8d3bf40f85beaf429cfe4849fbda" id="r_aabfc8d3bf40f85beaf429cfe4849fbda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabfc8d3bf40f85beaf429cfe4849fbda">deleteById</a> (Long postId)</td></tr>
+<tr class="memdesc:aabfc8d3bf40f85beaf429cfe4849fbda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаляет пост по его идентификатору.  <br /></td></tr>
+<tr class="separator:aabfc8d3bf40f85beaf429cfe4849fbda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff2c4686999dbfe6a18c09aa7ecab538" id="r_aff2c4686999dbfe6a18c09aa7ecab538"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post.html">Post</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff2c4686999dbfe6a18c09aa7ecab538">update</a> (UpdatePostRequest request, Long postId)</td></tr>
+<tr class="memdesc:aff2c4686999dbfe6a18c09aa7ecab538"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновляет пост.  <br /></td></tr>
+<tr class="separator:aff2c4686999dbfe6a18c09aa7ecab538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a05ed11adab74b8813d817d58c525af" id="r_a3a05ed11adab74b8813d817d58c525af"><td class="memItemLeft" align="right" valign="top">Page&lt; <a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post.html">Post</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a05ed11adab74b8813d817d58c525af">findByFilter</a> (<a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1post_1_1_post_filter.html">PostFilter</a> filter)</td></tr>
+<tr class="memdesc:a3a05ed11adab74b8813d817d58c525af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает посты по фильтру.  <br /></td></tr>
+<tr class="separator:a3a05ed11adab74b8813d817d58c525af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af84f3fc53a53b289e980983000e00207" id="r_af84f3fc53a53b289e980983000e00207"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af84f3fc53a53b289e980983000e00207">deleteByAuthorId</a> (Long id)</td></tr>
+<tr class="memdesc:af84f3fc53a53b289e980983000e00207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаляет посты по идентификатору автора.  <br /></td></tr>
+<tr class="separator:af84f3fc53a53b289e980983000e00207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0b2ddcd2c3a80736089408def5e31d5" id="r_ae0b2ddcd2c3a80736089408def5e31d5"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post.html">Post</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0b2ddcd2c3a80736089408def5e31d5">getAllByAuthorId</a> (Long id)</td></tr>
+<tr class="memdesc:ae0b2ddcd2c3a80736089408def5e31d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает все посты по идентификатору автора.  <br /></td></tr>
+<tr class="separator:ae0b2ddcd2c3a80736089408def5e31d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accc8d4bb5cf1f7fd3151c3aa6d4d267a" id="r_accc8d4bb5cf1f7fd3151c3aa6d4d267a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accc8d4bb5cf1f7fd3151c3aa6d4d267a">likePost</a> (Long postId)</td></tr>
+<tr class="memdesc:accc8d4bb5cf1f7fd3151c3aa6d4d267a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Лайкает пост.  <br /></td></tr>
+<tr class="separator:accc8d4bb5cf1f7fd3151c3aa6d4d267a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ff228c4acce8a58e1a40098dde5fc85" id="r_a4ff228c4acce8a58e1a40098dde5fc85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ff228c4acce8a58e1a40098dde5fc85">unlikePost</a> (Long postId)</td></tr>
+<tr class="memdesc:a4ff228c4acce8a58e1a40098dde5fc85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Убирает лайк с поста.  <br /></td></tr>
+<tr class="separator:a4ff228c4acce8a58e1a40098dde5fc85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс, представляющий сервис для работы с постами. </p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a4628bdbea16da60f0c80af9d8f91722e" name="a4628bdbea16da60f0c80af9d8f91722e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4628bdbea16da60f0c80af9d8f91722e">&#9670;&#160;</a></span>create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post.html">Post</a> edu.mirea.vitality.blog.service.PostService.create </td>
+          <td>(</td>
+          <td class="paramtype">PostRequest</td>          <td class="paramname"><span class="paramname"><em>request</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создает пост с прикрепленными файлами. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td>Запрос на создание поста. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Созданный пост. </dd></dl>
+
+</div>
+</div>
+<a id="af84f3fc53a53b289e980983000e00207" name="af84f3fc53a53b289e980983000e00207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af84f3fc53a53b289e980983000e00207">&#9670;&#160;</a></span>deleteByAuthorId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.mirea.vitality.blog.service.PostService.deleteByAuthorId </td>
+          <td>(</td>
+          <td class="paramtype">Long</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удаляет посты по идентификатору автора. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Идентификатор автора. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aabfc8d3bf40f85beaf429cfe4849fbda" name="aabfc8d3bf40f85beaf429cfe4849fbda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabfc8d3bf40f85beaf429cfe4849fbda">&#9670;&#160;</a></span>deleteById()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.mirea.vitality.blog.service.PostService.deleteById </td>
+          <td>(</td>
+          <td class="paramtype">Long</td>          <td class="paramname"><span class="paramname"><em>postId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удаляет пост по его идентификатору. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">postId</td><td>Идентификатор поста для удаления. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3a05ed11adab74b8813d817d58c525af" name="a3a05ed11adab74b8813d817d58c525af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a05ed11adab74b8813d817d58c525af">&#9670;&#160;</a></span>findByFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Page&lt; <a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post.html">Post</a> &gt; edu.mirea.vitality.blog.service.PostService.findByFilter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1post_1_1_post_filter.html">PostFilter</a></td>          <td class="paramname"><span class="paramname"><em>filter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получает посты по фильтру. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filter</td><td>Фильтр. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Найденные посты. </dd></dl>
+
+</div>
+</div>
+<a id="af79b0f05712c4dfb7cb54c6d1cfa0e72" name="af79b0f05712c4dfb7cb54c6d1cfa0e72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af79b0f05712c4dfb7cb54c6d1cfa0e72">&#9670;&#160;</a></span>findById()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Optional&lt; <a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post.html">Post</a> &gt; edu.mirea.vitality.blog.service.PostService.findById </td>
+          <td>(</td>
+          <td class="paramtype">Long</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ищет пост по идентификатору. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Идентификатор поста. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Найденный пост, если таковой имеется. </dd></dl>
+
+</div>
+</div>
+<a id="ae0b2ddcd2c3a80736089408def5e31d5" name="ae0b2ddcd2c3a80736089408def5e31d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0b2ddcd2c3a80736089408def5e31d5">&#9670;&#160;</a></span>getAllByAuthorId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post.html">Post</a> &gt; edu.mirea.vitality.blog.service.PostService.getAllByAuthorId </td>
+          <td>(</td>
+          <td class="paramtype">Long</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получает все посты по идентификатору автора. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Идентификатор автора. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Список постов автора. </dd></dl>
+
+</div>
+</div>
+<a id="a93c5cb393e2fcd90209ec63b0539d5ee" name="a93c5cb393e2fcd90209ec63b0539d5ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93c5cb393e2fcd90209ec63b0539d5ee">&#9670;&#160;</a></span>getById()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post.html">Post</a> edu.mirea.vitality.blog.service.PostService.getById </td>
+          <td>(</td>
+          <td class="paramtype">Long</td>          <td class="paramname"><span class="paramname"><em>postId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получает пост по его идентификатору. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">postId</td><td>Идентификатор поста. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Полученный пост. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">PostNotFoundProblem</td><td>если пост не найден. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="accc8d4bb5cf1f7fd3151c3aa6d4d267a" name="accc8d4bb5cf1f7fd3151c3aa6d4d267a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accc8d4bb5cf1f7fd3151c3aa6d4d267a">&#9670;&#160;</a></span>likePost()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.mirea.vitality.blog.service.PostService.likePost </td>
+          <td>(</td>
+          <td class="paramtype">Long</td>          <td class="paramname"><span class="paramname"><em>postId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Лайкает пост. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">postId</td><td>Идентификатор поста. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a16dcb4fee09ea19235bd06d4b02c66fd" name="a16dcb4fee09ea19235bd06d4b02c66fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16dcb4fee09ea19235bd06d4b02c66fd">&#9670;&#160;</a></span>save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post.html">Post</a> edu.mirea.vitality.blog.service.PostService.save </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post.html">Post</a></td>          <td class="paramname"><span class="paramname"><em>post</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сохраняет пост. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">post</td><td>Пост для сохранения. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Сохраненный пост. </dd></dl>
+
+</div>
+</div>
+<a id="a4ff228c4acce8a58e1a40098dde5fc85" name="a4ff228c4acce8a58e1a40098dde5fc85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ff228c4acce8a58e1a40098dde5fc85">&#9670;&#160;</a></span>unlikePost()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.mirea.vitality.blog.service.PostService.unlikePost </td>
+          <td>(</td>
+          <td class="paramtype">Long</td>          <td class="paramname"><span class="paramname"><em>postId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Убирает лайк с поста. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">postId</td><td>Идентификатор поста. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aff2c4686999dbfe6a18c09aa7ecab538" name="aff2c4686999dbfe6a18c09aa7ecab538"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff2c4686999dbfe6a18c09aa7ecab538">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post.html">Post</a> edu.mirea.vitality.blog.service.PostService.update </td>
+          <td>(</td>
+          <td class="paramtype">UpdatePostRequest</td>          <td class="paramname"><span class="paramname"><em>request</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Long</td>          <td class="paramname"><span class="paramname"><em>postId</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обновляет пост. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td>Запрос на обновление поста. </td></tr>
+    <tr><td class="paramname">postId</td><td>Идентификатор поста. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Обновленный пост. </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>service/<a class="el" href="_post_service_8java.html">PostService.java</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

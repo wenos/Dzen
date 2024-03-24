@@ -1,0 +1,247 @@
+\doxysection{Класс edu.\+mirea.\+vitality.\+blog.\+controller.\+User\+Controller}
+\hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller}{}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller}\index{edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}}
+
+
+Контроллер для работы с пользователями.  
+
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_ac29eaecff499b8cb7c27b9822fb8c23f}{self\+Update\+Username}} (@Request\+Body @Valid Update\+User\+Username\+Request request)
+\begin{DoxyCompactList}\small\item\em Обновляет имя пользователя. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_abb6e66e58024ae1650aa5e9acc4ba2a3}{self\+Update\+Email}} (@Request\+Body @Valid Update\+User\+Email\+Request request)
+\begin{DoxyCompactList}\small\item\em Обновляет почту пользователя. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_a89b910402075acc08eca25642afca4d4}{self\+Update\+Info}} (@Request\+Body @Valid Update\+User\+Info\+Request request)
+\begin{DoxyCompactList}\small\item\em Обновляет информацию о пользователе. \end{DoxyCompactList}\item 
+User\+Profile\+Response \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_a23da4cb880fcbd5d5fca03fa964e26c6}{get\+Profile}} (@Path\+Variable String username)
+\begin{DoxyCompactList}\small\item\em Получает данные профиля пользователя. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_a8be8736eae699d6229ab1214c5486a28}{set\+Banned\+At}} (@Request\+Body @Valid User\+Ban\+Request request)
+\begin{DoxyCompactList}\small\item\em Выдает бан пользователю. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_a4793d3db45edba91809d330921a25d56}{reset\+Banned\+At}} (@Path\+Variable Long user\+Id)
+\begin{DoxyCompactList}\small\item\em Снимает бан с пользователя. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_aa0f3626a00c9cb14a5b7ba36b1bc3380}{change\+Password}} (@Request\+Body @Valid Update\+User\+Password\+Request request)
+\begin{DoxyCompactList}\small\item\em Меняет пароль пользователя. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1pagination_1_1_page_response}{Page\+Response}}$<$ User\+Response $>$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_a7b4bf53f9e8a9d72d57201654db23f98}{find\+Posts\+By\+Filter}} (@Request\+Body @Valid \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1user_1_1_user_filter}{User\+Filter}} filter)
+\begin{DoxyCompactList}\small\item\em Пагинирует пользователей согласно заданному фильтру. \end{DoxyCompactList}\item 
+User\+Response \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_acbe008b6ba638b985d1b756b21f06240}{get\+By\+Id}} (@Path\+Variable Long user\+Id)
+\begin{DoxyCompactList}\small\item\em Получает пользователя по его идентификатору. \end{DoxyCompactList}\item 
+User\+Response \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_a0651ae06598e11201021f6508dec51f6}{get\+Current}} ()
+\begin{DoxyCompactList}\small\item\em Получает текущего пользователя. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_a4db57dd67b73a107b4be680317808d80}{change\+Role}} (@Request\+Body @Valid Update\+User\+Role\+Request request)
+\begin{DoxyCompactList}\small\item\em Изменяет роль пользователя. \end{DoxyCompactList}\item 
+Boolean \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_acba31d94af7984e52d588866fbe46d84}{is\+Superuser}} ()
+\begin{DoxyCompactList}\small\item\em Проверяет, является ли пользователь суперпользователем. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_a6b9dfa1104b7663fc0dea2b4a0728518}{delete\+User}} (@Request\+Body @Valid Delete\+User\+Request request)
+\begin{DoxyCompactList}\small\item\em Удаляет пользователя. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Контроллер для работы с пользователями. 
+
+\doxysubsection{Методы}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_aa0f3626a00c9cb14a5b7ba36b1bc3380}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_aa0f3626a00c9cb14a5b7ba36b1bc3380} 
+\index{edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}!changePassword@{changePassword}}
+\index{changePassword@{changePassword}!edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}}
+\doxysubsubsection{\texorpdfstring{changePassword()}{changePassword()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+controller.\+User\+Controller.\+change\+Password (\begin{DoxyParamCaption}\item[{@Request\+Body @Valid Update\+User\+Password\+Request}]{request }\end{DoxyParamCaption})}
+
+
+
+Меняет пароль пользователя. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em request} & Запрос на смену пароля пользователя. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_a4db57dd67b73a107b4be680317808d80}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_a4db57dd67b73a107b4be680317808d80} 
+\index{edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}!changeRole@{changeRole}}
+\index{changeRole@{changeRole}!edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}}
+\doxysubsubsection{\texorpdfstring{changeRole()}{changeRole()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+controller.\+User\+Controller.\+change\+Role (\begin{DoxyParamCaption}\item[{@Request\+Body @Valid Update\+User\+Role\+Request}]{request }\end{DoxyParamCaption})}
+
+
+
+Изменяет роль пользователя. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em request} & Запрос на изменение роли пользователя. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_a6b9dfa1104b7663fc0dea2b4a0728518}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_a6b9dfa1104b7663fc0dea2b4a0728518} 
+\index{edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}!deleteUser@{deleteUser}}
+\index{deleteUser@{deleteUser}!edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}}
+\doxysubsubsection{\texorpdfstring{deleteUser()}{deleteUser()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+controller.\+User\+Controller.\+delete\+User (\begin{DoxyParamCaption}\item[{@Request\+Body @Valid Delete\+User\+Request}]{request }\end{DoxyParamCaption})}
+
+
+
+Удаляет пользователя. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em request} & Запрос на удаление пользователя. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_a7b4bf53f9e8a9d72d57201654db23f98}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_a7b4bf53f9e8a9d72d57201654db23f98} 
+\index{edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}!findPostsByFilter@{findPostsByFilter}}
+\index{findPostsByFilter@{findPostsByFilter}!edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}}
+\doxysubsubsection{\texorpdfstring{findPostsByFilter()}{findPostsByFilter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1pagination_1_1_page_response}{Page\+Response}}$<$ User\+Response $>$ edu.\+mirea.\+vitality.\+blog.\+controller.\+User\+Controller.\+find\+Posts\+By\+Filter (\begin{DoxyParamCaption}\item[{@Request\+Body @Valid \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1user_1_1_user_filter}{User\+Filter}}}]{filter }\end{DoxyParamCaption})}
+
+
+
+Пагинирует пользователей согласно заданному фильтру. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em filter} & Фильтр для поиска пользователей. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Ответ с пагинированными пользователями. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_acbe008b6ba638b985d1b756b21f06240}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_acbe008b6ba638b985d1b756b21f06240} 
+\index{edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}!getById@{getById}}
+\index{getById@{getById}!edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}}
+\doxysubsubsection{\texorpdfstring{getById()}{getById()}}
+{\footnotesize\ttfamily User\+Response edu.\+mirea.\+vitality.\+blog.\+controller.\+User\+Controller.\+get\+By\+Id (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{user\+Id }\end{DoxyParamCaption})}
+
+
+
+Получает пользователя по его идентификатору. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em user\+Id} & Идентификатор пользователя. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Ответ с данными пользователя. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_a0651ae06598e11201021f6508dec51f6}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_a0651ae06598e11201021f6508dec51f6} 
+\index{edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}!getCurrent@{getCurrent}}
+\index{getCurrent@{getCurrent}!edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}}
+\doxysubsubsection{\texorpdfstring{getCurrent()}{getCurrent()}}
+{\footnotesize\ttfamily User\+Response edu.\+mirea.\+vitality.\+blog.\+controller.\+User\+Controller.\+get\+Current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получает текущего пользователя. 
+
+\begin{DoxyReturn}{Возвращает}
+Ответ с данными текущего пользователя. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_a23da4cb880fcbd5d5fca03fa964e26c6}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_a23da4cb880fcbd5d5fca03fa964e26c6} 
+\index{edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}!getProfile@{getProfile}}
+\index{getProfile@{getProfile}!edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}}
+\doxysubsubsection{\texorpdfstring{getProfile()}{getProfile()}}
+{\footnotesize\ttfamily User\+Profile\+Response edu.\+mirea.\+vitality.\+blog.\+controller.\+User\+Controller.\+get\+Profile (\begin{DoxyParamCaption}\item[{@Path\+Variable String}]{username }\end{DoxyParamCaption})}
+
+
+
+Получает данные профиля пользователя. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em username} & Имя пользователя. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Ответ с данными профиля пользователя. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_acba31d94af7984e52d588866fbe46d84}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_acba31d94af7984e52d588866fbe46d84} 
+\index{edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}!isSuperuser@{isSuperuser}}
+\index{isSuperuser@{isSuperuser}!edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}}
+\doxysubsubsection{\texorpdfstring{isSuperuser()}{isSuperuser()}}
+{\footnotesize\ttfamily Boolean edu.\+mirea.\+vitality.\+blog.\+controller.\+User\+Controller.\+is\+Superuser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Проверяет, является ли пользователь суперпользователем. 
+
+\begin{DoxyReturn}{Возвращает}
+Признак суперпользователя. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_a4793d3db45edba91809d330921a25d56}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_a4793d3db45edba91809d330921a25d56} 
+\index{edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}!resetBannedAt@{resetBannedAt}}
+\index{resetBannedAt@{resetBannedAt}!edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}}
+\doxysubsubsection{\texorpdfstring{resetBannedAt()}{resetBannedAt()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+controller.\+User\+Controller.\+reset\+Banned\+At (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{user\+Id }\end{DoxyParamCaption})}
+
+
+
+Снимает бан с пользователя. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em user\+Id} & Идентификатор пользователя. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_abb6e66e58024ae1650aa5e9acc4ba2a3}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_abb6e66e58024ae1650aa5e9acc4ba2a3} 
+\index{edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}!selfUpdateEmail@{selfUpdateEmail}}
+\index{selfUpdateEmail@{selfUpdateEmail}!edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}}
+\doxysubsubsection{\texorpdfstring{selfUpdateEmail()}{selfUpdateEmail()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+controller.\+User\+Controller.\+self\+Update\+Email (\begin{DoxyParamCaption}\item[{@Request\+Body @Valid Update\+User\+Email\+Request}]{request }\end{DoxyParamCaption})}
+
+
+
+Обновляет почту пользователя. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em request} & Запрос на обновление почты пользователя. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_a89b910402075acc08eca25642afca4d4}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_a89b910402075acc08eca25642afca4d4} 
+\index{edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}!selfUpdateInfo@{selfUpdateInfo}}
+\index{selfUpdateInfo@{selfUpdateInfo}!edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}}
+\doxysubsubsection{\texorpdfstring{selfUpdateInfo()}{selfUpdateInfo()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+controller.\+User\+Controller.\+self\+Update\+Info (\begin{DoxyParamCaption}\item[{@Request\+Body @Valid Update\+User\+Info\+Request}]{request }\end{DoxyParamCaption})}
+
+
+
+Обновляет информацию о пользователе. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em request} & Запрос на обновление информации о пользователе. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_ac29eaecff499b8cb7c27b9822fb8c23f}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_ac29eaecff499b8cb7c27b9822fb8c23f} 
+\index{edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}!selfUpdateUsername@{selfUpdateUsername}}
+\index{selfUpdateUsername@{selfUpdateUsername}!edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}}
+\doxysubsubsection{\texorpdfstring{selfUpdateUsername()}{selfUpdateUsername()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+controller.\+User\+Controller.\+self\+Update\+Username (\begin{DoxyParamCaption}\item[{@Request\+Body @Valid Update\+User\+Username\+Request}]{request }\end{DoxyParamCaption})}
+
+
+
+Обновляет имя пользователя. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em request} & Запрос на обновление имени пользователя. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_a8be8736eae699d6229ab1214c5486a28}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller_a8be8736eae699d6229ab1214c5486a28} 
+\index{edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}!setBannedAt@{setBannedAt}}
+\index{setBannedAt@{setBannedAt}!edu.mirea.vitality.blog.controller.UserController@{edu.mirea.vitality.blog.controller.UserController}}
+\doxysubsubsection{\texorpdfstring{setBannedAt()}{setBannedAt()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+controller.\+User\+Controller.\+set\+Banned\+At (\begin{DoxyParamCaption}\item[{@Request\+Body @Valid User\+Ban\+Request}]{request }\end{DoxyParamCaption})}
+
+
+
+Выдает бан пользователю. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em request} & Запрос на выдачу бана пользователю. \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+controller/User\+Controller.\+java\end{DoxyCompactItemize}

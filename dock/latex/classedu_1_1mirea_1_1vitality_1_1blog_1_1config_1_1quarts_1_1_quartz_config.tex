@@ -1,0 +1,83 @@
+\doxysection{Класс edu.\+mirea.\+vitality.\+blog.\+config.\+quarts.\+Quartz\+Config}
+\hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1config_1_1quarts_1_1_quartz_config}{}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1config_1_1quarts_1_1_quartz_config}\index{edu.mirea.vitality.blog.config.quarts.QuartzConfig@{edu.mirea.vitality.blog.config.quarts.QuartzConfig}}
+
+
+Конфигурация для Quartz Scheduler.  
+
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+Spring\+Bean\+Job\+Factory \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1config_1_1quarts_1_1_quartz_config_a3ad6c4f1708ed51bceba76d62333a006}{spring\+Bean\+Job\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Создает фабрику заданий Spring Bean. \end{DoxyCompactList}\item 
+Scheduler\+Factory\+Bean \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1config_1_1quarts_1_1_quartz_config_a4aecb8fdcffa3f5df9ba5dc7cd34808b}{scheduler}} (Trigger... triggers)
+\begin{DoxyCompactList}\small\item\em Создает фабрику планировщика заданий Quartz. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static Simple\+Trigger\+Factory\+Bean \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1config_1_1quarts_1_1_quartz_config_a1047dc9a56b8c5c7cd33d49aceaf4c8c}{create\+Trigger}} (Job\+Detail job\+Detail, Long poll\+FrequencyS, String trigger\+Name)
+\begin{DoxyCompactList}\small\item\em Создает фабрику простого триггера для задания Quartz. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Конфигурация для Quartz Scheduler. 
+
+\doxysubsection{Методы}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1config_1_1quarts_1_1_quartz_config_a1047dc9a56b8c5c7cd33d49aceaf4c8c}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1config_1_1quarts_1_1_quartz_config_a1047dc9a56b8c5c7cd33d49aceaf4c8c} 
+\index{edu.mirea.vitality.blog.config.quarts.QuartzConfig@{edu.mirea.vitality.blog.config.quarts.QuartzConfig}!createTrigger@{createTrigger}}
+\index{createTrigger@{createTrigger}!edu.mirea.vitality.blog.config.quarts.QuartzConfig@{edu.mirea.vitality.blog.config.quarts.QuartzConfig}}
+\doxysubsubsection{\texorpdfstring{createTrigger()}{createTrigger()}}
+{\footnotesize\ttfamily static Simple\+Trigger\+Factory\+Bean edu.\+mirea.\+vitality.\+blog.\+config.\+quarts.\+Quartz\+Config.\+create\+Trigger (\begin{DoxyParamCaption}\item[{Job\+Detail}]{job\+Detail,  }\item[{Long}]{poll\+FrequencyS,  }\item[{String}]{trigger\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Создает фабрику простого триггера для задания Quartz. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em job\+Detail} & Детали задания, к которому привязывается триггер \\
+\hline
+{\em poll\+FrequencyS} & Частота повторения задания в секундах \\
+\hline
+{\em trigger\+Name} & Имя триггера \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Фабрика триггера для задания Quartz 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1config_1_1quarts_1_1_quartz_config_a4aecb8fdcffa3f5df9ba5dc7cd34808b}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1config_1_1quarts_1_1_quartz_config_a4aecb8fdcffa3f5df9ba5dc7cd34808b} 
+\index{edu.mirea.vitality.blog.config.quarts.QuartzConfig@{edu.mirea.vitality.blog.config.quarts.QuartzConfig}!scheduler@{scheduler}}
+\index{scheduler@{scheduler}!edu.mirea.vitality.blog.config.quarts.QuartzConfig@{edu.mirea.vitality.blog.config.quarts.QuartzConfig}}
+\doxysubsubsection{\texorpdfstring{scheduler()}{scheduler()}}
+{\footnotesize\ttfamily Scheduler\+Factory\+Bean edu.\+mirea.\+vitality.\+blog.\+config.\+quarts.\+Quartz\+Config.\+scheduler (\begin{DoxyParamCaption}\item[{Trigger...}]{triggers }\end{DoxyParamCaption})}
+
+
+
+Создает фабрику планировщика заданий Quartz. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em triggers} & Массив триггеров \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Фабрика планировщика заданий Quartz 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1config_1_1quarts_1_1_quartz_config_a3ad6c4f1708ed51bceba76d62333a006}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1config_1_1quarts_1_1_quartz_config_a3ad6c4f1708ed51bceba76d62333a006} 
+\index{edu.mirea.vitality.blog.config.quarts.QuartzConfig@{edu.mirea.vitality.blog.config.quarts.QuartzConfig}!springBeanJobFactory@{springBeanJobFactory}}
+\index{springBeanJobFactory@{springBeanJobFactory}!edu.mirea.vitality.blog.config.quarts.QuartzConfig@{edu.mirea.vitality.blog.config.quarts.QuartzConfig}}
+\doxysubsubsection{\texorpdfstring{springBeanJobFactory()}{springBeanJobFactory()}}
+{\footnotesize\ttfamily Spring\+Bean\+Job\+Factory edu.\+mirea.\+vitality.\+blog.\+config.\+quarts.\+Quartz\+Config.\+spring\+Bean\+Job\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Создает фабрику заданий Spring Bean. 
+
+\begin{DoxyReturn}{Возвращает}
+Фабрика заданий Spring Bean 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+config/quarts/Quartz\+Config.\+java\end{DoxyCompactItemize}

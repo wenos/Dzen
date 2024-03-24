@@ -1,0 +1,43 @@
+\doxysection{Класс edu.\+mirea.\+vitality.\+blog.\+service.\+Delete\+Service}
+\hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_delete_service}{}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_delete_service}\index{edu.mirea.vitality.blog.service.DeleteService@{edu.mirea.vitality.blog.service.DeleteService}}
+
+
+Этот класс предоставляет сервис для удаления пользователей и связанных с ними данных.  
+
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_delete_service_a9badc1d3f244632a9d1e7c1f0f3c65ed}{delete\+User}} (Delete\+User\+Request request)
+\begin{DoxyCompactList}\small\item\em Удаляет пользователя и связанные с ним данные. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Этот класс предоставляет сервис для удаления пользователей и связанных с ними данных. 
+
+\doxysubsection{Методы}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_delete_service_a9badc1d3f244632a9d1e7c1f0f3c65ed}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_delete_service_a9badc1d3f244632a9d1e7c1f0f3c65ed} 
+\index{edu.mirea.vitality.blog.service.DeleteService@{edu.mirea.vitality.blog.service.DeleteService}!deleteUser@{deleteUser}}
+\index{deleteUser@{deleteUser}!edu.mirea.vitality.blog.service.DeleteService@{edu.mirea.vitality.blog.service.DeleteService}}
+\doxysubsubsection{\texorpdfstring{deleteUser()}{deleteUser()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+service.\+Delete\+Service.\+delete\+User (\begin{DoxyParamCaption}\item[{Delete\+User\+Request}]{request }\end{DoxyParamCaption})}
+
+
+
+Удаляет пользователя и связанные с ним данные. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em request} & Запрос на удаление пользователя. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em Forbidden\+Access\+Problem} & Если текущий пользователь не имеет прав на удаление пользователя или удаление суперпользователя. \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+service/\mbox{\hyperlink{_delete_service_8java}{Delete\+Service.\+java}}\end{DoxyCompactItemize}

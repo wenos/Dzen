@@ -1,0 +1,185 @@
+\doxysection{Класс edu.\+mirea.\+vitality.\+blog.\+service.\+Comment\+Service}
+\hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service}{}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service}\index{edu.mirea.vitality.blog.service.CommentService@{edu.mirea.vitality.blog.service.CommentService}}
+
+
+Этот класс предоставляет сервисные методы для работы с комментариями.  
+
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_comment}{Comment}} \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service_a94e643ed0cef59af4cd62b0b5b08223f}{save}} (\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_comment}{Comment}} comment)
+\begin{DoxyCompactList}\small\item\em Сохраняет комментарий. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_comment}{Comment}} \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service_a510770640c692edf15db58b68584c9ee}{create}} (Create\+Comment\+Request request)
+\begin{DoxyCompactList}\small\item\em Создает новый комментарий. \end{DoxyCompactList}\item 
+Optional$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_comment}{Comment}} $>$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service_a63c890dc23b66b08cdf3bdd94ea4db55}{find\+By\+Id}} (Long id)
+\begin{DoxyCompactList}\small\item\em Получает комментарий по его идентификатору. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_comment}{Comment}} \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service_a8e624a5f7defd93648bbb6950b0f820b}{get\+By\+Id}} (Long comment\+Id)
+\begin{DoxyCompactList}\small\item\em Получает комментарий по его идентификатору. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_comment}{Comment}} \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service_a7b13a6318b0bc75263ea209cec22e365}{update}} (Update\+Comment\+Request request, Long comment\+Id)
+\begin{DoxyCompactList}\small\item\em Обновляет информацию о комментарии. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service_aba749d0847f488be0ca05956236c20f8}{delete\+By\+Id}} (Long comment\+Id)
+\begin{DoxyCompactList}\small\item\em Удаляет комментарий по его идентификатору. \end{DoxyCompactList}\item 
+Page$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_comment}{Comment}} $>$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service_aaca8fb4707d2cf2b32f452805b4dde7a}{find\+By\+Post\+Id}} (\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1comment_1_1_comment_filter}{Comment\+Filter}} filter)
+\begin{DoxyCompactList}\small\item\em Поиск комментариев по идентификатору поста. \end{DoxyCompactList}\item 
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service_a729164dea90b6675f39b0f44f2402512}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service_a729164dea90b6675f39b0f44f2402512} 
+void {\bfseries delete\+Old\+Comments} ()
+\begin{DoxyCompactList}\small\item\em Удаляет устаревшие комментарии. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service_a311ad1caf16f2a4bec472d203f9c2361}{delete\+By\+Author\+Id}} (Long id)
+\begin{DoxyCompactList}\small\item\em Удаляет комментарии по идентификатору автора. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Этот класс предоставляет сервисные методы для работы с комментариями. 
+
+\doxysubsection{Методы}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service_a510770640c692edf15db58b68584c9ee}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service_a510770640c692edf15db58b68584c9ee} 
+\index{edu.mirea.vitality.blog.service.CommentService@{edu.mirea.vitality.blog.service.CommentService}!create@{create}}
+\index{create@{create}!edu.mirea.vitality.blog.service.CommentService@{edu.mirea.vitality.blog.service.CommentService}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_comment}{Comment}} edu.\+mirea.\+vitality.\+blog.\+service.\+Comment\+Service.\+create (\begin{DoxyParamCaption}\item[{Create\+Comment\+Request}]{request }\end{DoxyParamCaption})}
+
+
+
+Создает новый комментарий. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em request} & Запрос на создание комментария. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Созданный комментарий. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service_a311ad1caf16f2a4bec472d203f9c2361}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service_a311ad1caf16f2a4bec472d203f9c2361} 
+\index{edu.mirea.vitality.blog.service.CommentService@{edu.mirea.vitality.blog.service.CommentService}!deleteByAuthorId@{deleteByAuthorId}}
+\index{deleteByAuthorId@{deleteByAuthorId}!edu.mirea.vitality.blog.service.CommentService@{edu.mirea.vitality.blog.service.CommentService}}
+\doxysubsubsection{\texorpdfstring{deleteByAuthorId()}{deleteByAuthorId()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+service.\+Comment\+Service.\+delete\+By\+Author\+Id (\begin{DoxyParamCaption}\item[{Long}]{id }\end{DoxyParamCaption})}
+
+
+
+Удаляет комментарии по идентификатору автора. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & Идентификатор автора. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service_aba749d0847f488be0ca05956236c20f8}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service_aba749d0847f488be0ca05956236c20f8} 
+\index{edu.mirea.vitality.blog.service.CommentService@{edu.mirea.vitality.blog.service.CommentService}!deleteById@{deleteById}}
+\index{deleteById@{deleteById}!edu.mirea.vitality.blog.service.CommentService@{edu.mirea.vitality.blog.service.CommentService}}
+\doxysubsubsection{\texorpdfstring{deleteById()}{deleteById()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+service.\+Comment\+Service.\+delete\+By\+Id (\begin{DoxyParamCaption}\item[{Long}]{comment\+Id }\end{DoxyParamCaption})}
+
+
+
+Удаляет комментарий по его идентификатору. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em comment\+Id} & Идентификатор комментария. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service_a63c890dc23b66b08cdf3bdd94ea4db55}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service_a63c890dc23b66b08cdf3bdd94ea4db55} 
+\index{edu.mirea.vitality.blog.service.CommentService@{edu.mirea.vitality.blog.service.CommentService}!findById@{findById}}
+\index{findById@{findById}!edu.mirea.vitality.blog.service.CommentService@{edu.mirea.vitality.blog.service.CommentService}}
+\doxysubsubsection{\texorpdfstring{findById()}{findById()}}
+{\footnotesize\ttfamily Optional$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_comment}{Comment}} $>$ edu.\+mirea.\+vitality.\+blog.\+service.\+Comment\+Service.\+find\+By\+Id (\begin{DoxyParamCaption}\item[{Long}]{id }\end{DoxyParamCaption})}
+
+
+
+Получает комментарий по его идентификатору. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & Идентификатор комментария. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Комментарий с заданным идентификатором. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service_aaca8fb4707d2cf2b32f452805b4dde7a}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service_aaca8fb4707d2cf2b32f452805b4dde7a} 
+\index{edu.mirea.vitality.blog.service.CommentService@{edu.mirea.vitality.blog.service.CommentService}!findByPostId@{findByPostId}}
+\index{findByPostId@{findByPostId}!edu.mirea.vitality.blog.service.CommentService@{edu.mirea.vitality.blog.service.CommentService}}
+\doxysubsubsection{\texorpdfstring{findByPostId()}{findByPostId()}}
+{\footnotesize\ttfamily Page$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_comment}{Comment}} $>$ edu.\+mirea.\+vitality.\+blog.\+service.\+Comment\+Service.\+find\+By\+Post\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1comment_1_1_comment_filter}{Comment\+Filter}}}]{filter }\end{DoxyParamCaption})}
+
+
+
+Поиск комментариев по идентификатору поста. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em filter} & Фильтр. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Найденные комментарии. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service_a8e624a5f7defd93648bbb6950b0f820b}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service_a8e624a5f7defd93648bbb6950b0f820b} 
+\index{edu.mirea.vitality.blog.service.CommentService@{edu.mirea.vitality.blog.service.CommentService}!getById@{getById}}
+\index{getById@{getById}!edu.mirea.vitality.blog.service.CommentService@{edu.mirea.vitality.blog.service.CommentService}}
+\doxysubsubsection{\texorpdfstring{getById()}{getById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_comment}{Comment}} edu.\+mirea.\+vitality.\+blog.\+service.\+Comment\+Service.\+get\+By\+Id (\begin{DoxyParamCaption}\item[{Long}]{comment\+Id }\end{DoxyParamCaption})}
+
+
+
+Получает комментарий по его идентификатору. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em comment\+Id} & Идентификатор комментария. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Комментарий с заданным идентификатором. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em Comment\+Not\+Found\+Problem} & Если комментарий не найден. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service_a94e643ed0cef59af4cd62b0b5b08223f}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service_a94e643ed0cef59af4cd62b0b5b08223f} 
+\index{edu.mirea.vitality.blog.service.CommentService@{edu.mirea.vitality.blog.service.CommentService}!save@{save}}
+\index{save@{save}!edu.mirea.vitality.blog.service.CommentService@{edu.mirea.vitality.blog.service.CommentService}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_comment}{Comment}} edu.\+mirea.\+vitality.\+blog.\+service.\+Comment\+Service.\+save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_comment}{Comment}}}]{comment }\end{DoxyParamCaption})}
+
+
+
+Сохраняет комментарий. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em comment} & Комментарий для сохранения. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Сохраненный комментарий. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service_a7b13a6318b0bc75263ea209cec22e365}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_comment_service_a7b13a6318b0bc75263ea209cec22e365} 
+\index{edu.mirea.vitality.blog.service.CommentService@{edu.mirea.vitality.blog.service.CommentService}!update@{update}}
+\index{update@{update}!edu.mirea.vitality.blog.service.CommentService@{edu.mirea.vitality.blog.service.CommentService}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_comment}{Comment}} edu.\+mirea.\+vitality.\+blog.\+service.\+Comment\+Service.\+update (\begin{DoxyParamCaption}\item[{Update\+Comment\+Request}]{request,  }\item[{Long}]{comment\+Id }\end{DoxyParamCaption})}
+
+
+
+Обновляет информацию о комментарии. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em request} & Запрос на обновление комментария. \\
+\hline
+{\em comment\+Id} & Идентификатор комментария. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Обновленный комментарий. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+service/\mbox{\hyperlink{_comment_service_8java}{Comment\+Service.\+java}}\end{DoxyCompactItemize}

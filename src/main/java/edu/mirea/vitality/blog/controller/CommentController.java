@@ -23,16 +23,23 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * @class CommentController
+ * @brief Этот класс представляет собой контроллер для управления комментариями.
+ */
 @RestController
 @RequestMapping("/comments")
 @RequiredArgsConstructor
 @Tag(name = "Работа с комментариями")
 public class CommentController {
+
     private final CommentService service;
     private final CommentMapper mapper;
 
     /**
-     * Создание комментария
+     * @brief Создает комментарий.
+     * @param request Данные запроса для создания комментария.
+     * @return Созданный комментарий.
      */
     @Operation(summary = "Создание комментария")
     @PostMapping
@@ -42,7 +49,9 @@ public class CommentController {
     }
 
     /**
-     * Получение комментария по id
+     * @brief Получает комментарий по его идентификатору.
+     * @param commentId Идентификатор комментария.
+     * @return Комментарий.
      */
     @Operation(summary = "Получение комментария по id")
     @GetMapping("/{commentId}")
@@ -52,7 +61,10 @@ public class CommentController {
     }
 
     /**
-     * Обновление комментария
+     * @brief Обновляет комментарий.
+     * @param request Данные запроса для обновления комментария.
+     * @param commentId Идентификатор комментария.
+     * @return Обновленный комментарий.
      */
     @Operation(summary = "Обновление комментария")
     @PutMapping("/{commentId}")
@@ -65,7 +77,8 @@ public class CommentController {
     }
 
     /**
-     * Удаление комментария по id
+     * @brief Удаляет комментарий по его идентификатору.
+     * @param commentId Идентификатор комментария.
      */
     @Operation(summary = "Удаление комментария по id")
     @DeleteMapping("/{commentId}")
@@ -75,7 +88,9 @@ public class CommentController {
     }
 
     /**
-     * Пагинация комментариев
+     * @brief Пагинирует комментарии.
+     * @param filter Фильтр для поиска комментариев.
+     * @return Ответ с пагинированными комментариями.
      */
     @Operation(summary = "Получение комментариев для поста")
     @PostMapping("/post")

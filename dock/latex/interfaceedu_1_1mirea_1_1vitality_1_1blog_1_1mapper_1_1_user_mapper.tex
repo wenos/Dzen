@@ -1,0 +1,101 @@
+\doxysection{Интерфейс edu.\+mirea.\+vitality.\+blog.\+mapper.\+User\+Mapper}
+\hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_user_mapper}{}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_user_mapper}\index{edu.mirea.vitality.blog.mapper.UserMapper@{edu.mirea.vitality.blog.mapper.UserMapper}}
+
+
+Этот интерфейс предоставляет методы для преобразования объектов пользователя между сущностью и объектом ответа.  
+
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+User\+Response \mbox{\hyperlink{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_user_mapper_ae6bf479624bdfac81e9a775e029e6960}{to\+Response}} (\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} user)
+\begin{DoxyCompactList}\small\item\em Преобразует сущность пользователя в объект ответа пользователя. \end{DoxyCompactList}\item 
+User\+Profile\+Response \mbox{\hyperlink{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_user_mapper_aa3c276d45294361560310c260126c34f}{to\+Profile\+Response}} (\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} user)
+\begin{DoxyCompactList}\small\item\em Преобразует сущность пользователя в объект ответа профиля пользователя. \end{DoxyCompactList}\item 
+List$<$ User\+Response $>$ \mbox{\hyperlink{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_user_mapper_a27f3dbb2ac8050bd1cf71165bd350b8b}{to\+Response}} (List$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} $>$ users)
+\begin{DoxyCompactList}\small\item\em Преобразует список сущностей пользователей в список объектов ответа пользователей. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} \mbox{\hyperlink{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_user_mapper_a096dc76a520df3cebe800d496d10abd8}{to\+Entity}} (Sign\+Up\+Request request)
+\begin{DoxyCompactList}\small\item\em Преобразует объект запроса на регистрацию пользователя в сущность пользователя. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Этот интерфейс предоставляет методы для преобразования объектов пользователя между сущностью и объектом ответа. 
+
+\doxysubsection{Методы}
+\Hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_user_mapper_a096dc76a520df3cebe800d496d10abd8}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_user_mapper_a096dc76a520df3cebe800d496d10abd8} 
+\index{edu.mirea.vitality.blog.mapper.UserMapper@{edu.mirea.vitality.blog.mapper.UserMapper}!toEntity@{toEntity}}
+\index{toEntity@{toEntity}!edu.mirea.vitality.blog.mapper.UserMapper@{edu.mirea.vitality.blog.mapper.UserMapper}}
+\doxysubsubsection{\texorpdfstring{toEntity()}{toEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} edu.\+mirea.\+vitality.\+blog.\+mapper.\+User\+Mapper.\+to\+Entity (\begin{DoxyParamCaption}\item[{Sign\+Up\+Request}]{request }\end{DoxyParamCaption})}
+
+
+
+Преобразует объект запроса на регистрацию пользователя в сущность пользователя. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em request} & Запрос на регистрацию пользователя. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Сущность пользователя. 
+\end{DoxyReturn}
+\Hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_user_mapper_aa3c276d45294361560310c260126c34f}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_user_mapper_aa3c276d45294361560310c260126c34f} 
+\index{edu.mirea.vitality.blog.mapper.UserMapper@{edu.mirea.vitality.blog.mapper.UserMapper}!toProfileResponse@{toProfileResponse}}
+\index{toProfileResponse@{toProfileResponse}!edu.mirea.vitality.blog.mapper.UserMapper@{edu.mirea.vitality.blog.mapper.UserMapper}}
+\doxysubsubsection{\texorpdfstring{toProfileResponse()}{toProfileResponse()}}
+{\footnotesize\ttfamily User\+Profile\+Response edu.\+mirea.\+vitality.\+blog.\+mapper.\+User\+Mapper.\+to\+Profile\+Response (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}}}]{user }\end{DoxyParamCaption})}
+
+
+
+Преобразует сущность пользователя в объект ответа профиля пользователя. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em user} & Сущность пользователя. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Ответ профиля пользователя. 
+\end{DoxyReturn}
+\Hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_user_mapper_a27f3dbb2ac8050bd1cf71165bd350b8b}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_user_mapper_a27f3dbb2ac8050bd1cf71165bd350b8b} 
+\index{edu.mirea.vitality.blog.mapper.UserMapper@{edu.mirea.vitality.blog.mapper.UserMapper}!toResponse@{toResponse}}
+\index{toResponse@{toResponse}!edu.mirea.vitality.blog.mapper.UserMapper@{edu.mirea.vitality.blog.mapper.UserMapper}}
+\doxysubsubsection{\texorpdfstring{toResponse()}{toResponse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily List$<$ User\+Response $>$ edu.\+mirea.\+vitality.\+blog.\+mapper.\+User\+Mapper.\+to\+Response (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} $>$}]{users }\end{DoxyParamCaption})}
+
+
+
+Преобразует список сущностей пользователей в список объектов ответа пользователей. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em users} & Список сущностей пользователей. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Список ответов пользователей. 
+\end{DoxyReturn}
+\Hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_user_mapper_ae6bf479624bdfac81e9a775e029e6960}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_user_mapper_ae6bf479624bdfac81e9a775e029e6960} 
+\index{edu.mirea.vitality.blog.mapper.UserMapper@{edu.mirea.vitality.blog.mapper.UserMapper}!toResponse@{toResponse}}
+\index{toResponse@{toResponse}!edu.mirea.vitality.blog.mapper.UserMapper@{edu.mirea.vitality.blog.mapper.UserMapper}}
+\doxysubsubsection{\texorpdfstring{toResponse()}{toResponse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily User\+Response edu.\+mirea.\+vitality.\+blog.\+mapper.\+User\+Mapper.\+to\+Response (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}}}]{user }\end{DoxyParamCaption})}
+
+
+
+Преобразует сущность пользователя в объект ответа пользователя. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em user} & Сущность пользователя. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Ответ пользователя. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов интерфейса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+mapper/\mbox{\hyperlink{_user_mapper_8java}{User\+Mapper.\+java}}\end{DoxyCompactItemize}

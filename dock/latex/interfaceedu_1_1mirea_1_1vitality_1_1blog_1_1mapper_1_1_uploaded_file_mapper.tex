@@ -1,0 +1,101 @@
+\doxysection{Интерфейс edu.\+mirea.\+vitality.\+blog.\+mapper.\+Uploaded\+File\+Mapper}
+\hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_uploaded_file_mapper}{}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_uploaded_file_mapper}\index{edu.mirea.vitality.blog.mapper.UploadedFileMapper@{edu.mirea.vitality.blog.mapper.UploadedFileMapper}}
+
+
+Этот интерфейс предоставляет методы для преобразования объектов загруженных файлов между сущностью и объектом ответа.  
+
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+Uploaded\+File\+Response \mbox{\hyperlink{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_uploaded_file_mapper_a09c269de72d2b45bb16d962327cfb22f}{to\+Response}} (\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_uploaded_file}{Uploaded\+File}} uploaded\+File\+Response)
+\begin{DoxyCompactList}\small\item\em Преобразует сущность загруженного файла в объект ответа загруженного файла. \end{DoxyCompactList}\item 
+List$<$ Uploaded\+File\+Response $>$ \mbox{\hyperlink{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_uploaded_file_mapper_abed2d479cc1f3774b9b4585032f24bda}{to\+Response}} (List$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_uploaded_file}{Uploaded\+File}} $>$ uploaded\+File\+Response)
+\begin{DoxyCompactList}\small\item\em Преобразует список сущностей загруженных файлов в список объектов ответа загруженных файлов. \end{DoxyCompactList}\item 
+default List$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_uploaded_file}{Uploaded\+File}} $>$ \mbox{\hyperlink{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_uploaded_file_mapper_a76d7be7da06c615761ce506745ef465c}{to\+Entity}} (List$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post_file_rel}{Post\+File\+Rel}} $>$ post\+File\+Rel)
+\begin{DoxyCompactList}\small\item\em Преобразует список связей между постом и файлом в список загруженных файлов. \end{DoxyCompactList}\item 
+default \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_uploaded_file}{Uploaded\+File}} \mbox{\hyperlink{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_uploaded_file_mapper_a29ca7b33640b036bd229d3c5416ba833}{to\+Entity}} (\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post_file_rel}{Post\+File\+Rel}} post\+File\+Rel)
+\begin{DoxyCompactList}\small\item\em Преобразует связь между постом и файлом в загруженный файл. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Этот интерфейс предоставляет методы для преобразования объектов загруженных файлов между сущностью и объектом ответа. 
+
+\doxysubsection{Методы}
+\Hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_uploaded_file_mapper_a76d7be7da06c615761ce506745ef465c}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_uploaded_file_mapper_a76d7be7da06c615761ce506745ef465c} 
+\index{edu.mirea.vitality.blog.mapper.UploadedFileMapper@{edu.mirea.vitality.blog.mapper.UploadedFileMapper}!toEntity@{toEntity}}
+\index{toEntity@{toEntity}!edu.mirea.vitality.blog.mapper.UploadedFileMapper@{edu.mirea.vitality.blog.mapper.UploadedFileMapper}}
+\doxysubsubsection{\texorpdfstring{toEntity()}{toEntity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily default List$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_uploaded_file}{Uploaded\+File}} $>$ edu.\+mirea.\+vitality.\+blog.\+mapper.\+Uploaded\+File\+Mapper.\+to\+Entity (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post_file_rel}{Post\+File\+Rel}} $>$}]{post\+File\+Rel }\end{DoxyParamCaption})}
+
+
+
+Преобразует список связей между постом и файлом в список загруженных файлов. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em post\+File\+Rel} & Список связей между постом и файлом. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Список загруженных файлов. 
+\end{DoxyReturn}
+\Hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_uploaded_file_mapper_a29ca7b33640b036bd229d3c5416ba833}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_uploaded_file_mapper_a29ca7b33640b036bd229d3c5416ba833} 
+\index{edu.mirea.vitality.blog.mapper.UploadedFileMapper@{edu.mirea.vitality.blog.mapper.UploadedFileMapper}!toEntity@{toEntity}}
+\index{toEntity@{toEntity}!edu.mirea.vitality.blog.mapper.UploadedFileMapper@{edu.mirea.vitality.blog.mapper.UploadedFileMapper}}
+\doxysubsubsection{\texorpdfstring{toEntity()}{toEntity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily default \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_uploaded_file}{Uploaded\+File}} edu.\+mirea.\+vitality.\+blog.\+mapper.\+Uploaded\+File\+Mapper.\+to\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post_file_rel}{Post\+File\+Rel}}}]{post\+File\+Rel }\end{DoxyParamCaption})}
+
+
+
+Преобразует связь между постом и файлом в загруженный файл. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em post\+File\+Rel} & Связь между постом и файлом. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Загруженный файл. 
+\end{DoxyReturn}
+\Hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_uploaded_file_mapper_abed2d479cc1f3774b9b4585032f24bda}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_uploaded_file_mapper_abed2d479cc1f3774b9b4585032f24bda} 
+\index{edu.mirea.vitality.blog.mapper.UploadedFileMapper@{edu.mirea.vitality.blog.mapper.UploadedFileMapper}!toResponse@{toResponse}}
+\index{toResponse@{toResponse}!edu.mirea.vitality.blog.mapper.UploadedFileMapper@{edu.mirea.vitality.blog.mapper.UploadedFileMapper}}
+\doxysubsubsection{\texorpdfstring{toResponse()}{toResponse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily List$<$ Uploaded\+File\+Response $>$ edu.\+mirea.\+vitality.\+blog.\+mapper.\+Uploaded\+File\+Mapper.\+to\+Response (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_uploaded_file}{Uploaded\+File}} $>$}]{uploaded\+File\+Response }\end{DoxyParamCaption})}
+
+
+
+Преобразует список сущностей загруженных файлов в список объектов ответа загруженных файлов. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em uploaded\+File\+Response} & Список сущностей загруженных файлов. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Список ответов загруженных файлов. 
+\end{DoxyReturn}
+\Hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_uploaded_file_mapper_a09c269de72d2b45bb16d962327cfb22f}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_uploaded_file_mapper_a09c269de72d2b45bb16d962327cfb22f} 
+\index{edu.mirea.vitality.blog.mapper.UploadedFileMapper@{edu.mirea.vitality.blog.mapper.UploadedFileMapper}!toResponse@{toResponse}}
+\index{toResponse@{toResponse}!edu.mirea.vitality.blog.mapper.UploadedFileMapper@{edu.mirea.vitality.blog.mapper.UploadedFileMapper}}
+\doxysubsubsection{\texorpdfstring{toResponse()}{toResponse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Uploaded\+File\+Response edu.\+mirea.\+vitality.\+blog.\+mapper.\+Uploaded\+File\+Mapper.\+to\+Response (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_uploaded_file}{Uploaded\+File}}}]{uploaded\+File\+Response }\end{DoxyParamCaption})}
+
+
+
+Преобразует сущность загруженного файла в объект ответа загруженного файла. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em uploaded\+File\+Response} & Сущность загруженного файла. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Ответ загруженного файла. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов интерфейса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+mapper/\mbox{\hyperlink{_uploaded_file_mapper_8java}{Uploaded\+File\+Mapper.\+java}}\end{DoxyCompactItemize}

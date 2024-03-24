@@ -1,0 +1,236 @@
+\doxysection{Класс edu.\+mirea.\+vitality.\+blog.\+service.\+Post\+Service}
+\hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service}{}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service}\index{edu.mirea.vitality.blog.service.PostService@{edu.mirea.vitality.blog.service.PostService}}
+
+
+Класс, представляющий сервис для работы с постами.  
+
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post}{Post}} \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_a16dcb4fee09ea19235bd06d4b02c66fd}{save}} (\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post}{Post}} post)
+\begin{DoxyCompactList}\small\item\em Сохраняет пост. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post}{Post}} \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_a4628bdbea16da60f0c80af9d8f91722e}{create}} (Post\+Request request)
+\begin{DoxyCompactList}\small\item\em Создает пост с прикрепленными файлами. \end{DoxyCompactList}\item 
+Optional$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post}{Post}} $>$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_af79b0f05712c4dfb7cb54c6d1cfa0e72}{find\+By\+Id}} (Long id)
+\begin{DoxyCompactList}\small\item\em Ищет пост по идентификатору. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post}{Post}} \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_a93c5cb393e2fcd90209ec63b0539d5ee}{get\+By\+Id}} (Long post\+Id)
+\begin{DoxyCompactList}\small\item\em Получает пост по его идентификатору. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_aabfc8d3bf40f85beaf429cfe4849fbda}{delete\+By\+Id}} (Long post\+Id)
+\begin{DoxyCompactList}\small\item\em Удаляет пост по его идентификатору. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post}{Post}} \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_aff2c4686999dbfe6a18c09aa7ecab538}{update}} (Update\+Post\+Request request, Long post\+Id)
+\begin{DoxyCompactList}\small\item\em Обновляет пост. \end{DoxyCompactList}\item 
+Page$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post}{Post}} $>$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_a3a05ed11adab74b8813d817d58c525af}{find\+By\+Filter}} (\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1post_1_1_post_filter}{Post\+Filter}} filter)
+\begin{DoxyCompactList}\small\item\em Получает посты по фильтру. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_af84f3fc53a53b289e980983000e00207}{delete\+By\+Author\+Id}} (Long id)
+\begin{DoxyCompactList}\small\item\em Удаляет посты по идентификатору автора. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post}{Post}} $>$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_ae0b2ddcd2c3a80736089408def5e31d5}{get\+All\+By\+Author\+Id}} (Long id)
+\begin{DoxyCompactList}\small\item\em Получает все посты по идентификатору автора. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_accc8d4bb5cf1f7fd3151c3aa6d4d267a}{like\+Post}} (Long post\+Id)
+\begin{DoxyCompactList}\small\item\em Лайкает пост. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_a4ff228c4acce8a58e1a40098dde5fc85}{unlike\+Post}} (Long post\+Id)
+\begin{DoxyCompactList}\small\item\em Убирает лайк с поста. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс, представляющий сервис для работы с постами. 
+
+\doxysubsection{Методы}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_a4628bdbea16da60f0c80af9d8f91722e}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_a4628bdbea16da60f0c80af9d8f91722e} 
+\index{edu.mirea.vitality.blog.service.PostService@{edu.mirea.vitality.blog.service.PostService}!create@{create}}
+\index{create@{create}!edu.mirea.vitality.blog.service.PostService@{edu.mirea.vitality.blog.service.PostService}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post}{Post}} edu.\+mirea.\+vitality.\+blog.\+service.\+Post\+Service.\+create (\begin{DoxyParamCaption}\item[{Post\+Request}]{request }\end{DoxyParamCaption})}
+
+
+
+Создает пост с прикрепленными файлами. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em request} & Запрос на создание поста. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Созданный пост. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_af84f3fc53a53b289e980983000e00207}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_af84f3fc53a53b289e980983000e00207} 
+\index{edu.mirea.vitality.blog.service.PostService@{edu.mirea.vitality.blog.service.PostService}!deleteByAuthorId@{deleteByAuthorId}}
+\index{deleteByAuthorId@{deleteByAuthorId}!edu.mirea.vitality.blog.service.PostService@{edu.mirea.vitality.blog.service.PostService}}
+\doxysubsubsection{\texorpdfstring{deleteByAuthorId()}{deleteByAuthorId()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+service.\+Post\+Service.\+delete\+By\+Author\+Id (\begin{DoxyParamCaption}\item[{Long}]{id }\end{DoxyParamCaption})}
+
+
+
+Удаляет посты по идентификатору автора. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & Идентификатор автора. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_aabfc8d3bf40f85beaf429cfe4849fbda}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_aabfc8d3bf40f85beaf429cfe4849fbda} 
+\index{edu.mirea.vitality.blog.service.PostService@{edu.mirea.vitality.blog.service.PostService}!deleteById@{deleteById}}
+\index{deleteById@{deleteById}!edu.mirea.vitality.blog.service.PostService@{edu.mirea.vitality.blog.service.PostService}}
+\doxysubsubsection{\texorpdfstring{deleteById()}{deleteById()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+service.\+Post\+Service.\+delete\+By\+Id (\begin{DoxyParamCaption}\item[{Long}]{post\+Id }\end{DoxyParamCaption})}
+
+
+
+Удаляет пост по его идентификатору. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em post\+Id} & Идентификатор поста для удаления. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_a3a05ed11adab74b8813d817d58c525af}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_a3a05ed11adab74b8813d817d58c525af} 
+\index{edu.mirea.vitality.blog.service.PostService@{edu.mirea.vitality.blog.service.PostService}!findByFilter@{findByFilter}}
+\index{findByFilter@{findByFilter}!edu.mirea.vitality.blog.service.PostService@{edu.mirea.vitality.blog.service.PostService}}
+\doxysubsubsection{\texorpdfstring{findByFilter()}{findByFilter()}}
+{\footnotesize\ttfamily Page$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post}{Post}} $>$ edu.\+mirea.\+vitality.\+blog.\+service.\+Post\+Service.\+find\+By\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1post_1_1_post_filter}{Post\+Filter}}}]{filter }\end{DoxyParamCaption})}
+
+
+
+Получает посты по фильтру. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em filter} & Фильтр. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Найденные посты. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_af79b0f05712c4dfb7cb54c6d1cfa0e72}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_af79b0f05712c4dfb7cb54c6d1cfa0e72} 
+\index{edu.mirea.vitality.blog.service.PostService@{edu.mirea.vitality.blog.service.PostService}!findById@{findById}}
+\index{findById@{findById}!edu.mirea.vitality.blog.service.PostService@{edu.mirea.vitality.blog.service.PostService}}
+\doxysubsubsection{\texorpdfstring{findById()}{findById()}}
+{\footnotesize\ttfamily Optional$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post}{Post}} $>$ edu.\+mirea.\+vitality.\+blog.\+service.\+Post\+Service.\+find\+By\+Id (\begin{DoxyParamCaption}\item[{Long}]{id }\end{DoxyParamCaption})}
+
+
+
+Ищет пост по идентификатору. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & Идентификатор поста. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Найденный пост, если таковой имеется. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_ae0b2ddcd2c3a80736089408def5e31d5}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_ae0b2ddcd2c3a80736089408def5e31d5} 
+\index{edu.mirea.vitality.blog.service.PostService@{edu.mirea.vitality.blog.service.PostService}!getAllByAuthorId@{getAllByAuthorId}}
+\index{getAllByAuthorId@{getAllByAuthorId}!edu.mirea.vitality.blog.service.PostService@{edu.mirea.vitality.blog.service.PostService}}
+\doxysubsubsection{\texorpdfstring{getAllByAuthorId()}{getAllByAuthorId()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post}{Post}} $>$ edu.\+mirea.\+vitality.\+blog.\+service.\+Post\+Service.\+get\+All\+By\+Author\+Id (\begin{DoxyParamCaption}\item[{Long}]{id }\end{DoxyParamCaption})}
+
+
+
+Получает все посты по идентификатору автора. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & Идентификатор автора. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Список постов автора. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_a93c5cb393e2fcd90209ec63b0539d5ee}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_a93c5cb393e2fcd90209ec63b0539d5ee} 
+\index{edu.mirea.vitality.blog.service.PostService@{edu.mirea.vitality.blog.service.PostService}!getById@{getById}}
+\index{getById@{getById}!edu.mirea.vitality.blog.service.PostService@{edu.mirea.vitality.blog.service.PostService}}
+\doxysubsubsection{\texorpdfstring{getById()}{getById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post}{Post}} edu.\+mirea.\+vitality.\+blog.\+service.\+Post\+Service.\+get\+By\+Id (\begin{DoxyParamCaption}\item[{Long}]{post\+Id }\end{DoxyParamCaption})}
+
+
+
+Получает пост по его идентификатору. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em post\+Id} & Идентификатор поста. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Полученный пост. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em Post\+Not\+Found\+Problem} & если пост не найден. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_accc8d4bb5cf1f7fd3151c3aa6d4d267a}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_accc8d4bb5cf1f7fd3151c3aa6d4d267a} 
+\index{edu.mirea.vitality.blog.service.PostService@{edu.mirea.vitality.blog.service.PostService}!likePost@{likePost}}
+\index{likePost@{likePost}!edu.mirea.vitality.blog.service.PostService@{edu.mirea.vitality.blog.service.PostService}}
+\doxysubsubsection{\texorpdfstring{likePost()}{likePost()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+service.\+Post\+Service.\+like\+Post (\begin{DoxyParamCaption}\item[{Long}]{post\+Id }\end{DoxyParamCaption})}
+
+
+
+Лайкает пост. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em post\+Id} & Идентификатор поста. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_a16dcb4fee09ea19235bd06d4b02c66fd}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_a16dcb4fee09ea19235bd06d4b02c66fd} 
+\index{edu.mirea.vitality.blog.service.PostService@{edu.mirea.vitality.blog.service.PostService}!save@{save}}
+\index{save@{save}!edu.mirea.vitality.blog.service.PostService@{edu.mirea.vitality.blog.service.PostService}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post}{Post}} edu.\+mirea.\+vitality.\+blog.\+service.\+Post\+Service.\+save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post}{Post}}}]{post }\end{DoxyParamCaption})}
+
+
+
+Сохраняет пост. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em post} & Пост для сохранения. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Сохраненный пост. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_a4ff228c4acce8a58e1a40098dde5fc85}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_a4ff228c4acce8a58e1a40098dde5fc85} 
+\index{edu.mirea.vitality.blog.service.PostService@{edu.mirea.vitality.blog.service.PostService}!unlikePost@{unlikePost}}
+\index{unlikePost@{unlikePost}!edu.mirea.vitality.blog.service.PostService@{edu.mirea.vitality.blog.service.PostService}}
+\doxysubsubsection{\texorpdfstring{unlikePost()}{unlikePost()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+service.\+Post\+Service.\+unlike\+Post (\begin{DoxyParamCaption}\item[{Long}]{post\+Id }\end{DoxyParamCaption})}
+
+
+
+Убирает лайк с поста. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em post\+Id} & Идентификатор поста. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_aff2c4686999dbfe6a18c09aa7ecab538}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_post_service_aff2c4686999dbfe6a18c09aa7ecab538} 
+\index{edu.mirea.vitality.blog.service.PostService@{edu.mirea.vitality.blog.service.PostService}!update@{update}}
+\index{update@{update}!edu.mirea.vitality.blog.service.PostService@{edu.mirea.vitality.blog.service.PostService}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post}{Post}} edu.\+mirea.\+vitality.\+blog.\+service.\+Post\+Service.\+update (\begin{DoxyParamCaption}\item[{Update\+Post\+Request}]{request,  }\item[{Long}]{post\+Id }\end{DoxyParamCaption})}
+
+
+
+Обновляет пост. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em request} & Запрос на обновление поста. \\
+\hline
+{\em post\+Id} & Идентификатор поста. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Обновленный пост. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+service/\mbox{\hyperlink{_post_service_8java}{Post\+Service.\+java}}\end{DoxyCompactItemize}

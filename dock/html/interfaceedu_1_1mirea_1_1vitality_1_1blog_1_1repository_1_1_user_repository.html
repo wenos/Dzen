@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>VitalityBlog: Интерфейс edu.mirea.vitality.blog.repository.UserRepository</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">VitalityBlog<span id="projectnumber">&#160;next-SNAPSHOT</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>edu</b></li><li class="navelem"><b>mirea</b></li><li class="navelem"><b>vitality</b></li><li class="navelem"><b>blog</b></li><li class="navelem"><b>repository</b></li><li class="navelem"><a class="el" href="interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_user_repository.html">UserRepository</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_user_repository-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Интерфейс edu.mirea.vitality.blog.repository.UserRepository</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Этот интерфейс предоставляет методы для работы с сущностью User в базе данных.  
+ <a href="#details">Подробнее...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a80f3cd6e35e739628b85732bbff3a7e8" id="r_a80f3cd6e35e739628b85732bbff3a7e8"><td class="memItemLeft" align="right" valign="top">Optional&lt; <a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user.html">User</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80f3cd6e35e739628b85732bbff3a7e8">findByUsername</a> (String username)</td></tr>
+<tr class="memdesc:a80f3cd6e35e739628b85732bbff3a7e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Находит пользователя по имени пользователя.  <br /></td></tr>
+<tr class="separator:a80f3cd6e35e739628b85732bbff3a7e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76a47dd5f82efd065ec2dc7a6e645c4d" id="r_a76a47dd5f82efd065ec2dc7a6e645c4d"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76a47dd5f82efd065ec2dc7a6e645c4d">existsByUsername</a> (String username)</td></tr>
+<tr class="memdesc:a76a47dd5f82efd065ec2dc7a6e645c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет существование пользователя по имени пользователя.  <br /></td></tr>
+<tr class="separator:a76a47dd5f82efd065ec2dc7a6e645c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3adf648cf3ba0c1ae6e0cf47113b8487" id="r_a3adf648cf3ba0c1ae6e0cf47113b8487"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3adf648cf3ba0c1ae6e0cf47113b8487">existsByEmail</a> (String email)</td></tr>
+<tr class="memdesc:a3adf648cf3ba0c1ae6e0cf47113b8487"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет существование пользователя по адресу электронной почты.  <br /></td></tr>
+<tr class="separator:a3adf648cf3ba0c1ae6e0cf47113b8487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf9aaf54dda0824aa59f5ab72de513ea" id="r_adf9aaf54dda0824aa59f5ab72de513ea"><td class="memItemLeft" align="right" valign="top">Page&lt; <a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user.html">User</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf9aaf54dda0824aa59f5ab72de513ea">findAllWithFilter</a> ( @Param(&quot;id&quot;) Long id, @Param(&quot;username&quot;) String username, @Param(&quot;email&quot;) String email, @Param(&quot;role&quot;) <a class="el" href="enumedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_role.html">Role</a> role, @Param(&quot;isBanned&quot;) Boolean isBanned, @Param(&quot;time&quot;) OffsetDateTime time, Pageable pageable)</td></tr>
+<tr class="memdesc:adf9aaf54dda0824aa59f5ab72de513ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает страницу пользователей с учетом фильтрации.  <br /></td></tr>
+<tr class="separator:adf9aaf54dda0824aa59f5ab72de513ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Этот интерфейс предоставляет методы для работы с сущностью User в базе данных. </p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a3adf648cf3ba0c1ae6e0cf47113b8487" name="a3adf648cf3ba0c1ae6e0cf47113b8487"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3adf648cf3ba0c1ae6e0cf47113b8487">&#9670;&#160;</a></span>existsByEmail()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean edu.mirea.vitality.blog.repository.UserRepository.existsByEmail </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>email</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет существование пользователя по адресу электронной почты. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">email</td><td>Адрес электронной почты. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если пользователь существует, иначе false. </dd></dl>
+
+</div>
+</div>
+<a id="a76a47dd5f82efd065ec2dc7a6e645c4d" name="a76a47dd5f82efd065ec2dc7a6e645c4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76a47dd5f82efd065ec2dc7a6e645c4d">&#9670;&#160;</a></span>existsByUsername()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean edu.mirea.vitality.blog.repository.UserRepository.existsByUsername </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>username</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет существование пользователя по имени пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">username</td><td>Имя пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если пользователь существует, иначе false. </dd></dl>
+
+</div>
+</div>
+<a id="adf9aaf54dda0824aa59f5ab72de513ea" name="adf9aaf54dda0824aa59f5ab72de513ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf9aaf54dda0824aa59f5ab72de513ea">&#9670;&#160;</a></span>findAllWithFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Page&lt; <a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user.html">User</a> &gt; edu.mirea.vitality.blog.repository.UserRepository.findAllWithFilter </td>
+          <td>(</td>
+          <td class="paramtype">@Param(&quot;id&quot;) Long</td>          <td class="paramname"><span class="paramname"><em>id</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">@Param(&quot;username&quot;) String</td>          <td class="paramname"><span class="paramname"><em>username</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">@Param(&quot;email&quot;) String</td>          <td class="paramname"><span class="paramname"><em>email</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">@Param(&quot;role&quot;) <a class="el" href="enumedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_role.html">Role</a></td>          <td class="paramname"><span class="paramname"><em>role</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">@Param(&quot;isBanned&quot;) Boolean</td>          <td class="paramname"><span class="paramname"><em>isBanned</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">@Param(&quot;time&quot;) OffsetDateTime</td>          <td class="paramname"><span class="paramname"><em>time</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Pageable</td>          <td class="paramname"><span class="paramname"><em>pageable</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получает страницу пользователей с учетом фильтрации. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Идентификатор пользователя (может быть null). </td></tr>
+    <tr><td class="paramname">username</td><td>Имя пользователя (может быть null). </td></tr>
+    <tr><td class="paramname">email</td><td>Адрес электронной почты (может быть null). </td></tr>
+    <tr><td class="paramname">role</td><td>Роль пользователя (может быть null). </td></tr>
+    <tr><td class="paramname">isBanned</td><td>Признак блокировки пользователя (может быть null). </td></tr>
+    <tr><td class="paramname">time</td><td>Время для проверки блокировки пользователя (может быть null). </td></tr>
+    <tr><td class="paramname">pageable</td><td>Интерфейс для создания пагинации. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Страница пользователей, отфильтрованных в соответствии с заданными параметрами. </dd></dl>
+
+</div>
+</div>
+<a id="a80f3cd6e35e739628b85732bbff3a7e8" name="a80f3cd6e35e739628b85732bbff3a7e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80f3cd6e35e739628b85732bbff3a7e8">&#9670;&#160;</a></span>findByUsername()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Optional&lt; <a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user.html">User</a> &gt; edu.mirea.vitality.blog.repository.UserRepository.findByUsername </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>username</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Находит пользователя по имени пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">username</td><td>Имя пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Опциональный объект, содержащий пользователя, если найден. </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов интерфейса находятся в файле:<ul>
+<li>repository/<a class="el" href="_user_repository_8java.html">UserRepository.java</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

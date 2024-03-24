@@ -1,0 +1,96 @@
+\doxysection{Класс edu.\+mirea.\+vitality.\+blog.\+controller.\+File\+Controller}
+\hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_file_controller}{}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_file_controller}\index{edu.mirea.vitality.blog.controller.FileController@{edu.mirea.vitality.blog.controller.FileController}}
+
+
+Этот класс представляет собой контроллер для работы с файлами.  
+
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ UUID $>$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_file_controller_a3583e89b2f09d3b3eaa984935648635f}{upload\+Files}} (@Request\+Param("{}files"{}) Multipart\+File\mbox{[}$\,$\mbox{]} files)
+\begin{DoxyCompactList}\small\item\em Загружает файлы на сервер. \end{DoxyCompactList}\item 
+List$<$ Uploaded\+File\+Response $>$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_file_controller_ab5e7e549e4b4d2202e82997b9ec5fe12}{get\+All\+Files}} ()
+\begin{DoxyCompactList}\small\item\em Получает все файлы на сервере. \end{DoxyCompactList}\item 
+Uploaded\+File\+Response \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_file_controller_ae24e2d076cd010793208821ad49c94ca}{get\+File\+By\+Id}} (@Path\+Variable UUID file\+Id)
+\begin{DoxyCompactList}\small\item\em Получает файл по его идентификатору. \end{DoxyCompactList}\item 
+Response\+Entity$<$ byte\mbox{[}$\,$\mbox{]}$>$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_file_controller_a80c025978cab315b55604a081e5a60db}{download\+File}} (@Path\+Variable UUID file\+Id)
+\begin{DoxyCompactList}\small\item\em Загружает файл с сервера. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Этот класс представляет собой контроллер для работы с файлами. 
+
+\doxysubsection{Методы}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_file_controller_a80c025978cab315b55604a081e5a60db}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_file_controller_a80c025978cab315b55604a081e5a60db} 
+\index{edu.mirea.vitality.blog.controller.FileController@{edu.mirea.vitality.blog.controller.FileController}!downloadFile@{downloadFile}}
+\index{downloadFile@{downloadFile}!edu.mirea.vitality.blog.controller.FileController@{edu.mirea.vitality.blog.controller.FileController}}
+\doxysubsubsection{\texorpdfstring{downloadFile()}{downloadFile()}}
+{\footnotesize\ttfamily Response\+Entity$<$ byte\mbox{[}$\,$\mbox{]}$>$ edu.\+mirea.\+vitality.\+blog.\+controller.\+File\+Controller.\+download\+File (\begin{DoxyParamCaption}\item[{@Path\+Variable UUID}]{file\+Id }\end{DoxyParamCaption})}
+
+
+
+Загружает файл с сервера. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em file\+Id} & Идентификатор файла. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Ответ с данными файла для скачивания. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_file_controller_ab5e7e549e4b4d2202e82997b9ec5fe12}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_file_controller_ab5e7e549e4b4d2202e82997b9ec5fe12} 
+\index{edu.mirea.vitality.blog.controller.FileController@{edu.mirea.vitality.blog.controller.FileController}!getAllFiles@{getAllFiles}}
+\index{getAllFiles@{getAllFiles}!edu.mirea.vitality.blog.controller.FileController@{edu.mirea.vitality.blog.controller.FileController}}
+\doxysubsubsection{\texorpdfstring{getAllFiles()}{getAllFiles()}}
+{\footnotesize\ttfamily List$<$ Uploaded\+File\+Response $>$ edu.\+mirea.\+vitality.\+blog.\+controller.\+File\+Controller.\+get\+All\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получает все файлы на сервере. 
+
+\begin{DoxyReturn}{Возвращает}
+Список всех файлов. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_file_controller_ae24e2d076cd010793208821ad49c94ca}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_file_controller_ae24e2d076cd010793208821ad49c94ca} 
+\index{edu.mirea.vitality.blog.controller.FileController@{edu.mirea.vitality.blog.controller.FileController}!getFileById@{getFileById}}
+\index{getFileById@{getFileById}!edu.mirea.vitality.blog.controller.FileController@{edu.mirea.vitality.blog.controller.FileController}}
+\doxysubsubsection{\texorpdfstring{getFileById()}{getFileById()}}
+{\footnotesize\ttfamily Uploaded\+File\+Response edu.\+mirea.\+vitality.\+blog.\+controller.\+File\+Controller.\+get\+File\+By\+Id (\begin{DoxyParamCaption}\item[{@Path\+Variable UUID}]{file\+Id }\end{DoxyParamCaption})}
+
+
+
+Получает файл по его идентификатору. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em file\+Id} & Идентификатор файла. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Ответ с информацией о файле. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_file_controller_a3583e89b2f09d3b3eaa984935648635f}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_file_controller_a3583e89b2f09d3b3eaa984935648635f} 
+\index{edu.mirea.vitality.blog.controller.FileController@{edu.mirea.vitality.blog.controller.FileController}!uploadFiles@{uploadFiles}}
+\index{uploadFiles@{uploadFiles}!edu.mirea.vitality.blog.controller.FileController@{edu.mirea.vitality.blog.controller.FileController}}
+\doxysubsubsection{\texorpdfstring{uploadFiles()}{uploadFiles()}}
+{\footnotesize\ttfamily List$<$ UUID $>$ edu.\+mirea.\+vitality.\+blog.\+controller.\+File\+Controller.\+upload\+Files (\begin{DoxyParamCaption}\item[{@Request\+Param("{}files"{}) Multipart\+File\mbox{[}$\,$\mbox{]}}]{files }\end{DoxyParamCaption})}
+
+
+
+Загружает файлы на сервер. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em files} & Массив файлов для загрузки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Список идентификаторов загруженных файлов. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+controller/File\+Controller.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,65 @@
+\doxysection{Интерфейс edu.\+mirea.\+vitality.\+blog.\+repository.\+Post\+Repository}
+\hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_post_repository}{}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_post_repository}\index{edu.mirea.vitality.blog.repository.PostRepository@{edu.mirea.vitality.blog.repository.PostRepository}}
+
+
+Этот интерфейс предоставляет методы для работы с сущностью Post в базе данных.  
+
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+Page$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post}{Post}} $>$ \mbox{\hyperlink{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_post_repository_a2f2847b9b973761f665d3d5739bc30fb}{find\+All\+With\+Pages}} ( @Param("{}category\+Id"{}) Long category\+Id, @Param("{}title"{}) String title, Pageable pageable)
+\begin{DoxyCompactList}\small\item\em Получает страницу постов с учетом фильтрации по категории и заголовку. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post}{Post}} $>$ \mbox{\hyperlink{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_post_repository_a040075cdcb1cbd763624547d9a76cc28}{find\+All\+By\+Author\+Id}} (Long id)
+\begin{DoxyCompactList}\small\item\em Получает список всех постов автора с указанным идентификатором. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Этот интерфейс предоставляет методы для работы с сущностью Post в базе данных. 
+
+\doxysubsection{Методы}
+\Hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_post_repository_a040075cdcb1cbd763624547d9a76cc28}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_post_repository_a040075cdcb1cbd763624547d9a76cc28} 
+\index{edu.mirea.vitality.blog.repository.PostRepository@{edu.mirea.vitality.blog.repository.PostRepository}!findAllByAuthorId@{findAllByAuthorId}}
+\index{findAllByAuthorId@{findAllByAuthorId}!edu.mirea.vitality.blog.repository.PostRepository@{edu.mirea.vitality.blog.repository.PostRepository}}
+\doxysubsubsection{\texorpdfstring{findAllByAuthorId()}{findAllByAuthorId()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post}{Post}} $>$ edu.\+mirea.\+vitality.\+blog.\+repository.\+Post\+Repository.\+find\+All\+By\+Author\+Id (\begin{DoxyParamCaption}\item[{Long}]{id }\end{DoxyParamCaption})}
+
+
+
+Получает список всех постов автора с указанным идентификатором. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & Идентификатор автора. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Список постов автора. 
+\end{DoxyReturn}
+\Hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_post_repository_a2f2847b9b973761f665d3d5739bc30fb}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_post_repository_a2f2847b9b973761f665d3d5739bc30fb} 
+\index{edu.mirea.vitality.blog.repository.PostRepository@{edu.mirea.vitality.blog.repository.PostRepository}!findAllWithPages@{findAllWithPages}}
+\index{findAllWithPages@{findAllWithPages}!edu.mirea.vitality.blog.repository.PostRepository@{edu.mirea.vitality.blog.repository.PostRepository}}
+\doxysubsubsection{\texorpdfstring{findAllWithPages()}{findAllWithPages()}}
+{\footnotesize\ttfamily Page$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_post}{Post}} $>$ edu.\+mirea.\+vitality.\+blog.\+repository.\+Post\+Repository.\+find\+All\+With\+Pages (\begin{DoxyParamCaption}\item[{@Param("{}category\+Id"{}) Long}]{category\+Id,  }\item[{@Param("{}title"{}) String}]{title,  }\item[{Pageable}]{pageable }\end{DoxyParamCaption})}
+
+
+
+Получает страницу постов с учетом фильтрации по категории и заголовку. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em category\+Id} & Идентификатор категории (может быть null). \\
+\hline
+{\em title} & Заголовок поста (может быть null). \\
+\hline
+{\em pageable} & Интерфейс для создания пагинации. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Страница постов, отсортированных по дате создания в порядке убывания. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов интерфейса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+repository/\mbox{\hyperlink{_post_repository_8java}{Post\+Repository.\+java}}\end{DoxyCompactItemize}

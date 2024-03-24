@@ -27,52 +27,50 @@ import java.util.stream.Stream;
 import static java.util.Objects.isNull;
 
 /**
- * Управление файлами
+ * @class FileService
+ * @brief Этот класс предоставляет сервис для работы с файлами.
  */
 @Service
 @RequiredArgsConstructor
 public class FileService {
-
     private final AmazonS3 yandexS3;
     private final UploadedFileRepository repository;
     private final CloudStorageConfig cloudStorageConfig;
 
-
     /**
-     * Сохранение файла
+     * @brief Сохраняет файл.
+     * @param file Файл для сохранения.
+     * @return Сохраненный файл.
      */
     private UploadedFile save(UploadedFile file) {
         return repository.save(file);
     }
 
     /**
-     * Загрузка файлов на сервер
-     *
-     * @param files Массив файлов
-     * @return Список идентификаторов загруженных файлов
+     * @brief Загружает файлы на сервер и возвращает их идентификаторы.
+     * @param files Массив файлов для загрузки.
+     * @return Список идентификаторов загруженных файлов.
      */
     public List<UUID> uploadFilesAndGetIds(MultipartFile[] files) {
         return Stream.of(files).map(this::saveFile).map(UploadedFile::getId).toList();
     }
 
     /**
-     * Загрузка файлов на сервер
-     *
-     * @param files Массив файлов
-     * @return Список загруженных файлов
+     * @brief Загружает файлы на сервер.
+     * @param files Список файлов для загрузки.
+     * @return Список загруженных файлов.
      */
     public List<UploadedFile> uploadFiles(List<MultipartFile> files) {
         return files.stream().map(this::saveFile).toList();
     }
 
-
     /**
-     * Сохранение файла в облаке
-     *
-     * @param file Файл
-     * @return Сохранённый файл
+     * @brief Сохраняет файл в облаке.
+     * @param file Файл для сохранения.
+     * @return Сохраненный файл.
      */
     private UploadedFile saveFile(MultipartFile file) {
+        // Проверяем файл и его название
         if (isNull(file) || isNull(file.getOriginalFilename())) {
             throw new FileSaveProblem();
         }
@@ -94,10 +92,10 @@ public class FileService {
     }
 
     /**
-     * Сохранение файла в облаке
-     *
-     * @param file Файл
-     * @param code Код файла
+     * @brief Сохраняет файл в облаке.
+     * @param file Файл для сохранения.
+     * @param code Код файла.
+     * @throws FileSaveProblem Если возникает проблема при сохранении файла.
      */
     public void saveInCloud(MultipartFile file, String code) throws FileSaveProblem {
         try (ByteArrayInputStream inputStream = new ByteArrayInputStream(file.getBytes())) {
@@ -110,41 +108,36 @@ public class FileService {
         }
     }
 
-
     /**
-     * Получение данных о всех файлах
-     * TODO: Переделать на пагинацию, пока это не используется, оставим так
-     *
-     * @return Список файлов
+     * @brief Получает список всех файлов.
+     * @return Список файлов.
      */
     public List<UploadedFile> getAll() {
         return repository.findAll();
     }
 
     /**
-     * Поиск данных о файле по идентификатору
-     *
-     * @param id идентификатор файла
-     * @return Данные о файле
+     * @brief Находит файл по его идентификатору.
+     * @param id Идентификатор файла.
+     * @return Файл.
      */
     public Optional<UploadedFile> findById(UUID id) {
         return repository.findById(id);
     }
 
     /**
-     * Получение файла по идентификатору
-     *
-     * @param id идентификатор файла
-     * @return Данные о файле
+     * @brief Получает файл по его идентификатору.
+     * @param id Идентификатор файла.
+     * @return Файл.
      */
     public UploadedFile getById(UUID id) {
-        return findById(id).orElseThrow(
-                () -> new FileNotFoundProblem(id)
-        );
+        return findById(id).orElseThrow(() -> new FileNotFoundProblem(id));
     }
 
     /**
-     * Загрузка файла с облака
+     * @brief Загружает файл с облака.
+     * @param fileId Идентификатор файла.
+     * @return Данные о файле.
      */
     public UploadedFileContentResponse downloadFile(UUID fileId) {
         var file = getById(fileId);
@@ -164,9 +157,8 @@ public class FileService {
     }
 
     /**
-     * Удаление файла по id
-     *
-     * @param fileId id файла
+     * @brief Удаляет файл по его идентификатору.
+     * @param fileId Идентификатор файла.
      */
     public void deleteById(UUID fileId) {
         var uploadedFile = getById(fileId);

@@ -1,0 +1,113 @@
+\doxysection{Интерфейс edu.\+mirea.\+vitality.\+blog.\+repository.\+User\+Repository}
+\hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_user_repository}{}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_user_repository}\index{edu.mirea.vitality.blog.repository.UserRepository@{edu.mirea.vitality.blog.repository.UserRepository}}
+
+
+Этот интерфейс предоставляет методы для работы с сущностью User в базе данных.  
+
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+Optional$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} $>$ \mbox{\hyperlink{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_user_repository_a80f3cd6e35e739628b85732bbff3a7e8}{find\+By\+Username}} (String username)
+\begin{DoxyCompactList}\small\item\em Находит пользователя по имени пользователя. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_user_repository_a76a47dd5f82efd065ec2dc7a6e645c4d}{exists\+By\+Username}} (String username)
+\begin{DoxyCompactList}\small\item\em Проверяет существование пользователя по имени пользователя. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_user_repository_a3adf648cf3ba0c1ae6e0cf47113b8487}{exists\+By\+Email}} (String email)
+\begin{DoxyCompactList}\small\item\em Проверяет существование пользователя по адресу электронной почты. \end{DoxyCompactList}\item 
+Page$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} $>$ \mbox{\hyperlink{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_user_repository_adf9aaf54dda0824aa59f5ab72de513ea}{find\+All\+With\+Filter}} ( @Param("{}id"{}) Long id, @Param("{}username"{}) String username, @Param("{}email"{}) String email, @Param("{}role"{}) \mbox{\hyperlink{enumedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_role}{Role}} role, @Param("{}is\+Banned"{}) Boolean is\+Banned, @Param("{}time"{}) Offset\+Date\+Time time, Pageable pageable)
+\begin{DoxyCompactList}\small\item\em Получает страницу пользователей с учетом фильтрации. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Этот интерфейс предоставляет методы для работы с сущностью User в базе данных. 
+
+\doxysubsection{Методы}
+\Hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_user_repository_a3adf648cf3ba0c1ae6e0cf47113b8487}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_user_repository_a3adf648cf3ba0c1ae6e0cf47113b8487} 
+\index{edu.mirea.vitality.blog.repository.UserRepository@{edu.mirea.vitality.blog.repository.UserRepository}!existsByEmail@{existsByEmail}}
+\index{existsByEmail@{existsByEmail}!edu.mirea.vitality.blog.repository.UserRepository@{edu.mirea.vitality.blog.repository.UserRepository}}
+\doxysubsubsection{\texorpdfstring{existsByEmail()}{existsByEmail()}}
+{\footnotesize\ttfamily boolean edu.\+mirea.\+vitality.\+blog.\+repository.\+User\+Repository.\+exists\+By\+Email (\begin{DoxyParamCaption}\item[{String}]{email }\end{DoxyParamCaption})}
+
+
+
+Проверяет существование пользователя по адресу электронной почты. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em email} & Адрес электронной почты. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true, если пользователь существует, иначе false. 
+\end{DoxyReturn}
+\Hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_user_repository_a76a47dd5f82efd065ec2dc7a6e645c4d}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_user_repository_a76a47dd5f82efd065ec2dc7a6e645c4d} 
+\index{edu.mirea.vitality.blog.repository.UserRepository@{edu.mirea.vitality.blog.repository.UserRepository}!existsByUsername@{existsByUsername}}
+\index{existsByUsername@{existsByUsername}!edu.mirea.vitality.blog.repository.UserRepository@{edu.mirea.vitality.blog.repository.UserRepository}}
+\doxysubsubsection{\texorpdfstring{existsByUsername()}{existsByUsername()}}
+{\footnotesize\ttfamily boolean edu.\+mirea.\+vitality.\+blog.\+repository.\+User\+Repository.\+exists\+By\+Username (\begin{DoxyParamCaption}\item[{String}]{username }\end{DoxyParamCaption})}
+
+
+
+Проверяет существование пользователя по имени пользователя. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em username} & Имя пользователя. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true, если пользователь существует, иначе false. 
+\end{DoxyReturn}
+\Hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_user_repository_adf9aaf54dda0824aa59f5ab72de513ea}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_user_repository_adf9aaf54dda0824aa59f5ab72de513ea} 
+\index{edu.mirea.vitality.blog.repository.UserRepository@{edu.mirea.vitality.blog.repository.UserRepository}!findAllWithFilter@{findAllWithFilter}}
+\index{findAllWithFilter@{findAllWithFilter}!edu.mirea.vitality.blog.repository.UserRepository@{edu.mirea.vitality.blog.repository.UserRepository}}
+\doxysubsubsection{\texorpdfstring{findAllWithFilter()}{findAllWithFilter()}}
+{\footnotesize\ttfamily Page$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} $>$ edu.\+mirea.\+vitality.\+blog.\+repository.\+User\+Repository.\+find\+All\+With\+Filter (\begin{DoxyParamCaption}\item[{@Param("{}id"{}) Long}]{id,  }\item[{@Param("{}username"{}) String}]{username,  }\item[{@Param("{}email"{}) String}]{email,  }\item[{@Param("{}role"{}) \mbox{\hyperlink{enumedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_role}{Role}}}]{role,  }\item[{@Param("{}is\+Banned"{}) Boolean}]{is\+Banned,  }\item[{@Param("{}time"{}) Offset\+Date\+Time}]{time,  }\item[{Pageable}]{pageable }\end{DoxyParamCaption})}
+
+
+
+Получает страницу пользователей с учетом фильтрации. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & Идентификатор пользователя (может быть null). \\
+\hline
+{\em username} & Имя пользователя (может быть null). \\
+\hline
+{\em email} & Адрес электронной почты (может быть null). \\
+\hline
+{\em role} & Роль пользователя (может быть null). \\
+\hline
+{\em is\+Banned} & Признак блокировки пользователя (может быть null). \\
+\hline
+{\em time} & Время для проверки блокировки пользователя (может быть null). \\
+\hline
+{\em pageable} & Интерфейс для создания пагинации. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Страница пользователей, отфильтрованных в соответствии с заданными параметрами. 
+\end{DoxyReturn}
+\Hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_user_repository_a80f3cd6e35e739628b85732bbff3a7e8}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_user_repository_a80f3cd6e35e739628b85732bbff3a7e8} 
+\index{edu.mirea.vitality.blog.repository.UserRepository@{edu.mirea.vitality.blog.repository.UserRepository}!findByUsername@{findByUsername}}
+\index{findByUsername@{findByUsername}!edu.mirea.vitality.blog.repository.UserRepository@{edu.mirea.vitality.blog.repository.UserRepository}}
+\doxysubsubsection{\texorpdfstring{findByUsername()}{findByUsername()}}
+{\footnotesize\ttfamily Optional$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} $>$ edu.\+mirea.\+vitality.\+blog.\+repository.\+User\+Repository.\+find\+By\+Username (\begin{DoxyParamCaption}\item[{String}]{username }\end{DoxyParamCaption})}
+
+
+
+Находит пользователя по имени пользователя. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em username} & Имя пользователя. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Опциональный объект, содержащий пользователя, если найден. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов интерфейса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+repository/\mbox{\hyperlink{_user_repository_8java}{User\+Repository.\+java}}\end{DoxyCompactItemize}

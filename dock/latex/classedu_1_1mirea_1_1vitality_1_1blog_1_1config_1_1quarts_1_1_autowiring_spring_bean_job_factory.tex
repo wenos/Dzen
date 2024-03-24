@@ -1,0 +1,66 @@
+\doxysection{Класс edu.\+mirea.\+vitality.\+blog.\+config.\+quarts.\+Autowiring\+Spring\+Bean\+Job\+Factory}
+\hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1config_1_1quarts_1_1_autowiring_spring_bean_job_factory}{}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1config_1_1quarts_1_1_autowiring_spring_bean_job_factory}\index{edu.mirea.vitality.blog.config.quarts.AutowiringSpringBeanJobFactory@{edu.mirea.vitality.blog.config.quarts.AutowiringSpringBeanJobFactory}}
+
+
+Предоставляет возможность инъекции зависимостей в Quartz Job при его создании  
+
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1config_1_1quarts_1_1_autowiring_spring_bean_job_factory_adf1c0d27ec78a4a4be99d74817591f90}{set\+Application\+Context}} (final Application\+Context context)
+\begin{DoxyCompactList}\small\item\em Устанавливает контекст приложения для фабрики \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+Object \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1config_1_1quarts_1_1_autowiring_spring_bean_job_factory_addd07352e031d0670cebabef028b5b5b}{create\+Job\+Instance}} (final Trigger\+Fired\+Bundle bundle)  throws Exception 
+\begin{DoxyCompactList}\small\item\em Создает экземпляр задания (Job) и инъектирует зависимости в него \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Предоставляет возможность инъекции зависимостей в Quartz Job при его создании 
+
+\doxysubsection{Методы}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1config_1_1quarts_1_1_autowiring_spring_bean_job_factory_addd07352e031d0670cebabef028b5b5b}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1config_1_1quarts_1_1_autowiring_spring_bean_job_factory_addd07352e031d0670cebabef028b5b5b} 
+\index{edu.mirea.vitality.blog.config.quarts.AutowiringSpringBeanJobFactory@{edu.mirea.vitality.blog.config.quarts.AutowiringSpringBeanJobFactory}!createJobInstance@{createJobInstance}}
+\index{createJobInstance@{createJobInstance}!edu.mirea.vitality.blog.config.quarts.AutowiringSpringBeanJobFactory@{edu.mirea.vitality.blog.config.quarts.AutowiringSpringBeanJobFactory}}
+\doxysubsubsection{\texorpdfstring{createJobInstance()}{createJobInstance()}}
+{\footnotesize\ttfamily Object edu.\+mirea.\+vitality.\+blog.\+config.\+quarts.\+Autowiring\+Spring\+Bean\+Job\+Factory.\+create\+Job\+Instance (\begin{DoxyParamCaption}\item[{final Trigger\+Fired\+Bundle}]{bundle }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Создает экземпляр задания (Job) и инъектирует зависимости в него 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em bundle} & Информация о задании, запускаемом триггером \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Экземпляр задания (Job) с инъектированными зависимостями 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em Exception} & В случае возникновения ошибки при создании задания \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1config_1_1quarts_1_1_autowiring_spring_bean_job_factory_adf1c0d27ec78a4a4be99d74817591f90}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1config_1_1quarts_1_1_autowiring_spring_bean_job_factory_adf1c0d27ec78a4a4be99d74817591f90} 
+\index{edu.mirea.vitality.blog.config.quarts.AutowiringSpringBeanJobFactory@{edu.mirea.vitality.blog.config.quarts.AutowiringSpringBeanJobFactory}!setApplicationContext@{setApplicationContext}}
+\index{setApplicationContext@{setApplicationContext}!edu.mirea.vitality.blog.config.quarts.AutowiringSpringBeanJobFactory@{edu.mirea.vitality.blog.config.quarts.AutowiringSpringBeanJobFactory}}
+\doxysubsubsection{\texorpdfstring{setApplicationContext()}{setApplicationContext()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+config.\+quarts.\+Autowiring\+Spring\+Bean\+Job\+Factory.\+set\+Application\+Context (\begin{DoxyParamCaption}\item[{final Application\+Context}]{context }\end{DoxyParamCaption})}
+
+
+
+Устанавливает контекст приложения для фабрики 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em context} & Контекст приложения \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+config/quarts/Autowiring\+Spring\+Bean\+Job\+Factory.\+java\end{DoxyCompactItemize}

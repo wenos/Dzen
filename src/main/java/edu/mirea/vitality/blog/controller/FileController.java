@@ -22,16 +22,23 @@ import org.springframework.web.multipart.MultipartFile;
 import java.util.List;
 import java.util.UUID;
 
+/**
+ * @class FileController
+ * @brief Этот класс представляет собой контроллер для работы с файлами.
+ */
 @RestController
 @RequestMapping("/files")
 @RequiredArgsConstructor
 @Tag(name = "Работа с файлами")
 public class FileController {
+
     private final FileService service;
     private final UploadedFileMapper mapper;
 
     /**
-     * Загрузка файла
+     * @brief Загружает файлы на сервер.
+     * @param files Массив файлов для загрузки.
+     * @return Список идентификаторов загруженных файлов.
      */
     @Operation(summary = "Загрузка файла")
     @PostMapping("/upload")
@@ -41,8 +48,8 @@ public class FileController {
     }
 
     /**
-     * Получение всех файлов
-     * TODO: Пагинация
+     * @brief Получает все файлы на сервере.
+     * @return Список всех файлов.
      */
     @Operation(summary = "Получение всех файлов")
     @GetMapping
@@ -52,7 +59,9 @@ public class FileController {
     }
 
     /**
-     * Получение файла по id
+     * @brief Получает файл по его идентификатору.
+     * @param fileId Идентификатор файла.
+     * @return Ответ с информацией о файле.
      */
     @Operation(summary = "Получение файла по id")
     @GetMapping("/{fileId}")
@@ -62,7 +71,9 @@ public class FileController {
     }
 
     /**
-     * Загрузка файла с сервера
+     * @brief Загружает файл с сервера.
+     * @param fileId Идентификатор файла.
+     * @return Ответ с данными файла для скачивания.
      */
     @Operation(summary = "Загрузка файла с сервера")
     @GetMapping("/download/{fileId}")
@@ -79,6 +90,4 @@ public class FileController {
                 .headers(headers)
                 .body(file.content());
     }
-
-
 }

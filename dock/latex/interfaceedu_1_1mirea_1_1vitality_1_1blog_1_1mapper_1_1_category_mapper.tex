@@ -1,0 +1,81 @@
+\doxysection{Интерфейс edu.\+mirea.\+vitality.\+blog.\+mapper.\+Category\+Mapper}
+\hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_category_mapper}{}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_category_mapper}\index{edu.mirea.vitality.blog.mapper.CategoryMapper@{edu.mirea.vitality.blog.mapper.CategoryMapper}}
+
+
+Этот интерфейс предоставляет методы для преобразования объектов категорий между DTO и сущностью.  
+
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_category}{Category}} \mbox{\hyperlink{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_category_mapper_a282ab2a390829bc1a3051f055e49f465}{to\+Entity}} (Category\+Request category\+Request)
+\begin{DoxyCompactList}\small\item\em Преобразует объект запроса категории в сущность категории. \end{DoxyCompactList}\item 
+Category\+Response \mbox{\hyperlink{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_category_mapper_a8e134c34e27ba4fba931808e7e8e4177}{to\+Response}} (\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_category}{Category}} category)
+\begin{DoxyCompactList}\small\item\em Преобразует сущность категории в объект ответа категории. \end{DoxyCompactList}\item 
+List$<$ Category\+Response $>$ \mbox{\hyperlink{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_category_mapper_a7977919a23893722c0d16bb351a8df6b}{to\+Response}} (List$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_category}{Category}} $>$ categories)
+\begin{DoxyCompactList}\small\item\em Преобразует список сущностей категорий в список объектов ответа категорий. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Этот интерфейс предоставляет методы для преобразования объектов категорий между DTO и сущностью. 
+
+\doxysubsection{Методы}
+\Hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_category_mapper_a282ab2a390829bc1a3051f055e49f465}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_category_mapper_a282ab2a390829bc1a3051f055e49f465} 
+\index{edu.mirea.vitality.blog.mapper.CategoryMapper@{edu.mirea.vitality.blog.mapper.CategoryMapper}!toEntity@{toEntity}}
+\index{toEntity@{toEntity}!edu.mirea.vitality.blog.mapper.CategoryMapper@{edu.mirea.vitality.blog.mapper.CategoryMapper}}
+\doxysubsubsection{\texorpdfstring{toEntity()}{toEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_category}{Category}} edu.\+mirea.\+vitality.\+blog.\+mapper.\+Category\+Mapper.\+to\+Entity (\begin{DoxyParamCaption}\item[{Category\+Request}]{category\+Request }\end{DoxyParamCaption})}
+
+
+
+Преобразует объект запроса категории в сущность категории. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em category\+Request} & Запрос категории. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Сущность категории. 
+\end{DoxyReturn}
+\Hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_category_mapper_a8e134c34e27ba4fba931808e7e8e4177}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_category_mapper_a8e134c34e27ba4fba931808e7e8e4177} 
+\index{edu.mirea.vitality.blog.mapper.CategoryMapper@{edu.mirea.vitality.blog.mapper.CategoryMapper}!toResponse@{toResponse}}
+\index{toResponse@{toResponse}!edu.mirea.vitality.blog.mapper.CategoryMapper@{edu.mirea.vitality.blog.mapper.CategoryMapper}}
+\doxysubsubsection{\texorpdfstring{toResponse()}{toResponse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Category\+Response edu.\+mirea.\+vitality.\+blog.\+mapper.\+Category\+Mapper.\+to\+Response (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_category}{Category}}}]{category }\end{DoxyParamCaption})}
+
+
+
+Преобразует сущность категории в объект ответа категории. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em category} & Сущность категории. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Ответ категории. 
+\end{DoxyReturn}
+\Hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_category_mapper_a7977919a23893722c0d16bb351a8df6b}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_category_mapper_a7977919a23893722c0d16bb351a8df6b} 
+\index{edu.mirea.vitality.blog.mapper.CategoryMapper@{edu.mirea.vitality.blog.mapper.CategoryMapper}!toResponse@{toResponse}}
+\index{toResponse@{toResponse}!edu.mirea.vitality.blog.mapper.CategoryMapper@{edu.mirea.vitality.blog.mapper.CategoryMapper}}
+\doxysubsubsection{\texorpdfstring{toResponse()}{toResponse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily List$<$ Category\+Response $>$ edu.\+mirea.\+vitality.\+blog.\+mapper.\+Category\+Mapper.\+to\+Response (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_category}{Category}} $>$}]{categories }\end{DoxyParamCaption})}
+
+
+
+Преобразует список сущностей категорий в список объектов ответа категорий. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em categories} & Список сущностей категорий. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Список ответов категорий. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов интерфейса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+mapper/\mbox{\hyperlink{_category_mapper_8java}{Category\+Mapper.\+java}}\end{DoxyCompactItemize}

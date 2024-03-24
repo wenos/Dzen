@@ -8,6 +8,15 @@ import org.springframework.stereotype.Service;
 
 import java.time.OffsetDateTime;
 
+/**
+ * @file DeleteService.java
+ * @brief Этот файл содержит класс DeleteService.
+ */
+
+/**
+ * @class DeleteService
+ * @brief Этот класс предоставляет сервис для удаления пользователей и связанных с ними данных.
+ */
 @Service
 @RequiredArgsConstructor
 public class DeleteService {
@@ -16,21 +25,20 @@ public class DeleteService {
     private final CommentService commentService;
     private final SuperUserConfig superUserConfig;
 
-
     /**
-     * Удаление пользователя
-     *
-     * @param request Запрос на удаление пользователя
+     * @brief Удаляет пользователя и связанные с ним данные.
+     * @param request Запрос на удаление пользователя.
+     * @throws ForbiddenAccessProblem Если текущий пользователь не имеет прав на удаление пользователя или удаление суперпользователя.
      */
     public void deleteUser(DeleteUserRequest request) {
-        // Проверяем если права на удаление пользователя
+        // Проверяем права на удаление пользователя
         var currentUser = userService.getCurrentUser();
         var userForDelete = userService.getById(request.userId());
 
         // Если это не сам пользователь, проверяем
         if (!currentUser.getId().equals(userForDelete.getId())) {
 
-            // Если не админ, то кидаем ошибку
+            // Если не админ, кидаем ошибку
             if (!currentUser.isAdmin()) {
                 throw new ForbiddenAccessProblem();
             }
@@ -46,11 +54,13 @@ public class DeleteService {
             throw new ForbiddenAccessProblem();
         }
 
+        // Удаление комментариев, если указано в запросе
         if (request.deleteComments()) {
             commentService.deleteByAuthorId(userForDelete.getId());
             userForDelete.setComments(null);
         }
 
+        // Удаление постов, если указано в запросе
         if (request.deletePosts()) {
             postService.deleteByAuthorId(userForDelete.getId());
             userForDelete.setPosts(null);
@@ -60,3 +70,4 @@ public class DeleteService {
         userService.save(userForDelete);
     }
 }
+

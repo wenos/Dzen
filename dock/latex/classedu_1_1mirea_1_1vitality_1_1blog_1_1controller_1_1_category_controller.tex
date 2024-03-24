@@ -1,0 +1,115 @@
+\doxysection{Класс edu.\+mirea.\+vitality.\+blog.\+controller.\+Category\+Controller}
+\hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_category_controller}{}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_category_controller}\index{edu.mirea.vitality.blog.controller.CategoryController@{edu.mirea.vitality.blog.controller.CategoryController}}
+
+
+Этот класс представляет собой контроллер для управления категориями.  
+
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+Category\+Response \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_category_controller_a96babb29e78d44306f4e57f32537ddaf}{create}} (@Request\+Body @Valid Category\+Request request)
+\begin{DoxyCompactList}\small\item\em Создает новую категорию. \end{DoxyCompactList}\item 
+Category\+Response \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_category_controller_a8f4f866bc16d619ead3b573a1a885754}{get\+By\+Id}} (@Path\+Variable Long id)
+\begin{DoxyCompactList}\small\item\em Получает категорию по ее идентификатору. \end{DoxyCompactList}\item 
+List$<$ Category\+Response $>$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_category_controller_a4368f5e7e6760e509274d38abb013569}{get\+All}} ()
+\begin{DoxyCompactList}\small\item\em Получает все категории. \end{DoxyCompactList}\item 
+Category\+Response \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_category_controller_a01e4986d3379c41bf3bc2f08b24f4417}{update}} (@Path\+Variable Long id, @Request\+Body @Valid Category\+Request request)
+\begin{DoxyCompactList}\small\item\em Обновляет категорию по ее идентификатору. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_category_controller_ad8bf6b5e3708e032fc418d953e9e41cd}{delete}} (@Path\+Variable Long id)
+\begin{DoxyCompactList}\small\item\em Удаляет категорию по ее идентификатору. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Этот класс представляет собой контроллер для управления категориями. 
+
+\doxysubsection{Методы}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_category_controller_a96babb29e78d44306f4e57f32537ddaf}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_category_controller_a96babb29e78d44306f4e57f32537ddaf} 
+\index{edu.mirea.vitality.blog.controller.CategoryController@{edu.mirea.vitality.blog.controller.CategoryController}!create@{create}}
+\index{create@{create}!edu.mirea.vitality.blog.controller.CategoryController@{edu.mirea.vitality.blog.controller.CategoryController}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily Category\+Response edu.\+mirea.\+vitality.\+blog.\+controller.\+Category\+Controller.\+create (\begin{DoxyParamCaption}\item[{@Request\+Body @Valid Category\+Request}]{request }\end{DoxyParamCaption})}
+
+
+
+Создает новую категорию. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em request} & Данные запроса категории. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Созданный ответ категории. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_category_controller_ad8bf6b5e3708e032fc418d953e9e41cd}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_category_controller_ad8bf6b5e3708e032fc418d953e9e41cd} 
+\index{edu.mirea.vitality.blog.controller.CategoryController@{edu.mirea.vitality.blog.controller.CategoryController}!delete@{delete}}
+\index{delete@{delete}!edu.mirea.vitality.blog.controller.CategoryController@{edu.mirea.vitality.blog.controller.CategoryController}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+controller.\+Category\+Controller.\+delete (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{id }\end{DoxyParamCaption})}
+
+
+
+Удаляет категорию по ее идентификатору. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & Идентификатор категории. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_category_controller_a4368f5e7e6760e509274d38abb013569}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_category_controller_a4368f5e7e6760e509274d38abb013569} 
+\index{edu.mirea.vitality.blog.controller.CategoryController@{edu.mirea.vitality.blog.controller.CategoryController}!getAll@{getAll}}
+\index{getAll@{getAll}!edu.mirea.vitality.blog.controller.CategoryController@{edu.mirea.vitality.blog.controller.CategoryController}}
+\doxysubsubsection{\texorpdfstring{getAll()}{getAll()}}
+{\footnotesize\ttfamily List$<$ Category\+Response $>$ edu.\+mirea.\+vitality.\+blog.\+controller.\+Category\+Controller.\+get\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получает все категории. 
+
+\begin{DoxyReturn}{Возвращает}
+Список ответов категорий. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_category_controller_a8f4f866bc16d619ead3b573a1a885754}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_category_controller_a8f4f866bc16d619ead3b573a1a885754} 
+\index{edu.mirea.vitality.blog.controller.CategoryController@{edu.mirea.vitality.blog.controller.CategoryController}!getById@{getById}}
+\index{getById@{getById}!edu.mirea.vitality.blog.controller.CategoryController@{edu.mirea.vitality.blog.controller.CategoryController}}
+\doxysubsubsection{\texorpdfstring{getById()}{getById()}}
+{\footnotesize\ttfamily Category\+Response edu.\+mirea.\+vitality.\+blog.\+controller.\+Category\+Controller.\+get\+By\+Id (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{id }\end{DoxyParamCaption})}
+
+
+
+Получает категорию по ее идентификатору. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & Идентификатор категории. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Ответ категории. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_category_controller_a01e4986d3379c41bf3bc2f08b24f4417}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_category_controller_a01e4986d3379c41bf3bc2f08b24f4417} 
+\index{edu.mirea.vitality.blog.controller.CategoryController@{edu.mirea.vitality.blog.controller.CategoryController}!update@{update}}
+\index{update@{update}!edu.mirea.vitality.blog.controller.CategoryController@{edu.mirea.vitality.blog.controller.CategoryController}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily Category\+Response edu.\+mirea.\+vitality.\+blog.\+controller.\+Category\+Controller.\+update (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{id,  }\item[{@Request\+Body @Valid Category\+Request}]{request }\end{DoxyParamCaption})}
+
+
+
+Обновляет категорию по ее идентификатору. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & Идентификатор категории. \\
+\hline
+{\em request} & Данные запроса категории. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Обновленный ответ категории. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+controller/Category\+Controller.\+java\end{DoxyCompactItemize}

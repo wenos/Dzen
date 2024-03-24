@@ -14,17 +14,31 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * @file CategoryService.java
+ * @brief Этот файл содержит класс CategoryService.
+ */
+
+
+/**
+ * @class CategoryService
+ * @brief Этот класс предоставляет сервисные методы для работы с категориями.
+ */
 @Service
 @AllArgsConstructor
 public class CategoryService {
 
     private final CategoryRepository categoryRepository;
-
     private final UserService userService;
 
+    /**
+     * @brief Создает новую категорию.
+     * @param category Категория, которую нужно создать.
+     * @return Созданная категория.
+     * @throws ForbiddenAccessProblem Если текущий пользователь не является администратором.
+     * @throws CategoryNotUniqueTitleProblem Если категория с таким заголовком уже существует.
+     */
     public Category create(Category category) {
-
-
         User currentUser = userService.getCurrentUser();
         if (!currentUser.isAdmin()) {
             throw new ForbiddenAccessProblem();
@@ -37,6 +51,10 @@ public class CategoryService {
         return categoryRepository.save(category);
     }
 
+    /**
+     * @brief Получает список всех категорий.
+     * @return Список всех категорий.
+     */
     public List<Category> getAll() {
         return categoryRepository.findAll();
     }
@@ -45,12 +63,25 @@ public class CategoryService {
         return categoryRepository.findById(id);
     }
 
+    /**
+     * @brief Получает категорию по ее идентификатору.
+     * @param id Идентификатор категории.
+     * @return Категория с заданным идентификатором.
+     * @throws CategoryNotFoundProblem Если категория не найдена.
+     */
     public Category getById(Long id) {
         return findById(id).orElseThrow(() -> new CategoryNotFoundProblem(id));
     }
 
+    /**
+     * @brief Обновляет информацию о категории по ее идентификатору.
+     * @param id Идентификатор категории.
+     * @param category Новая информация о категории.
+     * @return Обновленная категория.
+     * @throws ForbiddenAccessProblem Если текущий пользователь не является администратором.
+     * @throws CategoryNotUniqueTitleProblem Если категория с таким заголовком уже существует.
+     */
     public Category updateById(Long id, CategoryRequest category) {
-
         User currentUser = userService.getCurrentUser();
         if (!currentUser.isAdmin()) {
             throw new ForbiddenAccessProblem();
@@ -65,8 +96,13 @@ public class CategoryService {
         return categoryRepository.save(foundCategory);
     }
 
+    /**
+     * @brief Удаляет категорию по ее идентификатору.
+     * @param id Идентификатор категории.
+     * @throws ForbiddenAccessProblem Если текущий пользователь не является администратором.
+     * @throws CategoryNotFoundProblem Если категория не найдена.
+     */
     public void deleteById(Long id) {
-
         User currentUser = userService.getCurrentUser();
         if (!currentUser.isAdmin()) {
             throw new ForbiddenAccessProblem();
@@ -75,7 +111,6 @@ public class CategoryService {
         Category defaultCategory = getById(1L);
 
         category.getPosts().forEach(post -> post.setCategory(defaultCategory));
-
 
         categoryRepository.deleteById(id);
     }

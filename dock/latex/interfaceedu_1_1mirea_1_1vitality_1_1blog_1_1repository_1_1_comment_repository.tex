@@ -1,0 +1,77 @@
+\doxysection{Интерфейс edu.\+mirea.\+vitality.\+blog.\+repository.\+Comment\+Repository}
+\hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_comment_repository}{}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_comment_repository}\index{edu.mirea.vitality.blog.repository.CommentRepository@{edu.mirea.vitality.blog.repository.CommentRepository}}
+
+
+Этот интерфейс предоставляет методы для работы с сущностью Comment в базе данных.  
+
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+Page$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_comment}{Comment}} $>$ \mbox{\hyperlink{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_comment_repository_ad1d3a2fa81ed26480a279ee20f6f6aca}{find\+All\+By\+Post\+Id}} (Long post\+Id, Pageable pageable)
+\begin{DoxyCompactList}\small\item\em Получает страницу комментариев для указанного идентификатора поста. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_comment_repository_acc728faa04afa0d6423da1c8e614879b}{delete\+Old\+Comments}} (@Param("{}cutoff\+Date"{}) Offset\+Date\+Time cutoff\+Date)
+\begin{DoxyCompactList}\small\item\em Удаляет старые комментарии, созданные до указанной даты. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_comment_repository_a1c00f9024cb4bb7d7797aef4f6459470}{delete\+All\+By\+Author\+Id}} (Long id)
+\begin{DoxyCompactList}\small\item\em Удаляет все комментарии автора с указанным идентификатором. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Этот интерфейс предоставляет методы для работы с сущностью Comment в базе данных. 
+
+\doxysubsection{Методы}
+\Hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_comment_repository_a1c00f9024cb4bb7d7797aef4f6459470}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_comment_repository_a1c00f9024cb4bb7d7797aef4f6459470} 
+\index{edu.mirea.vitality.blog.repository.CommentRepository@{edu.mirea.vitality.blog.repository.CommentRepository}!deleteAllByAuthorId@{deleteAllByAuthorId}}
+\index{deleteAllByAuthorId@{deleteAllByAuthorId}!edu.mirea.vitality.blog.repository.CommentRepository@{edu.mirea.vitality.blog.repository.CommentRepository}}
+\doxysubsubsection{\texorpdfstring{deleteAllByAuthorId()}{deleteAllByAuthorId()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+repository.\+Comment\+Repository.\+delete\+All\+By\+Author\+Id (\begin{DoxyParamCaption}\item[{Long}]{id }\end{DoxyParamCaption})}
+
+
+
+Удаляет все комментарии автора с указанным идентификатором. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & Идентификатор автора комментариев. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_comment_repository_acc728faa04afa0d6423da1c8e614879b}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_comment_repository_acc728faa04afa0d6423da1c8e614879b} 
+\index{edu.mirea.vitality.blog.repository.CommentRepository@{edu.mirea.vitality.blog.repository.CommentRepository}!deleteOldComments@{deleteOldComments}}
+\index{deleteOldComments@{deleteOldComments}!edu.mirea.vitality.blog.repository.CommentRepository@{edu.mirea.vitality.blog.repository.CommentRepository}}
+\doxysubsubsection{\texorpdfstring{deleteOldComments()}{deleteOldComments()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+repository.\+Comment\+Repository.\+delete\+Old\+Comments (\begin{DoxyParamCaption}\item[{@Param("{}cutoff\+Date"{}) Offset\+Date\+Time}]{cutoff\+Date }\end{DoxyParamCaption})}
+
+
+
+Удаляет старые комментарии, созданные до указанной даты. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em cutoff\+Date} & Дата, до которой нужно удалить комментарии. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_comment_repository_ad1d3a2fa81ed26480a279ee20f6f6aca}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_comment_repository_ad1d3a2fa81ed26480a279ee20f6f6aca} 
+\index{edu.mirea.vitality.blog.repository.CommentRepository@{edu.mirea.vitality.blog.repository.CommentRepository}!findAllByPostId@{findAllByPostId}}
+\index{findAllByPostId@{findAllByPostId}!edu.mirea.vitality.blog.repository.CommentRepository@{edu.mirea.vitality.blog.repository.CommentRepository}}
+\doxysubsubsection{\texorpdfstring{findAllByPostId()}{findAllByPostId()}}
+{\footnotesize\ttfamily Page$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_comment}{Comment}} $>$ edu.\+mirea.\+vitality.\+blog.\+repository.\+Comment\+Repository.\+find\+All\+By\+Post\+Id (\begin{DoxyParamCaption}\item[{Long}]{post\+Id,  }\item[{Pageable}]{pageable }\end{DoxyParamCaption})}
+
+
+
+Получает страницу комментариев для указанного идентификатора поста. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em post\+Id} & Идентификатор поста. \\
+\hline
+{\em pageable} & Интерфейс для создания пагинации. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Страница комментариев. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов интерфейса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+repository/\mbox{\hyperlink{_comment_repository_8java}{Comment\+Repository.\+java}}\end{DoxyCompactItemize}

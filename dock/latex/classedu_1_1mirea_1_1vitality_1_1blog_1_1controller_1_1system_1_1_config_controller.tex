@@ -1,0 +1,64 @@
+\doxysection{Класс edu.\+mirea.\+vitality.\+blog.\+controller.\+system.\+Config\+Controller}
+\hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1system_1_1_config_controller}{}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1system_1_1_config_controller}\index{edu.mirea.vitality.blog.controller.system.ConfigController@{edu.mirea.vitality.blog.controller.system.ConfigController}}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Config\+Unit\+Response $>$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1system_1_1_config_controller_a280b16261688cd440db27fdc168decab}{get\+All}} ()
+\begin{DoxyCompactList}\small\item\em Получение всех конфигураций \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1system_1_1_config_controller_a78491ba0b700df6907aec21beed67315}{update\+Config}} (@Request\+Body @Valid Update\+Config\+Unit\+Request request)
+\begin{DoxyCompactList}\small\item\em Обновление конфигурации \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1system_1_1_config_controller_aafd51d7f0dd9500fac76f2196341ab52}{update\+Interval}} ( @Request\+Body @Valid Update\+Job\+Interval\+Request request, @Path\+Variable String job)
+\begin{DoxyCompactList}\small\item\em Изменение интервала удаления комментариев \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Методы}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1system_1_1_config_controller_a280b16261688cd440db27fdc168decab}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1system_1_1_config_controller_a280b16261688cd440db27fdc168decab} 
+\index{edu.mirea.vitality.blog.controller.system.ConfigController@{edu.mirea.vitality.blog.controller.system.ConfigController}!getAll@{getAll}}
+\index{getAll@{getAll}!edu.mirea.vitality.blog.controller.system.ConfigController@{edu.mirea.vitality.blog.controller.system.ConfigController}}
+\doxysubsubsection{\texorpdfstring{getAll()}{getAll()}}
+{\footnotesize\ttfamily List$<$ Config\+Unit\+Response $>$ edu.\+mirea.\+vitality.\+blog.\+controller.\+system.\+Config\+Controller.\+get\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получение всех конфигураций 
+
+\begin{DoxyReturn}{Возвращает}
+список конфигураций 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1system_1_1_config_controller_a78491ba0b700df6907aec21beed67315}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1system_1_1_config_controller_a78491ba0b700df6907aec21beed67315} 
+\index{edu.mirea.vitality.blog.controller.system.ConfigController@{edu.mirea.vitality.blog.controller.system.ConfigController}!updateConfig@{updateConfig}}
+\index{updateConfig@{updateConfig}!edu.mirea.vitality.blog.controller.system.ConfigController@{edu.mirea.vitality.blog.controller.system.ConfigController}}
+\doxysubsubsection{\texorpdfstring{updateConfig()}{updateConfig()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+controller.\+system.\+Config\+Controller.\+update\+Config (\begin{DoxyParamCaption}\item[{@Request\+Body @Valid Update\+Config\+Unit\+Request}]{request }\end{DoxyParamCaption})}
+
+
+
+Обновление конфигурации 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em request} & запрос на обновление конфигурации \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1system_1_1_config_controller_aafd51d7f0dd9500fac76f2196341ab52}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1system_1_1_config_controller_aafd51d7f0dd9500fac76f2196341ab52} 
+\index{edu.mirea.vitality.blog.controller.system.ConfigController@{edu.mirea.vitality.blog.controller.system.ConfigController}!updateInterval@{updateInterval}}
+\index{updateInterval@{updateInterval}!edu.mirea.vitality.blog.controller.system.ConfigController@{edu.mirea.vitality.blog.controller.system.ConfigController}}
+\doxysubsubsection{\texorpdfstring{updateInterval()}{updateInterval()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+controller.\+system.\+Config\+Controller.\+update\+Interval (\begin{DoxyParamCaption}\item[{@Request\+Body @Valid Update\+Job\+Interval\+Request}]{request,  }\item[{@Path\+Variable String}]{job }\end{DoxyParamCaption})}
+
+
+
+Изменение интервала удаления комментариев 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em request} & запрос на изменение интервала \\
+\hline
+{\em job} & джоба для изменения \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+controller/system/Config\+Controller.\+java\end{DoxyCompactItemize}

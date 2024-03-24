@@ -1,0 +1,62 @@
+\doxysection{Интерфейс edu.\+mirea.\+vitality.\+blog.\+repository.\+Post\+User\+Rel\+Repository}
+\hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_post_user_rel_repository}{}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_post_user_rel_repository}\index{edu.mirea.vitality.blog.repository.PostUserRelRepository@{edu.mirea.vitality.blog.repository.PostUserRelRepository}}
+
+
+Этот интерфейс предоставляет методы для работы с сущностью Post\+User\+Rel в базе данных.  
+
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_post_user_rel_repository_a0a99e29d4219257a626fbe6edb06db90}{exists\+By\+Post\+Id\+And\+User\+Id}} (Long post\+Id, Long user\+Id)
+\begin{DoxyCompactList}\small\item\em Проверяет существование связи между постом и пользователем. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_post_user_rel_repository_a4b8f42a2003bdd4368b23ab6f36c4d65}{delete\+By\+Post\+Id\+And\+User\+Id}} (Long post\+Id, Long user\+Id)
+\begin{DoxyCompactList}\small\item\em Удаляет связь между постом и пользователем. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Этот интерфейс предоставляет методы для работы с сущностью Post\+User\+Rel в базе данных. 
+
+\doxysubsection{Методы}
+\Hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_post_user_rel_repository_a4b8f42a2003bdd4368b23ab6f36c4d65}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_post_user_rel_repository_a4b8f42a2003bdd4368b23ab6f36c4d65} 
+\index{edu.mirea.vitality.blog.repository.PostUserRelRepository@{edu.mirea.vitality.blog.repository.PostUserRelRepository}!deleteByPostIdAndUserId@{deleteByPostIdAndUserId}}
+\index{deleteByPostIdAndUserId@{deleteByPostIdAndUserId}!edu.mirea.vitality.blog.repository.PostUserRelRepository@{edu.mirea.vitality.blog.repository.PostUserRelRepository}}
+\doxysubsubsection{\texorpdfstring{deleteByPostIdAndUserId()}{deleteByPostIdAndUserId()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+repository.\+Post\+User\+Rel\+Repository.\+delete\+By\+Post\+Id\+And\+User\+Id (\begin{DoxyParamCaption}\item[{Long}]{post\+Id,  }\item[{Long}]{user\+Id }\end{DoxyParamCaption})}
+
+
+
+Удаляет связь между постом и пользователем. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em post\+Id} & Идентификатор поста. \\
+\hline
+{\em user\+Id} & Идентификатор пользователя. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_post_user_rel_repository_a0a99e29d4219257a626fbe6edb06db90}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1repository_1_1_post_user_rel_repository_a0a99e29d4219257a626fbe6edb06db90} 
+\index{edu.mirea.vitality.blog.repository.PostUserRelRepository@{edu.mirea.vitality.blog.repository.PostUserRelRepository}!existsByPostIdAndUserId@{existsByPostIdAndUserId}}
+\index{existsByPostIdAndUserId@{existsByPostIdAndUserId}!edu.mirea.vitality.blog.repository.PostUserRelRepository@{edu.mirea.vitality.blog.repository.PostUserRelRepository}}
+\doxysubsubsection{\texorpdfstring{existsByPostIdAndUserId()}{existsByPostIdAndUserId()}}
+{\footnotesize\ttfamily boolean edu.\+mirea.\+vitality.\+blog.\+repository.\+Post\+User\+Rel\+Repository.\+exists\+By\+Post\+Id\+And\+User\+Id (\begin{DoxyParamCaption}\item[{Long}]{post\+Id,  }\item[{Long}]{user\+Id }\end{DoxyParamCaption})}
+
+
+
+Проверяет существование связи между постом и пользователем. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em post\+Id} & Идентификатор поста. \\
+\hline
+{\em user\+Id} & Идентификатор пользователя. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true, если связь существует, иначе false. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов интерфейса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+repository/\mbox{\hyperlink{_post_user_rel_repository_8java}{Post\+User\+Rel\+Repository.\+java}}\end{DoxyCompactItemize}

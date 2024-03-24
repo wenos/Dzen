@@ -1,0 +1,325 @@
+\doxysection{Класс edu.\+mirea.\+vitality.\+blog.\+service.\+User\+Service}
+\hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service}{}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service}\index{edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}}
+
+
+Класс, представляющий сервис для работы с пользователями.  
+
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a180a15641f22b7205abe570ede578b71}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a180a15641f22b7205abe570ede578b71} 
+void {\bfseries init\+Super\+User} ()
+\begin{DoxyCompactList}\small\item\em Создание суперпользователя, если его нет \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a0f4fb03e3b84c8dd788a408781159696}{save}} (\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} user)
+\begin{DoxyCompactList}\small\item\em Сохранение пользователя \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_ac456cbaff629790fec47eb1dcc14fa24}{create}} (\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} user)
+\begin{DoxyCompactList}\small\item\em Создание пользователя \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a2650384203598d5d057d7dd1cac9aa54}{get\+Current\+User}} ()
+\begin{DoxyCompactList}\small\item\em Получение текущего пользователя \end{DoxyCompactList}\item 
+Optional$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} $>$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a16ea680d8a84383fdb56aec96b52e7a9}{find\+By\+Id}} (Long user\+Id)
+\begin{DoxyCompactList}\small\item\em Найти пользователя по ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a42c56984afe24c2250bfa4ac26e19b20}{get\+By\+Id}} (Long user\+Id)
+\begin{DoxyCompactList}\small\item\em Получить пользователя по ID. \end{DoxyCompactList}\item 
+Optional$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} $>$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a94bd50b082d66948e4ebc4287bda72b5}{find\+By\+Username}} (String username)
+\begin{DoxyCompactList}\small\item\em Найти пользователя по имени пользователя \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a2ff502c1f6df5e8ad0d8dd59009e905a}{get\+By\+Username}} (String username)
+\begin{DoxyCompactList}\small\item\em Получить пользователя по имени пользователя \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_ab756e3822f6648134129ea84eef93a11}{set\+Banned\+At}} (User\+Ban\+Request request)
+\begin{DoxyCompactList}\small\item\em Установить дату блокировки пользователю \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a99c298abf24d3c4d68f63ec09149ac94}{reset\+Banned\+At}} (Long user\+Id)
+\begin{DoxyCompactList}\small\item\em Сбросить дату блокировки пользователя \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a0c90df127f8509cedaae47a83ad6a3dd}{change\+Password}} (Update\+User\+Password\+Request request)
+\begin{DoxyCompactList}\small\item\em Изменить пароль пользователя \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a62ed4d717213c0600598773a0ffd6e95}{self\+Update\+Username}} (Update\+User\+Username\+Request request)
+\begin{DoxyCompactList}\small\item\em Обновить имя пользователя \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_ad743c551a682f5ddac8194c6ee038f55}{self\+Update\+Email}} (Update\+User\+Email\+Request request)
+\begin{DoxyCompactList}\small\item\em Обновить почту пользователя \end{DoxyCompactList}\item 
+Page$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} $>$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_ae5b7786ce806dc8579391b3435a507ff}{find\+By\+Filter}} (\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1user_1_1_user_filter}{User\+Filter}} filter)
+\begin{DoxyCompactList}\small\item\em Получение по фильтру \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_ae68b1e9097f00c3681d8d9c5d9143c3c}{change\+Role}} (Update\+User\+Role\+Request request)
+\begin{DoxyCompactList}\small\item\em Изменить роль пользователя \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_ac89678cf2043034fd6fedb5359bdb56f}{has\+Access\+To\+User}} (\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} current\+User, \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} user)
+\begin{DoxyCompactList}\small\item\em Проверка имеет ли пользователем права над другим пользователем \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_ac11b7afb7d1f41375be08e9ef207accc}{self\+Update\+Info}} (Update\+User\+Info\+Request request)
+\begin{DoxyCompactList}\small\item\em Обновление информации о пользователе \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a17269d7619e60316759f1f3d7c9afae8}{is\+Superuser}} ()
+\begin{DoxyCompactList}\small\item\em Является ли текущий пользователь суперпользователем \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс, представляющий сервис для работы с пользователями. 
+
+\doxysubsection{Методы}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a0c90df127f8509cedaae47a83ad6a3dd}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a0c90df127f8509cedaae47a83ad6a3dd} 
+\index{edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}!changePassword@{changePassword}}
+\index{changePassword@{changePassword}!edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}}
+\doxysubsubsection{\texorpdfstring{changePassword()}{changePassword()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+service.\+User\+Service.\+change\+Password (\begin{DoxyParamCaption}\item[{Update\+User\+Password\+Request}]{request }\end{DoxyParamCaption})}
+
+
+
+Изменить пароль пользователя 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em request} & Запрос на изменение пароля \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_ae68b1e9097f00c3681d8d9c5d9143c3c}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_ae68b1e9097f00c3681d8d9c5d9143c3c} 
+\index{edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}!changeRole@{changeRole}}
+\index{changeRole@{changeRole}!edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}}
+\doxysubsubsection{\texorpdfstring{changeRole()}{changeRole()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+service.\+User\+Service.\+change\+Role (\begin{DoxyParamCaption}\item[{Update\+User\+Role\+Request}]{request }\end{DoxyParamCaption})}
+
+
+
+Изменить роль пользователя 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em request} & Запрос на изменение роли \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_ac456cbaff629790fec47eb1dcc14fa24}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_ac456cbaff629790fec47eb1dcc14fa24} 
+\index{edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}!create@{create}}
+\index{create@{create}!edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} edu.\+mirea.\+vitality.\+blog.\+service.\+User\+Service.\+create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}}}]{user }\end{DoxyParamCaption})}
+
+
+
+Создание пользователя 
+
+\begin{DoxyReturn}{Возвращает}
+созданный пользователь 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_ae5b7786ce806dc8579391b3435a507ff}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_ae5b7786ce806dc8579391b3435a507ff} 
+\index{edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}!findByFilter@{findByFilter}}
+\index{findByFilter@{findByFilter}!edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}}
+\doxysubsubsection{\texorpdfstring{findByFilter()}{findByFilter()}}
+{\footnotesize\ttfamily Page$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} $>$ edu.\+mirea.\+vitality.\+blog.\+service.\+User\+Service.\+find\+By\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1user_1_1_user_filter}{User\+Filter}}}]{filter }\end{DoxyParamCaption})}
+
+
+
+Получение по фильтру 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em filter} & фильтр \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Найденные пользователи 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a16ea680d8a84383fdb56aec96b52e7a9}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a16ea680d8a84383fdb56aec96b52e7a9} 
+\index{edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}!findById@{findById}}
+\index{findById@{findById}!edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}}
+\doxysubsubsection{\texorpdfstring{findById()}{findById()}}
+{\footnotesize\ttfamily Optional$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} $>$ edu.\+mirea.\+vitality.\+blog.\+service.\+User\+Service.\+find\+By\+Id (\begin{DoxyParamCaption}\item[{Long}]{user\+Id }\end{DoxyParamCaption})}
+
+
+
+Найти пользователя по ID. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em user\+Id} & ID пользователя для поиска \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Optional, содержащий пользователя, если найден 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a94bd50b082d66948e4ebc4287bda72b5}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a94bd50b082d66948e4ebc4287bda72b5} 
+\index{edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}!findByUsername@{findByUsername}}
+\index{findByUsername@{findByUsername}!edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}}
+\doxysubsubsection{\texorpdfstring{findByUsername()}{findByUsername()}}
+{\footnotesize\ttfamily Optional$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} $>$ edu.\+mirea.\+vitality.\+blog.\+service.\+User\+Service.\+find\+By\+Username (\begin{DoxyParamCaption}\item[{String}]{username }\end{DoxyParamCaption})}
+
+
+
+Найти пользователя по имени пользователя 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em username} & Имя пользователя для поиска \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Optional, содержащий пользователя, если найден 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a42c56984afe24c2250bfa4ac26e19b20}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a42c56984afe24c2250bfa4ac26e19b20} 
+\index{edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}!getById@{getById}}
+\index{getById@{getById}!edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}}
+\doxysubsubsection{\texorpdfstring{getById()}{getById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} edu.\+mirea.\+vitality.\+blog.\+service.\+User\+Service.\+get\+By\+Id (\begin{DoxyParamCaption}\item[{Long}]{user\+Id }\end{DoxyParamCaption})}
+
+
+
+Получить пользователя по ID. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em user\+Id} & ID пользователя для поиска \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Найденный пользователь или выбросить исключение, если пользователь не найден 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a2ff502c1f6df5e8ad0d8dd59009e905a}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a2ff502c1f6df5e8ad0d8dd59009e905a} 
+\index{edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}!getByUsername@{getByUsername}}
+\index{getByUsername@{getByUsername}!edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}}
+\doxysubsubsection{\texorpdfstring{getByUsername()}{getByUsername()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} edu.\+mirea.\+vitality.\+blog.\+service.\+User\+Service.\+get\+By\+Username (\begin{DoxyParamCaption}\item[{String}]{username }\end{DoxyParamCaption})}
+
+
+
+Получить пользователя по имени пользователя 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em username} & Имя пользователя для поиска \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Найденный пользователь или выбросить исключение, если пользователь не найден 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a2650384203598d5d057d7dd1cac9aa54}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a2650384203598d5d057d7dd1cac9aa54} 
+\index{edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}!getCurrentUser@{getCurrentUser}}
+\index{getCurrentUser@{getCurrentUser}!edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}}
+\doxysubsubsection{\texorpdfstring{getCurrentUser()}{getCurrentUser()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} edu.\+mirea.\+vitality.\+blog.\+service.\+User\+Service.\+get\+Current\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получение текущего пользователя 
+
+\begin{DoxyReturn}{Возвращает}
+текущий пользователь 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_ac89678cf2043034fd6fedb5359bdb56f}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_ac89678cf2043034fd6fedb5359bdb56f} 
+\index{edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}!hasAccessToUser@{hasAccessToUser}}
+\index{hasAccessToUser@{hasAccessToUser}!edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}}
+\doxysubsubsection{\texorpdfstring{hasAccessToUser()}{hasAccessToUser()}}
+{\footnotesize\ttfamily boolean edu.\+mirea.\+vitality.\+blog.\+service.\+User\+Service.\+has\+Access\+To\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}}}]{current\+User,  }\item[{\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}}}]{user }\end{DoxyParamCaption})}
+
+
+
+Проверка имеет ли пользователем права над другим пользователем 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em current\+User} & текущий пользователь \\
+\hline
+{\em user} & пользователь, права на которого проверяются \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true, если текущий пользователь имеет права на пользователя 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a17269d7619e60316759f1f3d7c9afae8}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a17269d7619e60316759f1f3d7c9afae8} 
+\index{edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}!isSuperuser@{isSuperuser}}
+\index{isSuperuser@{isSuperuser}!edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}}
+\doxysubsubsection{\texorpdfstring{isSuperuser()}{isSuperuser()}}
+{\footnotesize\ttfamily boolean edu.\+mirea.\+vitality.\+blog.\+service.\+User\+Service.\+is\+Superuser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Является ли текущий пользователь суперпользователем 
+
+\begin{DoxyReturn}{Возвращает}
+true, если текущий пользователь суперпользователь 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a99c298abf24d3c4d68f63ec09149ac94}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a99c298abf24d3c4d68f63ec09149ac94} 
+\index{edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}!resetBannedAt@{resetBannedAt}}
+\index{resetBannedAt@{resetBannedAt}!edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}}
+\doxysubsubsection{\texorpdfstring{resetBannedAt()}{resetBannedAt()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+service.\+User\+Service.\+reset\+Banned\+At (\begin{DoxyParamCaption}\item[{Long}]{user\+Id }\end{DoxyParamCaption})}
+
+
+
+Сбросить дату блокировки пользователя 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em user\+Id} & Идентификатор пользователя для сброса блокировки \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a0f4fb03e3b84c8dd788a408781159696}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a0f4fb03e3b84c8dd788a408781159696} 
+\index{edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}!save@{save}}
+\index{save@{save}!edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}} edu.\+mirea.\+vitality.\+blog.\+service.\+User\+Service.\+save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_user}{User}}}]{user }\end{DoxyParamCaption})}
+
+
+
+Сохранение пользователя 
+
+\begin{DoxyReturn}{Возвращает}
+сохраненный пользователь 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_ad743c551a682f5ddac8194c6ee038f55}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_ad743c551a682f5ddac8194c6ee038f55} 
+\index{edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}!selfUpdateEmail@{selfUpdateEmail}}
+\index{selfUpdateEmail@{selfUpdateEmail}!edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}}
+\doxysubsubsection{\texorpdfstring{selfUpdateEmail()}{selfUpdateEmail()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+service.\+User\+Service.\+self\+Update\+Email (\begin{DoxyParamCaption}\item[{Update\+User\+Email\+Request}]{request }\end{DoxyParamCaption})}
+
+
+
+Обновить почту пользователя 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em request} & Запрос на обновление почты пользователя \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_ac11b7afb7d1f41375be08e9ef207accc}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_ac11b7afb7d1f41375be08e9ef207accc} 
+\index{edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}!selfUpdateInfo@{selfUpdateInfo}}
+\index{selfUpdateInfo@{selfUpdateInfo}!edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}}
+\doxysubsubsection{\texorpdfstring{selfUpdateInfo()}{selfUpdateInfo()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+service.\+User\+Service.\+self\+Update\+Info (\begin{DoxyParamCaption}\item[{Update\+User\+Info\+Request}]{request }\end{DoxyParamCaption})}
+
+
+
+Обновление информации о пользователе 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em request} & Запрос на обновление информации о пользователе \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a62ed4d717213c0600598773a0ffd6e95}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_a62ed4d717213c0600598773a0ffd6e95} 
+\index{edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}!selfUpdateUsername@{selfUpdateUsername}}
+\index{selfUpdateUsername@{selfUpdateUsername}!edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}}
+\doxysubsubsection{\texorpdfstring{selfUpdateUsername()}{selfUpdateUsername()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+service.\+User\+Service.\+self\+Update\+Username (\begin{DoxyParamCaption}\item[{Update\+User\+Username\+Request}]{request }\end{DoxyParamCaption})}
+
+
+
+Обновить имя пользователя 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em request} & Запрос на обновление имени пользователя \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_ab756e3822f6648134129ea84eef93a11}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_user_service_ab756e3822f6648134129ea84eef93a11} 
+\index{edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}!setBannedAt@{setBannedAt}}
+\index{setBannedAt@{setBannedAt}!edu.mirea.vitality.blog.service.UserService@{edu.mirea.vitality.blog.service.UserService}}
+\doxysubsubsection{\texorpdfstring{setBannedAt()}{setBannedAt()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+service.\+User\+Service.\+set\+Banned\+At (\begin{DoxyParamCaption}\item[{User\+Ban\+Request}]{request }\end{DoxyParamCaption})}
+
+
+
+Установить дату блокировки пользователю 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em request} & Запрос на блокировку пользователя \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+service/\mbox{\hyperlink{_user_service_8java}{User\+Service.\+java}}\end{DoxyCompactItemize}

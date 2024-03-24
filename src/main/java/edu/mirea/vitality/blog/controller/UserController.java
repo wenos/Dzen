@@ -28,17 +28,23 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * @class UserController
+ * @brief Контроллер для работы с пользователями.
+ */
 @RestController
 @RequiredArgsConstructor
 @Tag(name = "Работа с пользователями")
 @RequestMapping("/users")
 public class UserController {
+
     private final UserService service;
     private final DeleteService deleteService;
     private final UserMapper mapper;
 
     /**
-     * Обновление имени пользователя
+     * @brief Обновляет имя пользователя.
+     * @param request Запрос на обновление имени пользователя.
      */
     @Operation(summary = "Обновление имени пользователя")
     @PostMapping("/change-username") // TODO: Можно переписать на patch - логически подходит больше
@@ -47,7 +53,8 @@ public class UserController {
     }
 
     /**
-     * Обновление имени пользователя
+     * @brief Обновляет почту пользователя.
+     * @param request Запрос на обновление почты пользователя.
      */
     @Operation(summary = "Обновление почты пользователя")
     @PostMapping("/change-email")
@@ -55,12 +62,21 @@ public class UserController {
         service.selfUpdateEmail(request);
     }
 
+    /**
+     * @brief Обновляет информацию о пользователе.
+     * @param request Запрос на обновление информации о пользователе.
+     */
     @Operation(summary = "Обновление информации о пользователи")
     @PostMapping("/change-info")
     public void selfUpdateInfo(@RequestBody @Valid UpdateUserInfoRequest request) {
         service.selfUpdateInfo(request);
     }
 
+    /**
+     * @brief Получает данные профиля пользователя.
+     * @param username Имя пользователя.
+     * @return Ответ с данными профиля пользователя.
+     */
     @Operation(summary = "Получение данных профиля пользователя")
     @GetMapping("/profile/{username}")
     public UserProfileResponse getProfile(@PathVariable String username) {
@@ -69,7 +85,8 @@ public class UserController {
     }
 
     /**
-     * Выдача бана пользователю
+     * @brief Выдает бан пользователю.
+     * @param request Запрос на выдачу бана пользователю.
      */
     @PreAuthorize("hasAnyRole('ROLE_ADMIN', 'ROLE_MODERATOR')")
     @Operation(summary = "Выдача бана пользователю")
@@ -79,7 +96,8 @@ public class UserController {
     }
 
     /**
-     * Снятие бана с пользователя
+     * @brief Снимает бан с пользователя.
+     * @param userId Идентификатор пользователя.
      */
     @PreAuthorize("hasAnyRole('ROLE_ADMIN', 'ROLE_MODERATOR')")
     @Operation(summary = "Снятие бана с пользователя")
@@ -88,9 +106,9 @@ public class UserController {
         service.resetBannedAt(userId);
     }
 
-
     /**
-     * Смена пароля пользователя
+     * @brief Меняет пароль пользователя.
+     * @param request Запрос на смену пароля пользователя.
      */
     @Operation(summary = "Смена пароля пользователя")
     @PostMapping("/change-password")
@@ -99,7 +117,9 @@ public class UserController {
     }
 
     /**
-     * Пагинация пользователей по фильтру
+     * @brief Пагинирует пользователей согласно заданному фильтру.
+     * @param filter Фильтр для поиска пользователей.
+     * @return Ответ с пагинированными пользователями.
      */
     @PreAuthorize("hasAnyRole('ROLE_ADMIN', 'ROLE_MODERATOR')")
     @Operation(summary = "Получение пользователей по фильтру")
@@ -117,7 +137,9 @@ public class UserController {
     }
 
     /**
-     * Получение пользователя по id
+     * @brief Получает пользователя по его идентификатору.
+     * @param userId Идентификатор пользователя.
+     * @return Ответ с данными пользователя.
      */
     @PreAuthorize("hasAnyRole('ROLE_ADMIN', 'ROLE_MODERATOR')")
     @Operation(summary = "Получение пользователя по id")
@@ -127,7 +149,10 @@ public class UserController {
         return mapper.toResponse(user);
     }
 
-
+    /**
+     * @brief Получает текущего пользователя.
+     * @return Ответ с данными текущего пользователя.
+     */
     @Operation(summary = "Получение данного пользователя")
     @GetMapping("/current")
     public UserResponse getCurrent() {
@@ -135,9 +160,9 @@ public class UserController {
         return mapper.toResponse(user);
     }
 
-
     /**
-     * Изменение роли пользователя
+     * @brief Изменяет роль пользователя.
+     * @param request Запрос на изменение роли пользователя.
      */
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     @Operation(summary = "Изменение роли пользователя")
@@ -147,7 +172,8 @@ public class UserController {
     }
 
     /**
-     * Проверка что пользователь суперпользователь
+     * @brief Проверяет, является ли пользователь суперпользователем.
+     * @return Признак суперпользователя.
      */
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     @Operation(summary = "Проверка что пользователь суперпользователь")
@@ -156,6 +182,10 @@ public class UserController {
         return service.isSuperuser();
     }
 
+    /**
+     * @brief Удаляет пользователя.
+     * @param request Запрос на удаление пользователя.
+     */
     @Operation(summary = "Удаление пользователя")
     @PostMapping("/delete")
     public void deleteUser(@RequestBody @Valid DeleteUserRequest request) {

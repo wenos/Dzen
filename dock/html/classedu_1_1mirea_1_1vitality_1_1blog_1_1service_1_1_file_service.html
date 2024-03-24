@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>VitalityBlog: Класс edu.mirea.vitality.blog.service.FileService</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">VitalityBlog<span id="projectnumber">&#160;next-SNAPSHOT</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>edu</b></li><li class="navelem"><b>mirea</b></li><li class="navelem"><b>vitality</b></li><li class="navelem"><b>blog</b></li><li class="navelem"><b>service</b></li><li class="navelem"><a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service.html">FileService</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_file_service-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс edu.mirea.vitality.blog.service.FileService</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Этот класс предоставляет сервис для работы с файлами.  
+ <a href="#details">Подробнее...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ace420cf70517941a8089b3b8a5bd2e88" id="r_ace420cf70517941a8089b3b8a5bd2e88"><td class="memItemLeft" align="right" valign="top">List&lt; UUID &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace420cf70517941a8089b3b8a5bd2e88">uploadFilesAndGetIds</a> (MultipartFile[] files)</td></tr>
+<tr class="memdesc:ace420cf70517941a8089b3b8a5bd2e88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загружает файлы на сервер и возвращает их идентификаторы.  <br /></td></tr>
+<tr class="separator:ace420cf70517941a8089b3b8a5bd2e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab21ca9838f21992fafd49fb43f6fd6b4" id="r_ab21ca9838f21992fafd49fb43f6fd6b4"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_uploaded_file.html">UploadedFile</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab21ca9838f21992fafd49fb43f6fd6b4">uploadFiles</a> (List&lt; MultipartFile &gt; files)</td></tr>
+<tr class="memdesc:ab21ca9838f21992fafd49fb43f6fd6b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загружает файлы на сервер.  <br /></td></tr>
+<tr class="separator:ab21ca9838f21992fafd49fb43f6fd6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad7563da51b70839b99e6c50ba77ca8c" id="r_aad7563da51b70839b99e6c50ba77ca8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad7563da51b70839b99e6c50ba77ca8c">saveInCloud</a> (MultipartFile file, String code)  throws <a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1exception_1_1file_1_1_file_save_problem.html">FileSaveProblem</a> </td></tr>
+<tr class="memdesc:aad7563da51b70839b99e6c50ba77ca8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сохраняет файл в облаке.  <br /></td></tr>
+<tr class="separator:aad7563da51b70839b99e6c50ba77ca8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb2c347a13efd468ee32dfbc2d84af7" id="r_aacb2c347a13efd468ee32dfbc2d84af7"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_uploaded_file.html">UploadedFile</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacb2c347a13efd468ee32dfbc2d84af7">getAll</a> ()</td></tr>
+<tr class="memdesc:aacb2c347a13efd468ee32dfbc2d84af7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает список всех файлов.  <br /></td></tr>
+<tr class="separator:aacb2c347a13efd468ee32dfbc2d84af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23314313495d597beed74af3e6509499" id="r_a23314313495d597beed74af3e6509499"><td class="memItemLeft" align="right" valign="top">Optional&lt; <a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_uploaded_file.html">UploadedFile</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23314313495d597beed74af3e6509499">findById</a> (UUID id)</td></tr>
+<tr class="memdesc:a23314313495d597beed74af3e6509499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Находит файл по его идентификатору.  <br /></td></tr>
+<tr class="separator:a23314313495d597beed74af3e6509499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02c44c9e8cb4158cc0252e455038221e" id="r_a02c44c9e8cb4158cc0252e455038221e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_uploaded_file.html">UploadedFile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02c44c9e8cb4158cc0252e455038221e">getById</a> (UUID id)</td></tr>
+<tr class="memdesc:a02c44c9e8cb4158cc0252e455038221e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает файл по его идентификатору.  <br /></td></tr>
+<tr class="separator:a02c44c9e8cb4158cc0252e455038221e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cc8aba8f650b9bc3d16fe6570b419da" id="r_a5cc8aba8f650b9bc3d16fe6570b419da"><td class="memItemLeft" align="right" valign="top">UploadedFileContentResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cc8aba8f650b9bc3d16fe6570b419da">downloadFile</a> (UUID fileId)</td></tr>
+<tr class="memdesc:a5cc8aba8f650b9bc3d16fe6570b419da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загружает файл с облака.  <br /></td></tr>
+<tr class="separator:a5cc8aba8f650b9bc3d16fe6570b419da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99093392314985344a8276a85ab8baf5" id="r_a99093392314985344a8276a85ab8baf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99093392314985344a8276a85ab8baf5">deleteById</a> (UUID fileId)</td></tr>
+<tr class="memdesc:a99093392314985344a8276a85ab8baf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаляет файл по его идентификатору.  <br /></td></tr>
+<tr class="separator:a99093392314985344a8276a85ab8baf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Этот класс предоставляет сервис для работы с файлами. </p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a99093392314985344a8276a85ab8baf5" name="a99093392314985344a8276a85ab8baf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99093392314985344a8276a85ab8baf5">&#9670;&#160;</a></span>deleteById()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.mirea.vitality.blog.service.FileService.deleteById </td>
+          <td>(</td>
+          <td class="paramtype">UUID</td>          <td class="paramname"><span class="paramname"><em>fileId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удаляет файл по его идентификатору. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileId</td><td>Идентификатор файла. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5cc8aba8f650b9bc3d16fe6570b419da" name="a5cc8aba8f650b9bc3d16fe6570b419da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cc8aba8f650b9bc3d16fe6570b419da">&#9670;&#160;</a></span>downloadFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UploadedFileContentResponse edu.mirea.vitality.blog.service.FileService.downloadFile </td>
+          <td>(</td>
+          <td class="paramtype">UUID</td>          <td class="paramname"><span class="paramname"><em>fileId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Загружает файл с облака. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileId</td><td>Идентификатор файла. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Данные о файле. </dd></dl>
+
+</div>
+</div>
+<a id="a23314313495d597beed74af3e6509499" name="a23314313495d597beed74af3e6509499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23314313495d597beed74af3e6509499">&#9670;&#160;</a></span>findById()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Optional&lt; <a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_uploaded_file.html">UploadedFile</a> &gt; edu.mirea.vitality.blog.service.FileService.findById </td>
+          <td>(</td>
+          <td class="paramtype">UUID</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Находит файл по его идентификатору. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Идентификатор файла. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Файл. </dd></dl>
+
+</div>
+</div>
+<a id="aacb2c347a13efd468ee32dfbc2d84af7" name="aacb2c347a13efd468ee32dfbc2d84af7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacb2c347a13efd468ee32dfbc2d84af7">&#9670;&#160;</a></span>getAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_uploaded_file.html">UploadedFile</a> &gt; edu.mirea.vitality.blog.service.FileService.getAll </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получает список всех файлов. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Список файлов. </dd></dl>
+
+</div>
+</div>
+<a id="a02c44c9e8cb4158cc0252e455038221e" name="a02c44c9e8cb4158cc0252e455038221e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02c44c9e8cb4158cc0252e455038221e">&#9670;&#160;</a></span>getById()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_uploaded_file.html">UploadedFile</a> edu.mirea.vitality.blog.service.FileService.getById </td>
+          <td>(</td>
+          <td class="paramtype">UUID</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получает файл по его идентификатору. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Идентификатор файла. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Файл. </dd></dl>
+
+</div>
+</div>
+<a id="aad7563da51b70839b99e6c50ba77ca8c" name="aad7563da51b70839b99e6c50ba77ca8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad7563da51b70839b99e6c50ba77ca8c">&#9670;&#160;</a></span>saveInCloud()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.mirea.vitality.blog.service.FileService.saveInCloud </td>
+          <td>(</td>
+          <td class="paramtype">MultipartFile</td>          <td class="paramname"><span class="paramname"><em>file</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>code</em></span>&#160;) throws <a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1exception_1_1file_1_1_file_save_problem.html">FileSaveProblem</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сохраняет файл в облаке. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>Файл для сохранения. </td></tr>
+    <tr><td class="paramname">code</td><td>Код файла. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">FileSaveProblem</td><td>Если возникает проблема при сохранении файла. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab21ca9838f21992fafd49fb43f6fd6b4" name="ab21ca9838f21992fafd49fb43f6fd6b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab21ca9838f21992fafd49fb43f6fd6b4">&#9670;&#160;</a></span>uploadFiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_uploaded_file.html">UploadedFile</a> &gt; edu.mirea.vitality.blog.service.FileService.uploadFiles </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; MultipartFile &gt;</td>          <td class="paramname"><span class="paramname"><em>files</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Загружает файлы на сервер. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">files</td><td>Список файлов для загрузки. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Список загруженных файлов. </dd></dl>
+
+</div>
+</div>
+<a id="ace420cf70517941a8089b3b8a5bd2e88" name="ace420cf70517941a8089b3b8a5bd2e88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace420cf70517941a8089b3b8a5bd2e88">&#9670;&#160;</a></span>uploadFilesAndGetIds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; UUID &gt; edu.mirea.vitality.blog.service.FileService.uploadFilesAndGetIds </td>
+          <td>(</td>
+          <td class="paramtype">MultipartFile[]</td>          <td class="paramname"><span class="paramname"><em>files</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Загружает файлы на сервер и возвращает их идентификаторы. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">files</td><td>Массив файлов для загрузки. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Список идентификаторов загруженных файлов. </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>service/<b>FileService.java</b></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

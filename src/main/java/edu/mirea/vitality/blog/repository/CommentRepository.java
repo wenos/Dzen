@@ -11,13 +11,32 @@ import org.springframework.stereotype.Repository;
 
 import java.time.OffsetDateTime;
 
+/**
+ * @interface CommentRepository
+ * @brief Этот интерфейс предоставляет методы для работы с сущностью Comment в базе данных.
+ */
 @Repository
 public interface CommentRepository extends JpaRepository<Comment, Long> {
+
+    /**
+     * @brief Получает страницу комментариев для указанного идентификатора поста.
+     * @param postId Идентификатор поста.
+     * @param pageable Интерфейс для создания пагинации.
+     * @return Страница комментариев.
+     */
     Page<Comment> findAllByPostId(Long postId, Pageable pageable);
 
+    /**
+     * @brief Удаляет старые комментарии, созданные до указанной даты.
+     * @param cutoffDate Дата, до которой нужно удалить комментарии.
+     */
     @Modifying
     @Query("DELETE FROM Comment c WHERE c.createdAt <= :cutoffDate")
     void deleteOldComments(@Param("cutoffDate") OffsetDateTime cutoffDate);
 
+    /**
+     * @brief Удаляет все комментарии автора с указанным идентификатором.
+     * @param id Идентификатор автора комментариев.
+     */
     void deleteAllByAuthorId(Long id);
 }

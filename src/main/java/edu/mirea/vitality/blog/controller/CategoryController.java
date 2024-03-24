@@ -23,6 +23,11 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 
+
+/**
+ * @class CategoryController
+ * @brief Этот класс представляет собой контроллер для управления категориями.
+ */
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/category")
@@ -32,6 +37,11 @@ public class CategoryController {
 
     private final CategoryMapper categoryMapper;
 
+    /**
+     * @brief Создает новую категорию.
+     * @param request Данные запроса категории.
+     * @return Созданный ответ категории.
+     */
     @PostMapping
     @Operation(summary = "Создание новой категории")
     @ResponseStatus(value = HttpStatus.CREATED)
@@ -41,6 +51,11 @@ public class CategoryController {
         return categoryMapper.toResponse(created);
     }
 
+    /**
+     * @brief Получает категорию по ее идентификатору.
+     * @param id Идентификатор категории.
+     * @return Ответ категории.
+     */
     @GetMapping("/{id}")
     @Operation(summary = "Получение категории по categoryId")
     public CategoryResponse getById(@PathVariable Long id) {
@@ -48,7 +63,10 @@ public class CategoryController {
         return categoryMapper.toResponse(found);
     }
 
-
+    /**
+     * @brief Получает все категории.
+     * @return Список ответов категорий.
+     */
     @GetMapping
     @Operation(summary = "Получение списка всех категорий")
     public List<CategoryResponse> getAll() {
@@ -56,9 +74,12 @@ public class CategoryController {
         return categoryMapper.toResponse(found);
     }
 
-
-
-
+    /**
+     * @brief Обновляет категорию по ее идентификатору.
+     * @param id Идентификатор категории.
+     * @param request Данные запроса категории.
+     * @return Обновленный ответ категории.
+     */
     @PutMapping("/{id}")
     @Operation(summary = "Обновлении категории")
     public CategoryResponse update(@PathVariable Long id, @RequestBody @Valid CategoryRequest request) {
@@ -66,13 +87,15 @@ public class CategoryController {
         return categoryMapper.toResponse(category);
     }
 
-
+    /**
+     * @brief Удаляет категорию по ее идентификатору.
+     * @param id Идентификатор категории.
+     */
     @DeleteMapping("/{id}")
     @ResponseStatus(value = HttpStatus.NO_CONTENT)
     @Operation(summary = "Удаление категории")
     public void delete(@PathVariable Long id) {
         categoryService.deleteById(id);
     }
-
-
 }
+

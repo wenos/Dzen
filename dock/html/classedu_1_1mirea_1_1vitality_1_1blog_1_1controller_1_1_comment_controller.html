@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>VitalityBlog: Класс edu.mirea.vitality.blog.controller.CommentController</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">VitalityBlog<span id="projectnumber">&#160;next-SNAPSHOT</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>edu</b></li><li class="navelem"><b>mirea</b></li><li class="navelem"><b>vitality</b></li><li class="navelem"><b>blog</b></li><li class="navelem"><b>controller</b></li><li class="navelem"><a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_comment_controller.html">CommentController</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_comment_controller-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс edu.mirea.vitality.blog.controller.CommentController</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Этот класс представляет собой контроллер для управления комментариями.  
+ <a href="#details">Подробнее...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a7791e1a1370c1cc49b15f0f46ef09816" id="r_a7791e1a1370c1cc49b15f0f46ef09816"><td class="memItemLeft" align="right" valign="top">CommentResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7791e1a1370c1cc49b15f0f46ef09816">createComment</a> (@RequestBody @Valid CreateCommentRequest request)</td></tr>
+<tr class="memdesc:a7791e1a1370c1cc49b15f0f46ef09816"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создает комментарий.  <br /></td></tr>
+<tr class="separator:a7791e1a1370c1cc49b15f0f46ef09816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4eebc5a1511e77190561b7ece3f2679" id="r_aa4eebc5a1511e77190561b7ece3f2679"><td class="memItemLeft" align="right" valign="top">CommentResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4eebc5a1511e77190561b7ece3f2679">getCommentById</a> (@PathVariable Long commentId)</td></tr>
+<tr class="memdesc:aa4eebc5a1511e77190561b7ece3f2679"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает комментарий по его идентификатору.  <br /></td></tr>
+<tr class="separator:aa4eebc5a1511e77190561b7ece3f2679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6f2f7657c4a1246fc2821cebe21fd33" id="r_aa6f2f7657c4a1246fc2821cebe21fd33"><td class="memItemLeft" align="right" valign="top">CommentResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6f2f7657c4a1246fc2821cebe21fd33">updateComment</a> ( @RequestBody @Valid UpdateCommentRequest request, @PathVariable Long commentId)</td></tr>
+<tr class="memdesc:aa6f2f7657c4a1246fc2821cebe21fd33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновляет комментарий.  <br /></td></tr>
+<tr class="separator:aa6f2f7657c4a1246fc2821cebe21fd33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56c20ead8dc1f0e8f3ac12dff055a72d" id="r_a56c20ead8dc1f0e8f3ac12dff055a72d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56c20ead8dc1f0e8f3ac12dff055a72d">deleteCommentById</a> (@PathVariable Long commentId)</td></tr>
+<tr class="memdesc:a56c20ead8dc1f0e8f3ac12dff055a72d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаляет комментарий по его идентификатору.  <br /></td></tr>
+<tr class="separator:a56c20ead8dc1f0e8f3ac12dff055a72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4e0df73144440fc1204f73838dfd332" id="r_ad4e0df73144440fc1204f73838dfd332"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1pagination_1_1_page_response.html">PageResponse</a>&lt; CommentResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4e0df73144440fc1204f73838dfd332">findCommentsByPostId</a> (@RequestBody @Valid <a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1comment_1_1_comment_filter.html">CommentFilter</a> filter)</td></tr>
+<tr class="memdesc:ad4e0df73144440fc1204f73838dfd332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пагинирует комментарии.  <br /></td></tr>
+<tr class="separator:ad4e0df73144440fc1204f73838dfd332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Этот класс представляет собой контроллер для управления комментариями. </p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a7791e1a1370c1cc49b15f0f46ef09816" name="a7791e1a1370c1cc49b15f0f46ef09816"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7791e1a1370c1cc49b15f0f46ef09816">&#9670;&#160;</a></span>createComment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CommentResponse edu.mirea.vitality.blog.controller.CommentController.createComment </td>
+          <td>(</td>
+          <td class="paramtype">@RequestBody @Valid CreateCommentRequest</td>          <td class="paramname"><span class="paramname"><em>request</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создает комментарий. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td>Данные запроса для создания комментария. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Созданный комментарий. </dd></dl>
+
+</div>
+</div>
+<a id="a56c20ead8dc1f0e8f3ac12dff055a72d" name="a56c20ead8dc1f0e8f3ac12dff055a72d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56c20ead8dc1f0e8f3ac12dff055a72d">&#9670;&#160;</a></span>deleteCommentById()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.mirea.vitality.blog.controller.CommentController.deleteCommentById </td>
+          <td>(</td>
+          <td class="paramtype">@PathVariable Long</td>          <td class="paramname"><span class="paramname"><em>commentId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удаляет комментарий по его идентификатору. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">commentId</td><td>Идентификатор комментария. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad4e0df73144440fc1204f73838dfd332" name="ad4e0df73144440fc1204f73838dfd332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4e0df73144440fc1204f73838dfd332">&#9670;&#160;</a></span>findCommentsByPostId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1pagination_1_1_page_response.html">PageResponse</a>&lt; CommentResponse &gt; edu.mirea.vitality.blog.controller.CommentController.findCommentsByPostId </td>
+          <td>(</td>
+          <td class="paramtype">@RequestBody @Valid <a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1comment_1_1_comment_filter.html">CommentFilter</a></td>          <td class="paramname"><span class="paramname"><em>filter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Пагинирует комментарии. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filter</td><td>Фильтр для поиска комментариев. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Ответ с пагинированными комментариями. </dd></dl>
+
+</div>
+</div>
+<a id="aa4eebc5a1511e77190561b7ece3f2679" name="aa4eebc5a1511e77190561b7ece3f2679"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4eebc5a1511e77190561b7ece3f2679">&#9670;&#160;</a></span>getCommentById()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CommentResponse edu.mirea.vitality.blog.controller.CommentController.getCommentById </td>
+          <td>(</td>
+          <td class="paramtype">@PathVariable Long</td>          <td class="paramname"><span class="paramname"><em>commentId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получает комментарий по его идентификатору. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">commentId</td><td>Идентификатор комментария. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Комментарий. </dd></dl>
+
+</div>
+</div>
+<a id="aa6f2f7657c4a1246fc2821cebe21fd33" name="aa6f2f7657c4a1246fc2821cebe21fd33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6f2f7657c4a1246fc2821cebe21fd33">&#9670;&#160;</a></span>updateComment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CommentResponse edu.mirea.vitality.blog.controller.CommentController.updateComment </td>
+          <td>(</td>
+          <td class="paramtype">@RequestBody @Valid UpdateCommentRequest</td>          <td class="paramname"><span class="paramname"><em>request</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">@PathVariable Long</td>          <td class="paramname"><span class="paramname"><em>commentId</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обновляет комментарий. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td>Данные запроса для обновления комментария. </td></tr>
+    <tr><td class="paramname">commentId</td><td>Идентификатор комментария. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Обновленный комментарий. </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>controller/<b>CommentController.java</b></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

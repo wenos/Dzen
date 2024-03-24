@@ -1,0 +1,120 @@
+\doxysection{Класс edu.\+mirea.\+vitality.\+blog.\+controller.\+Comment\+Controller}
+\hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_comment_controller}{}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_comment_controller}\index{edu.mirea.vitality.blog.controller.CommentController@{edu.mirea.vitality.blog.controller.CommentController}}
+
+
+Этот класс представляет собой контроллер для управления комментариями.  
+
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+Comment\+Response \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_comment_controller_a7791e1a1370c1cc49b15f0f46ef09816}{create\+Comment}} (@Request\+Body @Valid Create\+Comment\+Request request)
+\begin{DoxyCompactList}\small\item\em Создает комментарий. \end{DoxyCompactList}\item 
+Comment\+Response \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_comment_controller_aa4eebc5a1511e77190561b7ece3f2679}{get\+Comment\+By\+Id}} (@Path\+Variable Long comment\+Id)
+\begin{DoxyCompactList}\small\item\em Получает комментарий по его идентификатору. \end{DoxyCompactList}\item 
+Comment\+Response \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_comment_controller_aa6f2f7657c4a1246fc2821cebe21fd33}{update\+Comment}} ( @Request\+Body @Valid Update\+Comment\+Request request, @Path\+Variable Long comment\+Id)
+\begin{DoxyCompactList}\small\item\em Обновляет комментарий. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_comment_controller_a56c20ead8dc1f0e8f3ac12dff055a72d}{delete\+Comment\+By\+Id}} (@Path\+Variable Long comment\+Id)
+\begin{DoxyCompactList}\small\item\em Удаляет комментарий по его идентификатору. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1pagination_1_1_page_response}{Page\+Response}}$<$ Comment\+Response $>$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_comment_controller_ad4e0df73144440fc1204f73838dfd332}{find\+Comments\+By\+Post\+Id}} (@Request\+Body @Valid \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1comment_1_1_comment_filter}{Comment\+Filter}} filter)
+\begin{DoxyCompactList}\small\item\em Пагинирует комментарии. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Этот класс представляет собой контроллер для управления комментариями. 
+
+\doxysubsection{Методы}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_comment_controller_a7791e1a1370c1cc49b15f0f46ef09816}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_comment_controller_a7791e1a1370c1cc49b15f0f46ef09816} 
+\index{edu.mirea.vitality.blog.controller.CommentController@{edu.mirea.vitality.blog.controller.CommentController}!createComment@{createComment}}
+\index{createComment@{createComment}!edu.mirea.vitality.blog.controller.CommentController@{edu.mirea.vitality.blog.controller.CommentController}}
+\doxysubsubsection{\texorpdfstring{createComment()}{createComment()}}
+{\footnotesize\ttfamily Comment\+Response edu.\+mirea.\+vitality.\+blog.\+controller.\+Comment\+Controller.\+create\+Comment (\begin{DoxyParamCaption}\item[{@Request\+Body @Valid Create\+Comment\+Request}]{request }\end{DoxyParamCaption})}
+
+
+
+Создает комментарий. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em request} & Данные запроса для создания комментария. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Созданный комментарий. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_comment_controller_a56c20ead8dc1f0e8f3ac12dff055a72d}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_comment_controller_a56c20ead8dc1f0e8f3ac12dff055a72d} 
+\index{edu.mirea.vitality.blog.controller.CommentController@{edu.mirea.vitality.blog.controller.CommentController}!deleteCommentById@{deleteCommentById}}
+\index{deleteCommentById@{deleteCommentById}!edu.mirea.vitality.blog.controller.CommentController@{edu.mirea.vitality.blog.controller.CommentController}}
+\doxysubsubsection{\texorpdfstring{deleteCommentById()}{deleteCommentById()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+controller.\+Comment\+Controller.\+delete\+Comment\+By\+Id (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{comment\+Id }\end{DoxyParamCaption})}
+
+
+
+Удаляет комментарий по его идентификатору. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em comment\+Id} & Идентификатор комментария. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_comment_controller_ad4e0df73144440fc1204f73838dfd332}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_comment_controller_ad4e0df73144440fc1204f73838dfd332} 
+\index{edu.mirea.vitality.blog.controller.CommentController@{edu.mirea.vitality.blog.controller.CommentController}!findCommentsByPostId@{findCommentsByPostId}}
+\index{findCommentsByPostId@{findCommentsByPostId}!edu.mirea.vitality.blog.controller.CommentController@{edu.mirea.vitality.blog.controller.CommentController}}
+\doxysubsubsection{\texorpdfstring{findCommentsByPostId()}{findCommentsByPostId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1pagination_1_1_page_response}{Page\+Response}}$<$ Comment\+Response $>$ edu.\+mirea.\+vitality.\+blog.\+controller.\+Comment\+Controller.\+find\+Comments\+By\+Post\+Id (\begin{DoxyParamCaption}\item[{@Request\+Body @Valid \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1comment_1_1_comment_filter}{Comment\+Filter}}}]{filter }\end{DoxyParamCaption})}
+
+
+
+Пагинирует комментарии. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em filter} & Фильтр для поиска комментариев. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Ответ с пагинированными комментариями. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_comment_controller_aa4eebc5a1511e77190561b7ece3f2679}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_comment_controller_aa4eebc5a1511e77190561b7ece3f2679} 
+\index{edu.mirea.vitality.blog.controller.CommentController@{edu.mirea.vitality.blog.controller.CommentController}!getCommentById@{getCommentById}}
+\index{getCommentById@{getCommentById}!edu.mirea.vitality.blog.controller.CommentController@{edu.mirea.vitality.blog.controller.CommentController}}
+\doxysubsubsection{\texorpdfstring{getCommentById()}{getCommentById()}}
+{\footnotesize\ttfamily Comment\+Response edu.\+mirea.\+vitality.\+blog.\+controller.\+Comment\+Controller.\+get\+Comment\+By\+Id (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{comment\+Id }\end{DoxyParamCaption})}
+
+
+
+Получает комментарий по его идентификатору. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em comment\+Id} & Идентификатор комментария. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Комментарий. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_comment_controller_aa6f2f7657c4a1246fc2821cebe21fd33}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_comment_controller_aa6f2f7657c4a1246fc2821cebe21fd33} 
+\index{edu.mirea.vitality.blog.controller.CommentController@{edu.mirea.vitality.blog.controller.CommentController}!updateComment@{updateComment}}
+\index{updateComment@{updateComment}!edu.mirea.vitality.blog.controller.CommentController@{edu.mirea.vitality.blog.controller.CommentController}}
+\doxysubsubsection{\texorpdfstring{updateComment()}{updateComment()}}
+{\footnotesize\ttfamily Comment\+Response edu.\+mirea.\+vitality.\+blog.\+controller.\+Comment\+Controller.\+update\+Comment (\begin{DoxyParamCaption}\item[{@Request\+Body @Valid Update\+Comment\+Request}]{request,  }\item[{@Path\+Variable Long}]{comment\+Id }\end{DoxyParamCaption})}
+
+
+
+Обновляет комментарий. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em request} & Данные запроса для обновления комментария. \\
+\hline
+{\em comment\+Id} & Идентификатор комментария. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Обновленный комментарий. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+controller/Comment\+Controller.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,141 @@
+\doxysection{Класс edu.\+mirea.\+vitality.\+blog.\+service.\+Category\+Service}
+\hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_category_service}{}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_category_service}\index{edu.mirea.vitality.blog.service.CategoryService@{edu.mirea.vitality.blog.service.CategoryService}}
+
+
+Этот класс предоставляет сервисные методы для работы с категориями.  
+
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_category}{Category}} \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_category_service_a7e6d38626cd67f6ad2b1f7dd19a89bc2}{create}} (\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_category}{Category}} category)
+\begin{DoxyCompactList}\small\item\em Создает новую категорию. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_category}{Category}} $>$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_category_service_a567c93015ef8b0d2b176a59b4693035b}{get\+All}} ()
+\begin{DoxyCompactList}\small\item\em Получает список всех категорий. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_category}{Category}} \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_category_service_a23c9f48f19fcd1df0f09c15c531e8598}{get\+By\+Id}} (Long id)
+\begin{DoxyCompactList}\small\item\em Получает категорию по ее идентификатору. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_category}{Category}} \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_category_service_a19b7a4cc7ae8aaaaed3de848503ed14c}{update\+By\+Id}} (Long id, Category\+Request category)
+\begin{DoxyCompactList}\small\item\em Обновляет информацию о категории по ее идентификатору. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_category_service_a23fde019996e07c9a301381fa8629fa0}{delete\+By\+Id}} (Long id)
+\begin{DoxyCompactList}\small\item\em Удаляет категорию по ее идентификатору. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Этот класс предоставляет сервисные методы для работы с категориями. 
+
+\doxysubsection{Методы}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_category_service_a7e6d38626cd67f6ad2b1f7dd19a89bc2}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_category_service_a7e6d38626cd67f6ad2b1f7dd19a89bc2} 
+\index{edu.mirea.vitality.blog.service.CategoryService@{edu.mirea.vitality.blog.service.CategoryService}!create@{create}}
+\index{create@{create}!edu.mirea.vitality.blog.service.CategoryService@{edu.mirea.vitality.blog.service.CategoryService}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_category}{Category}} edu.\+mirea.\+vitality.\+blog.\+service.\+Category\+Service.\+create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_category}{Category}}}]{category }\end{DoxyParamCaption})}
+
+
+
+Создает новую категорию. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em category} & Категория, которую нужно создать. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Созданная категория. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em Forbidden\+Access\+Problem} & Если текущий пользователь не является администратором. \\
+\hline
+{\em Category\+Not\+Unique\+Title\+Problem} & Если категория с таким заголовком уже существует. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_category_service_a23fde019996e07c9a301381fa8629fa0}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_category_service_a23fde019996e07c9a301381fa8629fa0} 
+\index{edu.mirea.vitality.blog.service.CategoryService@{edu.mirea.vitality.blog.service.CategoryService}!deleteById@{deleteById}}
+\index{deleteById@{deleteById}!edu.mirea.vitality.blog.service.CategoryService@{edu.mirea.vitality.blog.service.CategoryService}}
+\doxysubsubsection{\texorpdfstring{deleteById()}{deleteById()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+service.\+Category\+Service.\+delete\+By\+Id (\begin{DoxyParamCaption}\item[{Long}]{id }\end{DoxyParamCaption})}
+
+
+
+Удаляет категорию по ее идентификатору. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & Идентификатор категории. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em Forbidden\+Access\+Problem} & Если текущий пользователь не является администратором. \\
+\hline
+{\em Category\+Not\+Found\+Problem} & Если категория не найдена. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_category_service_a567c93015ef8b0d2b176a59b4693035b}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_category_service_a567c93015ef8b0d2b176a59b4693035b} 
+\index{edu.mirea.vitality.blog.service.CategoryService@{edu.mirea.vitality.blog.service.CategoryService}!getAll@{getAll}}
+\index{getAll@{getAll}!edu.mirea.vitality.blog.service.CategoryService@{edu.mirea.vitality.blog.service.CategoryService}}
+\doxysubsubsection{\texorpdfstring{getAll()}{getAll()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_category}{Category}} $>$ edu.\+mirea.\+vitality.\+blog.\+service.\+Category\+Service.\+get\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получает список всех категорий. 
+
+\begin{DoxyReturn}{Возвращает}
+Список всех категорий. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_category_service_a23c9f48f19fcd1df0f09c15c531e8598}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_category_service_a23c9f48f19fcd1df0f09c15c531e8598} 
+\index{edu.mirea.vitality.blog.service.CategoryService@{edu.mirea.vitality.blog.service.CategoryService}!getById@{getById}}
+\index{getById@{getById}!edu.mirea.vitality.blog.service.CategoryService@{edu.mirea.vitality.blog.service.CategoryService}}
+\doxysubsubsection{\texorpdfstring{getById()}{getById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_category}{Category}} edu.\+mirea.\+vitality.\+blog.\+service.\+Category\+Service.\+get\+By\+Id (\begin{DoxyParamCaption}\item[{Long}]{id }\end{DoxyParamCaption})}
+
+
+
+Получает категорию по ее идентификатору. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & Идентификатор категории. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Категория с заданным идентификатором. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em Category\+Not\+Found\+Problem} & Если категория не найдена. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_category_service_a19b7a4cc7ae8aaaaed3de848503ed14c}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1_category_service_a19b7a4cc7ae8aaaaed3de848503ed14c} 
+\index{edu.mirea.vitality.blog.service.CategoryService@{edu.mirea.vitality.blog.service.CategoryService}!updateById@{updateById}}
+\index{updateById@{updateById}!edu.mirea.vitality.blog.service.CategoryService@{edu.mirea.vitality.blog.service.CategoryService}}
+\doxysubsubsection{\texorpdfstring{updateById()}{updateById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_category}{Category}} edu.\+mirea.\+vitality.\+blog.\+service.\+Category\+Service.\+update\+By\+Id (\begin{DoxyParamCaption}\item[{Long}]{id,  }\item[{Category\+Request}]{category }\end{DoxyParamCaption})}
+
+
+
+Обновляет информацию о категории по ее идентификатору. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & Идентификатор категории. \\
+\hline
+{\em category} & Новая информация о категории. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Обновленная категория. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em Forbidden\+Access\+Problem} & Если текущий пользователь не является администратором. \\
+\hline
+{\em Category\+Not\+Unique\+Title\+Problem} & Если категория с таким заголовком уже существует. \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+service/\mbox{\hyperlink{_category_service_8java}{Category\+Service.\+java}}\end{DoxyCompactItemize}

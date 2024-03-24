@@ -1,0 +1,460 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>VitalityBlog: Класс edu.mirea.vitality.blog.controller.UserController</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">VitalityBlog<span id="projectnumber">&#160;next-SNAPSHOT</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>edu</b></li><li class="navelem"><b>mirea</b></li><li class="navelem"><b>vitality</b></li><li class="navelem"><b>blog</b></li><li class="navelem"><b>controller</b></li><li class="navelem"><a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller.html">UserController</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_user_controller-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс edu.mirea.vitality.blog.controller.UserController</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Контроллер для работы с пользователями.  
+ <a href="#details">Подробнее...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ac29eaecff499b8cb7c27b9822fb8c23f" id="r_ac29eaecff499b8cb7c27b9822fb8c23f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac29eaecff499b8cb7c27b9822fb8c23f">selfUpdateUsername</a> (@RequestBody @Valid UpdateUserUsernameRequest request)</td></tr>
+<tr class="memdesc:ac29eaecff499b8cb7c27b9822fb8c23f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновляет имя пользователя.  <br /></td></tr>
+<tr class="separator:ac29eaecff499b8cb7c27b9822fb8c23f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb6e66e58024ae1650aa5e9acc4ba2a3" id="r_abb6e66e58024ae1650aa5e9acc4ba2a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb6e66e58024ae1650aa5e9acc4ba2a3">selfUpdateEmail</a> (@RequestBody @Valid UpdateUserEmailRequest request)</td></tr>
+<tr class="memdesc:abb6e66e58024ae1650aa5e9acc4ba2a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновляет почту пользователя.  <br /></td></tr>
+<tr class="separator:abb6e66e58024ae1650aa5e9acc4ba2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89b910402075acc08eca25642afca4d4" id="r_a89b910402075acc08eca25642afca4d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89b910402075acc08eca25642afca4d4">selfUpdateInfo</a> (@RequestBody @Valid UpdateUserInfoRequest request)</td></tr>
+<tr class="memdesc:a89b910402075acc08eca25642afca4d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновляет информацию о пользователе.  <br /></td></tr>
+<tr class="separator:a89b910402075acc08eca25642afca4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23da4cb880fcbd5d5fca03fa964e26c6" id="r_a23da4cb880fcbd5d5fca03fa964e26c6"><td class="memItemLeft" align="right" valign="top">UserProfileResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23da4cb880fcbd5d5fca03fa964e26c6">getProfile</a> (@PathVariable String username)</td></tr>
+<tr class="memdesc:a23da4cb880fcbd5d5fca03fa964e26c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает данные профиля пользователя.  <br /></td></tr>
+<tr class="separator:a23da4cb880fcbd5d5fca03fa964e26c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8be8736eae699d6229ab1214c5486a28" id="r_a8be8736eae699d6229ab1214c5486a28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8be8736eae699d6229ab1214c5486a28">setBannedAt</a> (@RequestBody @Valid UserBanRequest request)</td></tr>
+<tr class="memdesc:a8be8736eae699d6229ab1214c5486a28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдает бан пользователю.  <br /></td></tr>
+<tr class="separator:a8be8736eae699d6229ab1214c5486a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4793d3db45edba91809d330921a25d56" id="r_a4793d3db45edba91809d330921a25d56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4793d3db45edba91809d330921a25d56">resetBannedAt</a> (@PathVariable Long userId)</td></tr>
+<tr class="memdesc:a4793d3db45edba91809d330921a25d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Снимает бан с пользователя.  <br /></td></tr>
+<tr class="separator:a4793d3db45edba91809d330921a25d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0f3626a00c9cb14a5b7ba36b1bc3380" id="r_aa0f3626a00c9cb14a5b7ba36b1bc3380"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0f3626a00c9cb14a5b7ba36b1bc3380">changePassword</a> (@RequestBody @Valid UpdateUserPasswordRequest request)</td></tr>
+<tr class="memdesc:aa0f3626a00c9cb14a5b7ba36b1bc3380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Меняет пароль пользователя.  <br /></td></tr>
+<tr class="separator:aa0f3626a00c9cb14a5b7ba36b1bc3380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b4bf53f9e8a9d72d57201654db23f98" id="r_a7b4bf53f9e8a9d72d57201654db23f98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1pagination_1_1_page_response.html">PageResponse</a>&lt; UserResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b4bf53f9e8a9d72d57201654db23f98">findPostsByFilter</a> (@RequestBody @Valid <a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1user_1_1_user_filter.html">UserFilter</a> filter)</td></tr>
+<tr class="memdesc:a7b4bf53f9e8a9d72d57201654db23f98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пагинирует пользователей согласно заданному фильтру.  <br /></td></tr>
+<tr class="separator:a7b4bf53f9e8a9d72d57201654db23f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbe008b6ba638b985d1b756b21f06240" id="r_acbe008b6ba638b985d1b756b21f06240"><td class="memItemLeft" align="right" valign="top">UserResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbe008b6ba638b985d1b756b21f06240">getById</a> (@PathVariable Long userId)</td></tr>
+<tr class="memdesc:acbe008b6ba638b985d1b756b21f06240"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает пользователя по его идентификатору.  <br /></td></tr>
+<tr class="separator:acbe008b6ba638b985d1b756b21f06240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0651ae06598e11201021f6508dec51f6" id="r_a0651ae06598e11201021f6508dec51f6"><td class="memItemLeft" align="right" valign="top">UserResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0651ae06598e11201021f6508dec51f6">getCurrent</a> ()</td></tr>
+<tr class="memdesc:a0651ae06598e11201021f6508dec51f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает текущего пользователя.  <br /></td></tr>
+<tr class="separator:a0651ae06598e11201021f6508dec51f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4db57dd67b73a107b4be680317808d80" id="r_a4db57dd67b73a107b4be680317808d80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4db57dd67b73a107b4be680317808d80">changeRole</a> (@RequestBody @Valid UpdateUserRoleRequest request)</td></tr>
+<tr class="memdesc:a4db57dd67b73a107b4be680317808d80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменяет роль пользователя.  <br /></td></tr>
+<tr class="separator:a4db57dd67b73a107b4be680317808d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acba31d94af7984e52d588866fbe46d84" id="r_acba31d94af7984e52d588866fbe46d84"><td class="memItemLeft" align="right" valign="top">Boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acba31d94af7984e52d588866fbe46d84">isSuperuser</a> ()</td></tr>
+<tr class="memdesc:acba31d94af7984e52d588866fbe46d84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, является ли пользователь суперпользователем.  <br /></td></tr>
+<tr class="separator:acba31d94af7984e52d588866fbe46d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b9dfa1104b7663fc0dea2b4a0728518" id="r_a6b9dfa1104b7663fc0dea2b4a0728518"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b9dfa1104b7663fc0dea2b4a0728518">deleteUser</a> (@RequestBody @Valid DeleteUserRequest request)</td></tr>
+<tr class="memdesc:a6b9dfa1104b7663fc0dea2b4a0728518"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаляет пользователя.  <br /></td></tr>
+<tr class="separator:a6b9dfa1104b7663fc0dea2b4a0728518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Контроллер для работы с пользователями. </p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="aa0f3626a00c9cb14a5b7ba36b1bc3380" name="aa0f3626a00c9cb14a5b7ba36b1bc3380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0f3626a00c9cb14a5b7ba36b1bc3380">&#9670;&#160;</a></span>changePassword()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.mirea.vitality.blog.controller.UserController.changePassword </td>
+          <td>(</td>
+          <td class="paramtype">@RequestBody @Valid UpdateUserPasswordRequest</td>          <td class="paramname"><span class="paramname"><em>request</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Меняет пароль пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td>Запрос на смену пароля пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4db57dd67b73a107b4be680317808d80" name="a4db57dd67b73a107b4be680317808d80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4db57dd67b73a107b4be680317808d80">&#9670;&#160;</a></span>changeRole()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.mirea.vitality.blog.controller.UserController.changeRole </td>
+          <td>(</td>
+          <td class="paramtype">@RequestBody @Valid UpdateUserRoleRequest</td>          <td class="paramname"><span class="paramname"><em>request</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Изменяет роль пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td>Запрос на изменение роли пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6b9dfa1104b7663fc0dea2b4a0728518" name="a6b9dfa1104b7663fc0dea2b4a0728518"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b9dfa1104b7663fc0dea2b4a0728518">&#9670;&#160;</a></span>deleteUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.mirea.vitality.blog.controller.UserController.deleteUser </td>
+          <td>(</td>
+          <td class="paramtype">@RequestBody @Valid DeleteUserRequest</td>          <td class="paramname"><span class="paramname"><em>request</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удаляет пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td>Запрос на удаление пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7b4bf53f9e8a9d72d57201654db23f98" name="a7b4bf53f9e8a9d72d57201654db23f98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b4bf53f9e8a9d72d57201654db23f98">&#9670;&#160;</a></span>findPostsByFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1pagination_1_1_page_response.html">PageResponse</a>&lt; UserResponse &gt; edu.mirea.vitality.blog.controller.UserController.findPostsByFilter </td>
+          <td>(</td>
+          <td class="paramtype">@RequestBody @Valid <a class="el" href="classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1user_1_1_user_filter.html">UserFilter</a></td>          <td class="paramname"><span class="paramname"><em>filter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Пагинирует пользователей согласно заданному фильтру. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filter</td><td>Фильтр для поиска пользователей. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Ответ с пагинированными пользователями. </dd></dl>
+
+</div>
+</div>
+<a id="acbe008b6ba638b985d1b756b21f06240" name="acbe008b6ba638b985d1b756b21f06240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbe008b6ba638b985d1b756b21f06240">&#9670;&#160;</a></span>getById()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UserResponse edu.mirea.vitality.blog.controller.UserController.getById </td>
+          <td>(</td>
+          <td class="paramtype">@PathVariable Long</td>          <td class="paramname"><span class="paramname"><em>userId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получает пользователя по его идентификатору. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>Идентификатор пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Ответ с данными пользователя. </dd></dl>
+
+</div>
+</div>
+<a id="a0651ae06598e11201021f6508dec51f6" name="a0651ae06598e11201021f6508dec51f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0651ae06598e11201021f6508dec51f6">&#9670;&#160;</a></span>getCurrent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UserResponse edu.mirea.vitality.blog.controller.UserController.getCurrent </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получает текущего пользователя. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Ответ с данными текущего пользователя. </dd></dl>
+
+</div>
+</div>
+<a id="a23da4cb880fcbd5d5fca03fa964e26c6" name="a23da4cb880fcbd5d5fca03fa964e26c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23da4cb880fcbd5d5fca03fa964e26c6">&#9670;&#160;</a></span>getProfile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UserProfileResponse edu.mirea.vitality.blog.controller.UserController.getProfile </td>
+          <td>(</td>
+          <td class="paramtype">@PathVariable String</td>          <td class="paramname"><span class="paramname"><em>username</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получает данные профиля пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">username</td><td>Имя пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Ответ с данными профиля пользователя. </dd></dl>
+
+</div>
+</div>
+<a id="acba31d94af7984e52d588866fbe46d84" name="acba31d94af7984e52d588866fbe46d84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acba31d94af7984e52d588866fbe46d84">&#9670;&#160;</a></span>isSuperuser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Boolean edu.mirea.vitality.blog.controller.UserController.isSuperuser </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет, является ли пользователь суперпользователем. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Признак суперпользователя. </dd></dl>
+
+</div>
+</div>
+<a id="a4793d3db45edba91809d330921a25d56" name="a4793d3db45edba91809d330921a25d56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4793d3db45edba91809d330921a25d56">&#9670;&#160;</a></span>resetBannedAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.mirea.vitality.blog.controller.UserController.resetBannedAt </td>
+          <td>(</td>
+          <td class="paramtype">@PathVariable Long</td>          <td class="paramname"><span class="paramname"><em>userId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Снимает бан с пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>Идентификатор пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abb6e66e58024ae1650aa5e9acc4ba2a3" name="abb6e66e58024ae1650aa5e9acc4ba2a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb6e66e58024ae1650aa5e9acc4ba2a3">&#9670;&#160;</a></span>selfUpdateEmail()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.mirea.vitality.blog.controller.UserController.selfUpdateEmail </td>
+          <td>(</td>
+          <td class="paramtype">@RequestBody @Valid UpdateUserEmailRequest</td>          <td class="paramname"><span class="paramname"><em>request</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обновляет почту пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td>Запрос на обновление почты пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a89b910402075acc08eca25642afca4d4" name="a89b910402075acc08eca25642afca4d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89b910402075acc08eca25642afca4d4">&#9670;&#160;</a></span>selfUpdateInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.mirea.vitality.blog.controller.UserController.selfUpdateInfo </td>
+          <td>(</td>
+          <td class="paramtype">@RequestBody @Valid UpdateUserInfoRequest</td>          <td class="paramname"><span class="paramname"><em>request</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обновляет информацию о пользователе. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td>Запрос на обновление информации о пользователе. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac29eaecff499b8cb7c27b9822fb8c23f" name="ac29eaecff499b8cb7c27b9822fb8c23f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac29eaecff499b8cb7c27b9822fb8c23f">&#9670;&#160;</a></span>selfUpdateUsername()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.mirea.vitality.blog.controller.UserController.selfUpdateUsername </td>
+          <td>(</td>
+          <td class="paramtype">@RequestBody @Valid UpdateUserUsernameRequest</td>          <td class="paramname"><span class="paramname"><em>request</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обновляет имя пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td>Запрос на обновление имени пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8be8736eae699d6229ab1214c5486a28" name="a8be8736eae699d6229ab1214c5486a28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8be8736eae699d6229ab1214c5486a28">&#9670;&#160;</a></span>setBannedAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.mirea.vitality.blog.controller.UserController.setBannedAt </td>
+          <td>(</td>
+          <td class="paramtype">@RequestBody @Valid UserBanRequest</td>          <td class="paramname"><span class="paramname"><em>request</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выдает бан пользователю. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td>Запрос на выдачу бана пользователю. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>controller/<b>UserController.java</b></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

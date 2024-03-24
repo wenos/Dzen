@@ -1,0 +1,81 @@
+\doxysection{Интерфейс edu.\+mirea.\+vitality.\+blog.\+mapper.\+Comment\+Mapper}
+\hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_comment_mapper}{}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_comment_mapper}\index{edu.mirea.vitality.blog.mapper.CommentMapper@{edu.mirea.vitality.blog.mapper.CommentMapper}}
+
+
+Этот интерфейс предоставляет методы для преобразования объектов комментариев между сущностью и объектом ответа.  
+
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+Comment\+Response \mbox{\hyperlink{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_comment_mapper_a50af5760e6b92e04f17e2634a7225e21}{to\+Response}} (\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_comment}{Comment}} comment)
+\begin{DoxyCompactList}\small\item\em Преобразует сущность комментария в объект ответа комментария. \end{DoxyCompactList}\item 
+default User\+Response \mbox{\hyperlink{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_comment_mapper_a3252e21e3776c07ef437f8a2d1794ee9}{check\+Anonymous}} (\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_comment}{Comment}} comment)
+\begin{DoxyCompactList}\small\item\em Проверяет, является ли автор комментария анонимным и возвращает соответствующий ответ пользователя. \end{DoxyCompactList}\item 
+List$<$ Comment\+Response $>$ \mbox{\hyperlink{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_comment_mapper_a1f0a334d3e184b5ce53b9133934f1de0}{to\+Response}} (List$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_comment}{Comment}} $>$ comments)
+\begin{DoxyCompactList}\small\item\em Преобразует список сущностей комментариев в список объектов ответа комментариев. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Этот интерфейс предоставляет методы для преобразования объектов комментариев между сущностью и объектом ответа. 
+
+\doxysubsection{Методы}
+\Hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_comment_mapper_a3252e21e3776c07ef437f8a2d1794ee9}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_comment_mapper_a3252e21e3776c07ef437f8a2d1794ee9} 
+\index{edu.mirea.vitality.blog.mapper.CommentMapper@{edu.mirea.vitality.blog.mapper.CommentMapper}!checkAnonymous@{checkAnonymous}}
+\index{checkAnonymous@{checkAnonymous}!edu.mirea.vitality.blog.mapper.CommentMapper@{edu.mirea.vitality.blog.mapper.CommentMapper}}
+\doxysubsubsection{\texorpdfstring{checkAnonymous()}{checkAnonymous()}}
+{\footnotesize\ttfamily default User\+Response edu.\+mirea.\+vitality.\+blog.\+mapper.\+Comment\+Mapper.\+check\+Anonymous (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_comment}{Comment}}}]{comment }\end{DoxyParamCaption})}
+
+
+
+Проверяет, является ли автор комментария анонимным и возвращает соответствующий ответ пользователя. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em comment} & Комментарий. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Ответ пользователя, если автор не анонимный, иначе пустой ответ. 
+\end{DoxyReturn}
+\Hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_comment_mapper_a50af5760e6b92e04f17e2634a7225e21}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_comment_mapper_a50af5760e6b92e04f17e2634a7225e21} 
+\index{edu.mirea.vitality.blog.mapper.CommentMapper@{edu.mirea.vitality.blog.mapper.CommentMapper}!toResponse@{toResponse}}
+\index{toResponse@{toResponse}!edu.mirea.vitality.blog.mapper.CommentMapper@{edu.mirea.vitality.blog.mapper.CommentMapper}}
+\doxysubsubsection{\texorpdfstring{toResponse()}{toResponse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Comment\+Response edu.\+mirea.\+vitality.\+blog.\+mapper.\+Comment\+Mapper.\+to\+Response (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_comment}{Comment}}}]{comment }\end{DoxyParamCaption})}
+
+
+
+Преобразует сущность комментария в объект ответа комментария. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em comment} & Сущность комментария. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Ответ комментария. 
+\end{DoxyReturn}
+\Hypertarget{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_comment_mapper_a1f0a334d3e184b5ce53b9133934f1de0}\label{interfaceedu_1_1mirea_1_1vitality_1_1blog_1_1mapper_1_1_comment_mapper_a1f0a334d3e184b5ce53b9133934f1de0} 
+\index{edu.mirea.vitality.blog.mapper.CommentMapper@{edu.mirea.vitality.blog.mapper.CommentMapper}!toResponse@{toResponse}}
+\index{toResponse@{toResponse}!edu.mirea.vitality.blog.mapper.CommentMapper@{edu.mirea.vitality.blog.mapper.CommentMapper}}
+\doxysubsubsection{\texorpdfstring{toResponse()}{toResponse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily List$<$ Comment\+Response $>$ edu.\+mirea.\+vitality.\+blog.\+mapper.\+Comment\+Mapper.\+to\+Response (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1_comment}{Comment}} $>$}]{comments }\end{DoxyParamCaption})}
+
+
+
+Преобразует список сущностей комментариев в список объектов ответа комментариев. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em comments} & Список сущностей комментариев. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Список ответов комментариев. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов интерфейса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+mapper/\mbox{\hyperlink{_comment_mapper_8java}{Comment\+Mapper.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,99 @@
+\doxysection{Класс edu.\+mirea.\+vitality.\+blog.\+service.\+system.\+Config\+Service}
+\hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1system_1_1_config_service}{}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1system_1_1_config_service}\index{edu.mirea.vitality.blog.service.system.ConfigService@{edu.mirea.vitality.blog.service.system.ConfigService}}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1system_1_1_config_service_add8ed83555bc13214a56831a7a1cc5e9}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1system_1_1_config_service_add8ed83555bc13214a56831a7a1cc5e9} 
+void {\bfseries init} ()
+\begin{DoxyCompactList}\small\item\em Первоначальная загрузка конфигурации \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1system_1_1_config_unit}{Config\+Unit}} \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1system_1_1_config_service_a096ec812106d5703c943e3d90a9ef8df}{save}} (\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1system_1_1_config_unit}{Config\+Unit}} unit)
+\begin{DoxyCompactList}\small\item\em Сохранение конфигурации \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1system_1_1_config_unit}{Config\+Unit}} $>$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1system_1_1_config_service_a778ca9bf726ddab57aa6611ab037797b}{get\+Properties}} ()
+\begin{DoxyCompactList}\small\item\em Получение всех конфигураций \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1system_1_1_config_unit}{Config\+Unit}} \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1system_1_1_config_service_a2754d3b178c44a8d65da9fd5860a54fd}{get\+Property}} (\mbox{\hyperlink{enumedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1system_1_1_system_property_key}{System\+Property\+Key}} key)
+\begin{DoxyCompactList}\small\item\em Получение конфигурации по ключу \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1system_1_1_config_service_ade24c88792b9c008546c4a183aabab72}{update\+Unit}} (\mbox{\hyperlink{enumedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1system_1_1_system_property_key}{System\+Property\+Key}} key, String value)
+\begin{DoxyCompactList}\small\item\em Обновление конфигурации \end{DoxyCompactList}\item 
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1system_1_1_config_service_a9e3a980bb694f359baf927899b712c5d}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1system_1_1_config_service_a9e3a980bb694f359baf927899b712c5d} 
+void {\bfseries update\+Cache} ()
+\begin{DoxyCompactList}\small\item\em Обновление кэша \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Статические открытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1system_1_1_config_service_ac59c2d871a93c63d32e8998e134e86af}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1system_1_1_config_service_ac59c2d871a93c63d32e8998e134e86af} 
+static final String {\bfseries CONFIGURATIONS\+\_\+\+CACHE\+\_\+\+NAME} = "{}configurations"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Методы}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1system_1_1_config_service_a778ca9bf726ddab57aa6611ab037797b}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1system_1_1_config_service_a778ca9bf726ddab57aa6611ab037797b} 
+\index{edu.mirea.vitality.blog.service.system.ConfigService@{edu.mirea.vitality.blog.service.system.ConfigService}!getProperties@{getProperties}}
+\index{getProperties@{getProperties}!edu.mirea.vitality.blog.service.system.ConfigService@{edu.mirea.vitality.blog.service.system.ConfigService}}
+\doxysubsubsection{\texorpdfstring{getProperties()}{getProperties()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1system_1_1_config_unit}{Config\+Unit}} $>$ edu.\+mirea.\+vitality.\+blog.\+service.\+system.\+Config\+Service.\+get\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получение всех конфигураций 
+
+\begin{DoxyReturn}{Возвращает}
+список конфигураций 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1system_1_1_config_service_a2754d3b178c44a8d65da9fd5860a54fd}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1system_1_1_config_service_a2754d3b178c44a8d65da9fd5860a54fd} 
+\index{edu.mirea.vitality.blog.service.system.ConfigService@{edu.mirea.vitality.blog.service.system.ConfigService}!getProperty@{getProperty}}
+\index{getProperty@{getProperty}!edu.mirea.vitality.blog.service.system.ConfigService@{edu.mirea.vitality.blog.service.system.ConfigService}}
+\doxysubsubsection{\texorpdfstring{getProperty()}{getProperty()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1system_1_1_config_unit}{Config\+Unit}} edu.\+mirea.\+vitality.\+blog.\+service.\+system.\+Config\+Service.\+get\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1system_1_1_system_property_key}{System\+Property\+Key}}}]{key }\end{DoxyParamCaption})}
+
+
+
+Получение конфигурации по ключу 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em key} & ключ конфигурации \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+конфигурация 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1system_1_1_config_service_a096ec812106d5703c943e3d90a9ef8df}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1system_1_1_config_service_a096ec812106d5703c943e3d90a9ef8df} 
+\index{edu.mirea.vitality.blog.service.system.ConfigService@{edu.mirea.vitality.blog.service.system.ConfigService}!save@{save}}
+\index{save@{save}!edu.mirea.vitality.blog.service.system.ConfigService@{edu.mirea.vitality.blog.service.system.ConfigService}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1system_1_1_config_unit}{Config\+Unit}} edu.\+mirea.\+vitality.\+blog.\+service.\+system.\+Config\+Service.\+save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1system_1_1_config_unit}{Config\+Unit}}}]{unit }\end{DoxyParamCaption})}
+
+
+
+Сохранение конфигурации 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em unit} & конфигурация \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+сохраненная конфигурация 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1system_1_1_config_service_ade24c88792b9c008546c4a183aabab72}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1service_1_1system_1_1_config_service_ade24c88792b9c008546c4a183aabab72} 
+\index{edu.mirea.vitality.blog.service.system.ConfigService@{edu.mirea.vitality.blog.service.system.ConfigService}!updateUnit@{updateUnit}}
+\index{updateUnit@{updateUnit}!edu.mirea.vitality.blog.service.system.ConfigService@{edu.mirea.vitality.blog.service.system.ConfigService}}
+\doxysubsubsection{\texorpdfstring{updateUnit()}{updateUnit()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+service.\+system.\+Config\+Service.\+update\+Unit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1model_1_1system_1_1_system_property_key}{System\+Property\+Key}}}]{key,  }\item[{String}]{value }\end{DoxyParamCaption})}
+
+
+
+Обновление конфигурации 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em key} & ключ конфигурации \\
+\hline
+{\em value} & значение конфигурации \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+service/system/Config\+Service.\+java\end{DoxyCompactItemize}

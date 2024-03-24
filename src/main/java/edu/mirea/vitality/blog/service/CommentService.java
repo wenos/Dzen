@@ -20,6 +20,15 @@ import org.springframework.transaction.annotation.Transactional;
 import java.time.OffsetDateTime;
 import java.util.Optional;
 
+/**
+ * @file CommentService.java
+ * @brief Этот файл содержит класс CommentService.
+ */
+
+/**
+ * @class CommentService
+ * @brief Этот класс предоставляет сервисные методы для работы с комментариями.
+ */
 @Service
 @RequiredArgsConstructor
 public class CommentService {
@@ -29,17 +38,18 @@ public class CommentService {
     private final ConfigService configService;
 
     /**
-     * Сохранение комментария
+     * @brief Сохраняет комментарий.
+     * @param comment Комментарий для сохранения.
+     * @return Сохраненный комментарий.
      */
     public Comment save(Comment comment) {
         return repository.save(comment);
     }
 
     /**
-     * Создание комментария
-     *
-     * @param request запрос на создание комментария
-     * @return созданный комментарий
+     * @brief Создает новый комментарий.
+     * @param request Запрос на создание комментария.
+     * @return Созданный комментарий.
      */
     @Transactional
     public Comment create(CreateCommentRequest request) {
@@ -56,31 +66,29 @@ public class CommentService {
     }
 
     /**
-     * Поиск комментария по идентификатору
-     *
-     * @param id идентификатор комментария
-     * @return комментарий
+     * @brief Получает комментарий по его идентификатору.
+     * @param id Идентификатор комментария.
+     * @return Комментарий с заданным идентификатором.
      */
     public Optional<Comment> findById(Long id) {
         return repository.findById(id);
     }
 
     /**
-     * Получение комментария по идентификатору
-     *
-     * @param commentId идентификатор комментария
-     * @return комментарий
+     * @brief Получает комментарий по его идентификатору.
+     * @param commentId Идентификатор комментария.
+     * @return Комментарий с заданным идентификатором.
+     * @throws CommentNotFoundProblem Если комментарий не найден.
      */
     public Comment getById(Long commentId) {
         return findById(commentId).orElseThrow(() -> new CommentNotFoundProblem(commentId));
     }
 
     /**
-     * Обновление комментария
-     *
-     * @param request   запрос на обновление комментария
-     * @param commentId id комментария
-     * @return обновленный комментарий
+     * @brief Обновляет информацию о комментарии.
+     * @param request Запрос на обновление комментария.
+     * @param commentId Идентификатор комментария.
+     * @return Обновленный комментарий.
      */
     public Comment update(UpdateCommentRequest request, Long commentId) {
         User currentUser = userService.getCurrentUser();
@@ -95,9 +103,8 @@ public class CommentService {
     }
 
     /**
-     * Удаление комментария по id
-     *
-     * @param commentId id комментария
+     * @brief Удаляет комментарий по его идентификатору.
+     * @param commentId Идентификатор комментария.
      */
     public void deleteById(Long commentId) {
         User currentUser = userService.getCurrentUser();
@@ -111,19 +118,17 @@ public class CommentService {
     }
 
     /**
-     * Поиск комментариев по идентификатору поста
-     *
-     * @param filter фильтр
-     * @return Найденные посты
+     * @brief Поиск комментариев по идентификатору поста.
+     * @param filter Фильтр.
+     * @return Найденные комментарии.
      */
     public Page<Comment> findByPostId(CommentFilter filter) {
         Pageable pageable = PageRequest.of(filter.getPage(), filter.getSize());
         return repository.findAllByPostId(filter.getPostId(), pageable);
     }
 
-
     /**
-     * Удаление устаревших комментариев
+     * @brief Удаляет устаревшие комментарии.
      */
     @Transactional
     public void deleteOldComments() {
@@ -133,12 +138,12 @@ public class CommentService {
     }
 
     /**
-     * Удаление комментариев по id автора
-     *
-     * @param id id автора
+     * @brief Удаляет комментарии по идентификатору автора.
+     * @param id Идентификатор автора.
      */
     @Transactional
     public void deleteByAuthorId(Long id) {
         repository.deleteAllByAuthorId(id);
     }
 }
+

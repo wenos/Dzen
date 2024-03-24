@@ -1,0 +1,174 @@
+\doxysection{Класс edu.\+mirea.\+vitality.\+blog.\+controller.\+Post\+Controller}
+\hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_post_controller}{}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_post_controller}\index{edu.mirea.vitality.blog.controller.PostController@{edu.mirea.vitality.blog.controller.PostController}}
+
+
+Этот класс представляет собой контроллер для работы с постами.  
+
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+Post\+Response \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_post_controller_aa35394a0db77eb1d2ffe4f4fa2f25a38}{create\+Post}} (@Valid Post\+Request request)
+\begin{DoxyCompactList}\small\item\em Создает новый пост. \end{DoxyCompactList}\item 
+Post\+Response \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_post_controller_a08d76d7a236705de286b31591d7399f0}{get\+Post\+By\+Id}} (@Path\+Variable Long post\+Id)
+\begin{DoxyCompactList}\small\item\em Получает пост по его идентификатору. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_post_controller_aca15463e804e7edec9bcbab06cc0a290}{delete\+Post}} (@Path\+Variable Long post\+Id)
+\begin{DoxyCompactList}\small\item\em Удаляет пост по его идентификатору. \end{DoxyCompactList}\item 
+Post\+Response \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_post_controller_a52d5a6e7af1ebbd52e744b1b1d773932}{update\+Post}} ( @Valid Update\+Post\+Request request, @Path\+Variable Long post\+Id)
+\begin{DoxyCompactList}\small\item\em Обновляет пост. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1pagination_1_1_page_response}{Page\+Response}}$<$ Post\+Response $>$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_post_controller_a9c9d325a5d03057ba701c207f1679f70}{find\+Posts\+By\+Filter}} (@Request\+Body @Valid \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1post_1_1_post_filter}{Post\+Filter}} filter)
+\begin{DoxyCompactList}\small\item\em Пагинирует посты согласно заданному фильтру. \end{DoxyCompactList}\item 
+List$<$ Post\+Response $>$ \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_post_controller_aa4ae5e25434e34932c55084927fbcbed}{get\+All\+By\+Author\+Id}} (@Path\+Variable Long id)
+\begin{DoxyCompactList}\small\item\em Получает все посты автора по его идентификатору. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_post_controller_afee43bd085882da7421ed192b6f17901}{like\+Post}} (@Path\+Variable Long id)
+\begin{DoxyCompactList}\small\item\em Ставит лайк на пост. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_post_controller_a54e856c262509df4deda3ce79bfe461d}{unlike\+Post}} (@Path\+Variable Long id)
+\begin{DoxyCompactList}\small\item\em Убирает лайк с поста. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Этот класс представляет собой контроллер для работы с постами. 
+
+\doxysubsection{Методы}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_post_controller_aa35394a0db77eb1d2ffe4f4fa2f25a38}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_post_controller_aa35394a0db77eb1d2ffe4f4fa2f25a38} 
+\index{edu.mirea.vitality.blog.controller.PostController@{edu.mirea.vitality.blog.controller.PostController}!createPost@{createPost}}
+\index{createPost@{createPost}!edu.mirea.vitality.blog.controller.PostController@{edu.mirea.vitality.blog.controller.PostController}}
+\doxysubsubsection{\texorpdfstring{createPost()}{createPost()}}
+{\footnotesize\ttfamily Post\+Response edu.\+mirea.\+vitality.\+blog.\+controller.\+Post\+Controller.\+create\+Post (\begin{DoxyParamCaption}\item[{@Valid Post\+Request}]{request }\end{DoxyParamCaption})}
+
+
+
+Создает новый пост. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em request} & Данные запроса для создания поста. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Созданный пост. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_post_controller_aca15463e804e7edec9bcbab06cc0a290}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_post_controller_aca15463e804e7edec9bcbab06cc0a290} 
+\index{edu.mirea.vitality.blog.controller.PostController@{edu.mirea.vitality.blog.controller.PostController}!deletePost@{deletePost}}
+\index{deletePost@{deletePost}!edu.mirea.vitality.blog.controller.PostController@{edu.mirea.vitality.blog.controller.PostController}}
+\doxysubsubsection{\texorpdfstring{deletePost()}{deletePost()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+controller.\+Post\+Controller.\+delete\+Post (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{post\+Id }\end{DoxyParamCaption})}
+
+
+
+Удаляет пост по его идентификатору. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em post\+Id} & Идентификатор поста. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_post_controller_a9c9d325a5d03057ba701c207f1679f70}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_post_controller_a9c9d325a5d03057ba701c207f1679f70} 
+\index{edu.mirea.vitality.blog.controller.PostController@{edu.mirea.vitality.blog.controller.PostController}!findPostsByFilter@{findPostsByFilter}}
+\index{findPostsByFilter@{findPostsByFilter}!edu.mirea.vitality.blog.controller.PostController@{edu.mirea.vitality.blog.controller.PostController}}
+\doxysubsubsection{\texorpdfstring{findPostsByFilter()}{findPostsByFilter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1pagination_1_1_page_response}{Page\+Response}}$<$ Post\+Response $>$ edu.\+mirea.\+vitality.\+blog.\+controller.\+Post\+Controller.\+find\+Posts\+By\+Filter (\begin{DoxyParamCaption}\item[{@Request\+Body @Valid \mbox{\hyperlink{classedu_1_1mirea_1_1vitality_1_1blog_1_1domain_1_1dto_1_1post_1_1_post_filter}{Post\+Filter}}}]{filter }\end{DoxyParamCaption})}
+
+
+
+Пагинирует посты согласно заданному фильтру. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em filter} & Фильтр для поиска постов. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Ответ с пагинированными постами. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_post_controller_aa4ae5e25434e34932c55084927fbcbed}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_post_controller_aa4ae5e25434e34932c55084927fbcbed} 
+\index{edu.mirea.vitality.blog.controller.PostController@{edu.mirea.vitality.blog.controller.PostController}!getAllByAuthorId@{getAllByAuthorId}}
+\index{getAllByAuthorId@{getAllByAuthorId}!edu.mirea.vitality.blog.controller.PostController@{edu.mirea.vitality.blog.controller.PostController}}
+\doxysubsubsection{\texorpdfstring{getAllByAuthorId()}{getAllByAuthorId()}}
+{\footnotesize\ttfamily List$<$ Post\+Response $>$ edu.\+mirea.\+vitality.\+blog.\+controller.\+Post\+Controller.\+get\+All\+By\+Author\+Id (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{id }\end{DoxyParamCaption})}
+
+
+
+Получает все посты автора по его идентификатору. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & Идентификатор автора постов. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Список постов автора. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_post_controller_a08d76d7a236705de286b31591d7399f0}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_post_controller_a08d76d7a236705de286b31591d7399f0} 
+\index{edu.mirea.vitality.blog.controller.PostController@{edu.mirea.vitality.blog.controller.PostController}!getPostById@{getPostById}}
+\index{getPostById@{getPostById}!edu.mirea.vitality.blog.controller.PostController@{edu.mirea.vitality.blog.controller.PostController}}
+\doxysubsubsection{\texorpdfstring{getPostById()}{getPostById()}}
+{\footnotesize\ttfamily Post\+Response edu.\+mirea.\+vitality.\+blog.\+controller.\+Post\+Controller.\+get\+Post\+By\+Id (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{post\+Id }\end{DoxyParamCaption})}
+
+
+
+Получает пост по его идентификатору. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em post\+Id} & Идентификатор поста. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Ответ с информацией о посте. 
+\end{DoxyReturn}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_post_controller_afee43bd085882da7421ed192b6f17901}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_post_controller_afee43bd085882da7421ed192b6f17901} 
+\index{edu.mirea.vitality.blog.controller.PostController@{edu.mirea.vitality.blog.controller.PostController}!likePost@{likePost}}
+\index{likePost@{likePost}!edu.mirea.vitality.blog.controller.PostController@{edu.mirea.vitality.blog.controller.PostController}}
+\doxysubsubsection{\texorpdfstring{likePost()}{likePost()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+controller.\+Post\+Controller.\+like\+Post (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{id }\end{DoxyParamCaption})}
+
+
+
+Ставит лайк на пост. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & Идентификатор поста. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_post_controller_a54e856c262509df4deda3ce79bfe461d}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_post_controller_a54e856c262509df4deda3ce79bfe461d} 
+\index{edu.mirea.vitality.blog.controller.PostController@{edu.mirea.vitality.blog.controller.PostController}!unlikePost@{unlikePost}}
+\index{unlikePost@{unlikePost}!edu.mirea.vitality.blog.controller.PostController@{edu.mirea.vitality.blog.controller.PostController}}
+\doxysubsubsection{\texorpdfstring{unlikePost()}{unlikePost()}}
+{\footnotesize\ttfamily void edu.\+mirea.\+vitality.\+blog.\+controller.\+Post\+Controller.\+unlike\+Post (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{id }\end{DoxyParamCaption})}
+
+
+
+Убирает лайк с поста. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & Идентификатор поста. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_post_controller_a52d5a6e7af1ebbd52e744b1b1d773932}\label{classedu_1_1mirea_1_1vitality_1_1blog_1_1controller_1_1_post_controller_a52d5a6e7af1ebbd52e744b1b1d773932} 
+\index{edu.mirea.vitality.blog.controller.PostController@{edu.mirea.vitality.blog.controller.PostController}!updatePost@{updatePost}}
+\index{updatePost@{updatePost}!edu.mirea.vitality.blog.controller.PostController@{edu.mirea.vitality.blog.controller.PostController}}
+\doxysubsubsection{\texorpdfstring{updatePost()}{updatePost()}}
+{\footnotesize\ttfamily Post\+Response edu.\+mirea.\+vitality.\+blog.\+controller.\+Post\+Controller.\+update\+Post (\begin{DoxyParamCaption}\item[{@Valid Update\+Post\+Request}]{request,  }\item[{@Path\+Variable Long}]{post\+Id }\end{DoxyParamCaption})}
+
+
+
+Обновляет пост. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em request} & Данные запроса для обновления поста. \\
+\hline
+{\em post\+Id} & Идентификатор поста. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Обновленный пост. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+controller/Post\+Controller.\+java\end{DoxyCompactItemize}

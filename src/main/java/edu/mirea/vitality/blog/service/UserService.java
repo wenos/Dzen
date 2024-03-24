@@ -32,6 +32,17 @@ import org.springframework.stereotype.Service;
 import java.time.OffsetDateTime;
 import java.util.Optional;
 
+
+/**
+ * @file UserService.java
+ * @brief Этот файл содержит класс UserService.
+ */
+
+
+/**
+ * @class UserService
+ * @brief Класс, представляющий сервис для работы с пользователями.
+ */
 @Service
 @Slf4j
 @RequiredArgsConstructor
@@ -56,7 +67,7 @@ public class UserService {
             User u = new User();
             u.setId(superuserId);
             u.setUsername("superuser");
-            u.setEmail(RandomStringUtils.randomAlphanumeric(10) + "@tinkoff.ru");
+            u.setEmail(RandomStringUtils.randomAlphanumeric(10) + "@vitality.ru");
             u.setPassword(passwordEncoder.encode(superUserConfig.getSuperuserDefaultPassword()));
             u.setRole(Role.ROLE_ADMIN);
             repository.save(u);
