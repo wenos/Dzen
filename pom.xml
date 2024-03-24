@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>edu.mirea</groupId>
-    <artifactId>MyInvest</artifactId>
+    <artifactId>VitalityBlog</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Tinkoff Ne Ninja</name>
-    <description>Tinkoff Ne Ninja</description>
+    <name>Vitality blog</name>
+    <description>Vitality blog</description>
     <properties>
         <java.version>17</java.version>
         <org.mapstruct.version>1.5.5.Final</org.mapstruct.version>
