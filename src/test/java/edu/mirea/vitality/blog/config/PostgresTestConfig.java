@@ -1,4 +1,4 @@
-package edu.mirea.myinvest.config;
+package edu.mirea.vitality.blog.config;
 
 import org.springframework.boot.test.util.TestPropertyValues;
 import org.springframework.context.ApplicationContextInitializer;
